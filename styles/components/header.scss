@@ -1,0 +1,42 @@
+.header{
+    position: sticky;
+    top: 0;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 3px 6px 0px #0000004A;
+
+    .nav{
+        display: none;
+        .navbar{
+            
+            & a{
+                text-decoration: none;
+            }
+            &__item{
+                list-style: none;
+
+                color: $color-black;
+
+            }
+        }
+
+    }
+
+    .title{
+        display: flex;
+        align-items: center;
+
+        &--H {
+            padding: 0.5em;
+            box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.25);
+        }   
+
+        & h3{
+            width: 20%;
+            line-height: 70%;
+        }
+    }
+
+}
