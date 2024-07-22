@@ -7,23 +7,6 @@
     align-items: center;
     box-shadow: 0px 3px 6px 0px #0000004A;
 
-    .nav{
-        display: none;
-        .navbar{
-            
-            & a{
-                text-decoration: none;
-            }
-            &__item{
-                list-style: none;
-
-                color: $color-black;
-
-            }
-        }
-
-    }
-
     .title{
         display: flex;
         align-items: center;
@@ -39,4 +22,27 @@
         }
     }
 
+}
+
+.nav{
+    position: sticky;
+    top: 68px;
+    display: none;
+    
+
+    &--mobile{
+        display: block;
+    }
+    
+    .navbar{
+        
+        &__item{
+            list-style-type: none;
+
+            & a{
+                text-decoration: none;
+                color: $color-black;
+            }
+        }
+    }
 }

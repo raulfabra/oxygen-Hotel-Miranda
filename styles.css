@@ -17,16 +17,6 @@ body {
   align-items: center;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
 }
-.header .nav {
-  display: none;
-}
-.header .nav .navbar a {
-  text-decoration: none;
-}
-.header .nav .navbar__item {
-  list-style: none;
-  color: rgb(17, 17, 17);
-}
 .header .title {
   display: flex;
   align-items: center;
@@ -38,6 +28,22 @@ body {
 .header .title h3 {
   width: 20%;
   line-height: 70%;
+}
+
+.nav {
+  position: sticky;
+  top: 68px;
+  display: none;
+}
+.nav--mobile {
+  display: block;
+}
+.nav .navbar__item {
+  list-style-type: none;
+}
+.nav .navbar__item a {
+  text-decoration: none;
+  color: rgb(17, 17, 17);
 }
 
 .footer::before {
