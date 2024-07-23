@@ -36,5 +36,25 @@
   letter-spacing: -1.2px;
   text-align: left;
 }
+.banner__button {
+  display: block;
+  margin: 2em 0;
+  padding: 1.5em;
+  width: 200px;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  color: rgb(255, 255, 255);
+}
+.banner__button--beige {
+  border: 1px solid rgb(34, 34, 34);
+  background-color: rgb(190, 173, 142);
+}
+.banner__button--grey {
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
+}
 
 /*# sourceMappingURL=home.css.map */
