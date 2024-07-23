@@ -4,8 +4,9 @@
     position: sticky;
     top: 0;
     z-index: 33;
-    padding: 1em;
+    padding: 1em 0.5em;
     box-shadow: 0px 3px 6px 0px #0000004A;
+    background-color: $color-white;
 
     &__menuBar,
     .menuBar {
@@ -54,11 +55,12 @@
 .nav{
     display: none;
     position: sticky;
-    top: 68px;
+    top: 65px;
+    z-index: 33;
+    background-color: $color-white;
 
     &--mobile{
         display: block;
-        margin: 1em;
     }
     
     .navbar{

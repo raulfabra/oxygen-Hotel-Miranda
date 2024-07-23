@@ -1,0 +1,40 @@
+.old-standard-tt-regular {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.old-standard-tt-bold {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.old-standard-tt-regular-italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.banner {
+  padding: 3em 1.5em;
+  background-color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+}
+.banner__subtitle {
+  padding-top: 1em;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-align: left;
+}
+.banner__title {
+  padding-top: 1em;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  text-align: left;
+}
+
+/*# sourceMappingURL=home.css.map */
