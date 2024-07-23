@@ -28,7 +28,7 @@
     position: sticky;
     top: 68px;
     display: none;
-    
+    text-align: left;
 
     &--mobile{
         display: block;
@@ -37,7 +37,14 @@
     .navbar{
         
         &__item{
+            padding: 1em;
             list-style-type: none;
+
+            font-family: $font-archivo;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 18px;
+            text-align: center;
 
             & a{
                 text-decoration: none;

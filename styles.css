@@ -8,6 +8,21 @@ body {
   text-align: center;
 }
 
+.old-standard-tt-regular {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.old-standard-tt-bold {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.old-standard-tt-regular-italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -34,12 +49,19 @@ body {
   position: sticky;
   top: 68px;
   display: none;
+  text-align: left;
 }
 .nav--mobile {
   display: block;
 }
 .nav .navbar__item {
+  padding: 1em;
   list-style-type: none;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
 }
 .nav .navbar__item a {
   text-decoration: none;

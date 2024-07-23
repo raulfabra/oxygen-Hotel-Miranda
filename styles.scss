@@ -10,7 +10,7 @@ body{
 
 // Variables
 @import 'styles/constants/colors.scss';
-@import 'styles/constants//fonts.scss';
+@import 'styles/constants/fonts.scss';
 
 // Components
 @import 'styles/components/header.scss';
@@ -18,5 +18,10 @@ body{
 
 // Pages
 @import 'styles/pages/home.scss';
+@import 'styles/pages/aboutUs.scss';
+@import 'styles/pages/rooms.scss';
+@import 'styles/pages/offers.scss';
+@import 'styles/pages/contact.scss';
+
 
 

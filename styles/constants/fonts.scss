@@ -1,3 +1,21 @@
-$font-primary: "Old Standard TT", sans-serif;
-$font-secundary: "Archivo", sans-serif;
+$font-oldstandardTT: "Old Standard TT", sans-serif;
+$font-archivo: "Archivo", sans-serif;
 
+
+.old-standard-tt-regular {
+    
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .old-standard-tt-bold {
+    
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .old-standard-tt-regular-italic {
+    
+    font-weight: 400;
+    font-style: italic;
+  }
