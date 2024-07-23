@@ -6,7 +6,7 @@
     right: 0;
     bottom: 0;
     z-index: -1;
-    background-image: url("/public/images/Background-Footer.png");
+    background-image: url("../../public/images/Background-Footer.png");
     opacity: 0.03;
 }
 
@@ -57,13 +57,13 @@
             line-height: 26px;
             text-align: left;
             color: $color-grey;
-                        
+            
         }
     }
 
     .Copyright_Terminos{
         padding: 2em;
-        background-color: $background-gray-light;
+        background-color: $background-grey-light;
         font-weight: 700;
     }
 }
