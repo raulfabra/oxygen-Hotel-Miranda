@@ -56,13 +56,19 @@
 
     </section>
     <section class="calendar">
-        <form class="calendar__form">
-            <label for="arrival">Arrival Date</label><br>
-            <input type="date" name="arrival" id="arrival" />
+        <form class="formulario">
+            <div class="form">
+                <label for="arrival" class="form__title">Arrival Date</label><br><br>
+                <input type="date" class="form__input--calendar"/>
+                <input type="text" class="form__input--text" placeholder="24th march 2020" />
+            </div>
             <br><br>
-            <label for="departure">Departure Date</label><br>
-            <input type="date" name="departure" id="departure" />
-            <br><br>
+            <div class="form">
+                <label for="departure" class="form__title">Departure Date</label><br><br>
+                <input type="date" class="form__input--calendar" />
+                <input type="text" class="form__input--text" placeholder="30th march 2020" />
+            </div>
+            <br>
             <button type="button" class="banner__button banner__button--beige">CHECK AVAILABILITY</button>
         </form>
     </section>
