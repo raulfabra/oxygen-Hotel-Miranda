@@ -1,0 +1,70 @@
+.swiper {
+    width: auto;
+    height: 400px;
+
+
+    &__imagenes{
+        background-color: $background-grey-photo;
+        & img{
+            width: 80%;
+            vertical-align: middle;
+        }
+    }
+    &__description{
+        padding: 2em;
+        & h2{
+            font-family: $font-oldstandardTT;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: -1.20px;
+                        
+            color: $color-black;
+        }
+
+        &--loremIpsu{
+            font-family: $font-roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+
+            color: $color-grey;
+            
+        }
+
+        &--price{
+            font-family: $font-archivo;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 43px;
+            
+            color: $background-beige;
+
+            & span{
+                font-family: $font-archivo;
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 43px;
+                text-align: center;
+                               
+                color: $background-beige;
+            }
+        }
+    }
+
+    &-button-prev{
+        top: var(--swiper-navigation-top-offset,30%);
+
+        &:after{
+            content: none;
+        }
+    }
+
+    &-button-next{
+        top: var(--swiper-navigation-top-offset,30%);
+
+        &:after{
+            content: none;
+        }
+    }
+}
