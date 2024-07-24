@@ -1,31 +1,12 @@
 .banner {
   padding: 3em 1.5em;
   background-color: rgb(51, 51, 51);
-  color: rgb(255, 255, 255);
 }
-.banner__subtitle {
-  padding-top: 1em;
-  font-family: "Archivo", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 3px;
-  text-align: left;
-}
-.banner__title {
-  padding-top: 1em;
-  font-family: "Old Standard TT", sans-serif;
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 60px;
-  letter-spacing: -1.2px;
-  text-align: left;
-}
-.banner__button {
+.banner__button--beige {
   display: block;
+  width: 200px;
   margin: 2em 0;
   padding: 1.5em;
-  width: 200px;
   border: none;
   font-family: "Archivo", sans-serif;
   font-size: 14px;
@@ -33,11 +14,20 @@
   line-height: 15px;
   letter-spacing: 2.8px;
   color: rgb(255, 255, 255);
-}
-.banner__button--beige {
   background-color: rgb(190, 173, 142);
 }
 .banner__button--grey {
+  display: block;
+  width: 200px;
+  margin: 2em 0;
+  padding: 1.5em;
+  border: none;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  color: rgb(255, 255, 255);
   border: 2px solid rgba(255, 255, 255, 0.33);
   background-color: transparent;
 }
@@ -74,6 +64,21 @@
   width: 90%;
   background-color: rgb(34, 34, 34);
 }
+.formulario__button {
+  display: block;
+  width: 200px;
+  margin: 2em 0;
+  padding: 1.5em;
+  border: none;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  color: rgb(255, 255, 255);
+  width: 250px;
+  background-color: rgb(190, 173, 142);
+}
 
 .aboutUS {
   padding: 2em 1.5em;
@@ -82,22 +87,43 @@
   background-color: rgb(248, 248, 248);
 }
 .aboutUS__subtitle {
+  padding-top: 1em;
   font-family: "Archivo", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 2.8px;
-  text-align: left;
+  line-height: 16px;
+  letter-spacing: 3px;
   color: rgb(119, 119, 119);
+  /*font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.80px;
+
+  color: $color-grey;
+
+
+  padding-bottom: 2em;
+
+  font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-align: left;
+
+  color: $color-grey; */
+  text-align: left;
 }
-.aboutUS h1 {
-  padding-top: 0.5em;
+.aboutUS__title {
+  padding-top: 1em;
+  text-align: center;
   font-family: "Old Standard TT", sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 60px;
   letter-spacing: -1.2px;
-  text-align: center;
+  color: rgb(17, 17, 17);
 }
 .aboutUS__loremIpsum {
   padding-top: 1em;
@@ -108,75 +134,154 @@
   text-align: justify;
   color: rgb(119, 119, 119);
 }
+.aboutUS__button {
+  display: block;
+  width: 200px;
+  margin: 2em 0;
+  padding: 1.5em;
+  border: none;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(190, 173, 142);
+}
 
 .rooms {
   padding: 2em 0;
 }
 .rooms__subtitle {
-  font-family: "Archivo", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 15.23px;
-  letter-spacing: 2.8px;
-  color: rgb(119, 119, 119);
-}
-.rooms__title {
-  margin: 0.5em 0;
-  font-family: "Old Standard TT", sans-serif;
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 60px;
-  letter-spacing: -1.2px;
-  color: rgb(17, 17, 17);
-}
-
-.facilities {
-  padding: 2em 1.5em;
-}
-.facilities__subtitle {
-  font-family: "Archivo", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 15.23px;
-  letter-spacing: 2.8px;
-  color: rgb(119, 119, 119);
-}
-.facilities__title {
-  margin: 0.5em 0;
-  padding-bottom: 1em;
-  font-family: "Old Standard TT", sans-serif;
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 60px;
-  letter-spacing: -1.2px;
-  color: rgb(17, 17, 17);
-}
-
-.menuFoods {
-  position: relative;
-  padding: 2em 1.5em;
-  color: rgb(17, 17, 17);
-  text-align: left;
-}
-.menuFoods img {
-  position: relative;
-  left: 80%;
-}
-.menuFoods__subtitle {
-  padding-bottom: 2em;
+  padding-top: 1em;
   font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 3px;
   color: rgb(119, 119, 119);
+  /*font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.80px;
+
+  color: $color-grey;
+
+
+  padding-bottom: 2em;
+
+  font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-align: left;
+
+  color: $color-grey; */
 }
-.menuFoods__title {
+.rooms__title {
+  padding-top: 1em;
+  text-align: center;
   font-family: "Old Standard TT", sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 60px;
   letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+  padding-bottom: 0.5em;
+}
+
+.facilities {
+  padding: 2em 1.5em;
+}
+.facilities__subtitle {
+  padding-top: 1em;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  color: rgb(119, 119, 119);
+  /*font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.80px;
+
+  color: $color-grey;
+
+
+  padding-bottom: 2em;
+
+  font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-align: left;
+
+  color: $color-grey; */
+}
+.facilities__title {
+  padding-top: 1em;
+  text-align: center;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+  padding-bottom: 1em;
+}
+
+.menuFoods {
+  position: relative;
+  padding: 2em 1.5em;
+  color: rgb(17, 17, 17);
+}
+.menuFoods img {
+  position: relative;
+  left: 44%;
+}
+.menuFoods__subtitle {
+  padding-top: 1em;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  color: rgb(119, 119, 119);
+  /*font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.80px;
+
+  color: $color-grey;
+
+
+  padding-bottom: 2em;
+
+  font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-align: left;
+
+  color: $color-grey; */
+  text-align: left;
+}
+.menuFoods__title {
+  padding-top: 1em;
+  text-align: left;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
 }
 
 .stadistics {

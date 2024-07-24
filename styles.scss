@@ -12,6 +12,11 @@ body{
 @import 'styles/constants/colors.scss';
 @import 'styles/constants/fonts.scss';
 
+// Mixins
+@import 'styles/@mixins/title.scss';
+@import 'styles/@mixins/subtitle.scss';
+@import 'styles/@mixins/button.scss';
+
 // Components
 @import 'styles/components/header.scss';
 @import 'styles/components/banner.scss';

@@ -1,0 +1,16 @@
+@mixin button($font, $color){
+    display: block;
+    width: 200px;
+    margin: 2em 0;
+    padding: 1.5em;
+    border: none;
+
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2.80px;
+
+    color: $color;
+
+}
