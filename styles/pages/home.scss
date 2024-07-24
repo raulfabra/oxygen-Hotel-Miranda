@@ -229,3 +229,40 @@
         
     }
 }
+
+.stadistics{
+    padding: 3em;
+    background-color: $background-grey-strong;
+
+    .stadistic{
+        padding: 1.5em;
+        &__image{}
+
+        &__description{
+            & h1{
+                font-family: $font-roboto;
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 82px;
+
+                color: $color-white;
+                
+                & span{
+                    font-family: $font-roboto;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 22px;
+                                        
+                }
+            }
+            & p{
+                font-family: $font-roboto;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 22px;
+                
+                color: $color-grey;
+            }
+        }
+    }
+}

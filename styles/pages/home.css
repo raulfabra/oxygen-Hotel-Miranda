@@ -179,4 +179,32 @@
   letter-spacing: -1.2px;
 }
 
+.stadistics {
+  padding: 3em;
+  background-color: rgb(34, 34, 34);
+}
+.stadistics .stadistic {
+  padding: 1.5em;
+}
+.stadistics .stadistic__description h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 82px;
+  color: rgb(255, 255, 255);
+}
+.stadistics .stadistic__description h1 span {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.stadistics .stadistic__description p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  color: rgb(119, 119, 119);
+}
+
 /*# sourceMappingURL=home.css.map */
