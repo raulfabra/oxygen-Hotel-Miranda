@@ -25,4 +25,9 @@
         text-align: left;
         
     }
+
+    &__container--video{
+        width: 100%;
+        overflow: hidden;
+    }
 }

@@ -111,6 +111,10 @@ body {
   letter-spacing: -1.2px;
   text-align: left;
 }
+.banner__container--video {
+  width: 100%;
+  overflow: hidden;
+}
 
 .card {
   position: relative;
@@ -224,52 +228,136 @@ body {
 }
 
 .footer {
+  margin-top: 4em;
+  padding: 2em 1.5em;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
-.footer__title {
-  display: flex;
+.footer__title,
+.footer .title {
   font-family: "Archivo", sans-serif;
-  width: 30%;
   text-align: left;
-  align-items: center;
-  padding: 2em;
 }
-.footer__title .letter--H {
+.footer__title h2,
+.footer .title h2 {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  margin-left: 1em;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 3px;
+}
+.footer__title h2 span,
+.footer .title h2 span {
+  font-weight: 400;
+}
+.footer__title--H,
+.footer .title--H {
+  display: inline-block;
+  padding: 0.4em 0.6em;
+  vertical-align: middle;
   font-size: 40px;
   font-weight: 700;
   background-color: rgb(190, 173, 142);
-  padding: 0.5em;
   color: rgb(255, 255, 255);
 }
-.footer__title h2 {
-  padding: 2em;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 28.29px;
-  letter-spacing: 3px;
-}
-.footer__title h2 span {
-  font-weight: 400;
-}
-.footer .info {
-  margin: 0 auto;
-  width: 335px;
-  height: 130px;
-}
 .footer .info p {
+  margin: 2em 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+  text-align: justify;
+  color: rgb(119, 119, 119);
+}
+.footer .RedesSociales {
+  width: 70%;
+  text-align: left;
+  background-color: rgb(248, 248, 248);
+  margin-bottom: 2em;
+}
+.footer .RedesSociales img {
+  padding: 0.5em;
+}
+.footer .Services {
+  width: 100%;
+  text-align: left;
+}
+.footer .Services__title {
+  padding-bottom: 1em;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(34, 34, 34);
+}
+.footer .Services__contenedor {
+  display: inline-block;
+}
+.footer .Services__contenedor__list {
+  display: inline-block;
+  width: 49%;
+  list-style-type: none;
+  vertical-align: top;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 48px;
+  color: rgb(119, 119, 119);
+}
+.footer .Services__contenedor__list li {
+  width: 165px;
+}
+.footer .ContactUs {
+  margin-top: 2em;
+  width: 100%;
+  text-align: left;
+}
+.footer .ContactUs__title {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(34, 34, 34);
+}
+.footer .ContactUs__contenedor {
+  display: inline-block;
+  padding-top: 2em;
+}
+.footer .ContactUs__contenedor h5 {
+  display: inline-block;
+  width: 49%;
+  list-style-type: none;
+  vertical-align: top;
+  margin-left: 1em;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgb(17, 17, 17);
+}
+.footer .ContactUs__contenedor h5 span {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.4px;
   text-align: left;
   color: rgb(119, 119, 119);
 }
-.footer .Copyright_Terminos {
-  padding: 2em;
+
+.Copyright_Terminos {
+  padding: 1em 1.5em;
   background-color: rgb(248, 248, 248);
+}
+.Copyright_Terminos p {
+  padding: 0.5em 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   font-weight: 700;
+  line-height: 18.8px;
+  letter-spacing: -0.5px;
+  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */
