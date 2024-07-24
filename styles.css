@@ -217,7 +217,116 @@ body {
 
 .swiper {
   width: auto;
-  height: 300px;
+  height: 400px;
+}
+.swiper__imagenes {
+  background-color: rgb(228, 228, 228);
+}
+.swiper__imagenes img {
+  width: 80%;
+  vertical-align: middle;
+}
+.swiper__description {
+  padding: 2em;
+}
+.swiper__description h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+}
+.swiper__description--loremIpsu {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+.swiper__description--price {
+  font-family: "Archivo", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  color: rgb(190, 173, 142);
+}
+.swiper__description--price span {
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 43px;
+  text-align: center;
+  color: rgb(190, 173, 142);
+}
+.swiper-button-prev {
+  top: var(--swiper-navigation-top-offset, 30%);
+}
+.swiper-button-prev:after {
+  content: none;
+}
+.swiper-button-next {
+  top: var(--swiper-navigation-top-offset, 30%);
+}
+.swiper-button-next:after {
+  content: none;
+}
+
+.promo {
+  padding: 2em 1.5em;
+  background-color: rgb(34, 34, 34);
+  color: rgb(255, 255, 255);
+}
+.promo__subtitle {
+  padding: 2em 0;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(190, 173, 142);
+}
+.promo__title {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  text-align: left;
+}
+.promo__parraf {
+  margin: 1em 0;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+  color: rgb(119, 119, 119);
+}
+.promo__video {
+  width: 100%;
+  overflow: hidden;
+}
+.promo__button {
+  display: block;
+  margin: 2em 0;
+  padding: 1.5em;
+  width: 200px;
+  border: none;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  color: rgb(255, 255, 255);
+}
+.promo__button--beige {
+  background-color: rgb(190, 173, 142);
+}
+.promo__button--grey {
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
 }
 
 .footer::before {

@@ -34,6 +34,7 @@
         margin: 2em 0;
         padding: 1.5em;
         width: 200px;
+        border: none;
 
         font-family: $font-archivo;
         font-size: 14px;
@@ -43,7 +44,6 @@
         color: $color-white;
 
         &--beige{
-            border: 1px solid $background-grey-strong;
             background-color: $background-beige;
         }
 
@@ -138,6 +138,93 @@
         text-align: justify;
 
         color: $color-grey;
+        
+    }
+}
+
+.rooms{
+    padding: 2em 0;
+    &__subtitle{
+        font-family: $font-archivo;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 15.23px;
+        letter-spacing: 2.80px;
+
+        color: $color-grey;
+        
+    }
+
+    &__title{
+        margin: 0.5em 0;
+        font-family: $font-oldstandardTT;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: -1.20px;
+
+        color: $color-black;
+        
+    }
+}
+
+.facilities{
+    padding: 2em 0;
+    &__subtitle{
+        font-family: $font-archivo;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 15.23px;
+        letter-spacing: 2.80px;
+
+        color: $color-grey;
+        
+    }
+
+    &__title{
+        margin: 0.5em 0;
+        font-family: $font-oldstandardTT;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: -1.20px;
+
+        color: $color-black;
+        
+    }
+}
+
+.menuFoods{
+    position: relative;
+    padding: 2em 1.5em;
+    color: $color-black;
+    text-align: left;
+
+    & img{
+        position: absolute;
+        top: 0;
+        left: 77%;
+    }
+    
+    &__subtitle{
+        padding: 2em 0;
+
+        font-family: $font-archivo;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 3px;
+
+        color: $color-grey;
+
+    }
+
+    &__title{
+        font-family: $font-oldstandardTT;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: -1.2px;
         
     }
 }

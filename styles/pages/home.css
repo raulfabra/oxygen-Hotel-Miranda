@@ -26,6 +26,7 @@
   margin: 2em 0;
   padding: 1.5em;
   width: 200px;
+  border: none;
   font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -34,7 +35,6 @@
   color: rgb(255, 255, 255);
 }
 .banner__button--beige {
-  border: 1px solid rgb(34, 34, 34);
   background-color: rgb(190, 173, 142);
 }
 .banner__button--grey {
@@ -107,6 +107,76 @@
   line-height: 24px;
   text-align: justify;
   color: rgb(119, 119, 119);
+}
+
+.rooms {
+  padding: 2em 0;
+}
+.rooms__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.8px;
+  color: rgb(119, 119, 119);
+}
+.rooms__title {
+  margin: 0.5em 0;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+}
+
+.facilities {
+  padding: 2em 0;
+}
+.facilities__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.8px;
+  color: rgb(119, 119, 119);
+}
+.facilities__title {
+  margin: 0.5em 0;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+}
+
+.menuFoods {
+  position: relative;
+  padding: 2em 1.5em;
+  color: rgb(17, 17, 17);
+  text-align: left;
+}
+.menuFoods img {
+  position: absolute;
+  top: 0;
+  left: 77%;
+}
+.menuFoods__subtitle {
+  padding: 2em 0;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  color: rgb(119, 119, 119);
+}
+.menuFoods__title {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
 }
 
 /*# sourceMappingURL=home.css.map */
