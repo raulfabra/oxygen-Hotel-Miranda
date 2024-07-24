@@ -111,6 +111,10 @@ body {
   letter-spacing: -1.2px;
   text-align: left;
 }
+.banner__container--video {
+  width: 100%;
+  overflow: hidden;
+}
 
 .card {
   position: relative;
