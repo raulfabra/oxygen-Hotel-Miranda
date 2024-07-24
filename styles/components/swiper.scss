@@ -68,3 +68,51 @@
         }
     }
 }
+
+.swiper__rating{
+    width: auto;
+    height: 320px;
+    &__banner{
+        position: relative;
+        text-align: left;
+        vertical-align: bottom;
+
+        & h1{
+            position: absolute;
+            top: 0%;
+            left: 50%;
+
+            font-family: $font-archivo;
+            font-size: 120px;
+            font-weight: 700;
+            line-height: 130px;
+
+            color: rgba(34, 34, 34, 0.04);
+            
+        }
+    }
+
+    &__title{
+        margin-top: 2em;
+        font-family: $font-oldstandardTT;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.90px;
+        text-align: left;
+        
+    }
+
+    &__parragraf{
+        margin-top: 2em;
+
+        font-family: $font-archivo;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        
+        color: $color-grey;
+    }
+
+}
