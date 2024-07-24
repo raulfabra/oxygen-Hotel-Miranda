@@ -215,6 +215,11 @@ body {
   color: rgb(255, 255, 255);
 }
 
+.swiper {
+  width: auto;
+  height: 300px;
+}
+
 .footer::before {
   content: "";
   position: absolute;

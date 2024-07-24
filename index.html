@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Miranda</title>
     <link rel="icon" type="image/vnd.icon" href="./public/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles.css" type="text/css">
     <link rel="stylesheet" href="./styles/pages/home.css" type="text/css">
     <style>
@@ -108,14 +109,34 @@
     <section class="rooms">
         <p class="rooms__subtitle">ROOMS</p>
         <h1 class="rooms__title">Hand Picked Rooms</h1>
-        <div class="accessories">
-            <img src="./public/images/8725460_bed_icon 1.png" alt="bed-icon" />
-            <img src="./public/images/925808_wifi_icon 1.png" alt="wifi-icon" />
-            <img src="./public/images/4920723_automobile_car_transport_transportation_travel_icon 1.png" alt="car-icon" />
-            <img src="./public/images/384878_cold_new year_snowflake_wheather_winter_icon 1.png" alt="cold-icon" />
-            <img src="./public/images/9042522_gym_icon 1.png" alt="gym-icon" />
-            <img src="./public/images/9081473_smoking_no_icon 1.png" alt="smoke-icon" />
-            <img src="./public/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.png" alt="cocktail-icon" />
+        
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper__accessories">
+                    <img src="./public/images/8725460_bed_icon 1.png" alt="bed-icon" />
+                    <img src="./public/images/925808_wifi_icon 1.png" alt="wifi-icon" />
+                    <img src="./public/images/4920723_automobile_car_transport_transportation_travel_icon 1.png" alt="car-icon" />
+                    <img src="./public/images/384878_cold_new year_snowflake_wheather_winter_icon 1.png" alt="cold-icon" />
+                    <img src="./public/images/9042522_gym_icon 1.png" alt="gym-icon" />
+                    <img src="./public/images/9081473_smoking_no_icon 1.png" alt="smoke-icon" />
+                    <img src="./public/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.png" alt="cocktail-icon" />
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+
+            </div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
         </div>
     </section>
     <section class="banner video">
@@ -211,6 +232,8 @@
         <p>Terms of use    |    Privacy Environmental Policy</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
     <script src="./scripts/index.js"></script>
 </body>
 </html>
