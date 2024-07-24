@@ -131,7 +131,7 @@
 }
 
 .facilities {
-  padding: 2em 0;
+  padding: 2em 1.5em;
 }
 .facilities__subtitle {
   font-family: "Archivo", sans-serif;
@@ -143,6 +143,7 @@
 }
 .facilities__title {
   margin: 0.5em 0;
+  padding-bottom: 1em;
   font-family: "Old Standard TT", sans-serif;
   font-size: 56px;
   font-weight: 400;
@@ -158,12 +159,11 @@
   text-align: left;
 }
 .menuFoods img {
-  position: absolute;
-  top: 0;
-  left: 77%;
+  position: relative;
+  left: 80%;
 }
 .menuFoods__subtitle {
-  padding: 2em 0;
+  padding-bottom: 2em;
   font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;

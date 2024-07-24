@@ -169,7 +169,8 @@
 }
 
 .facilities{
-    padding: 2em 0;
+    padding: 2em 1.5em;
+
     &__subtitle{
         font-family: $font-archivo;
         font-size: 14px;
@@ -183,6 +184,7 @@
 
     &__title{
         margin: 0.5em 0;
+        padding-bottom: 1em;
         font-family: $font-oldstandardTT;
         font-size: 56px;
         font-weight: 400;
@@ -201,13 +203,12 @@
     text-align: left;
 
     & img{
-        position: absolute;
-        top: 0;
-        left: 77%;
+        position: relative;
+        left: 80%;
     }
     
     &__subtitle{
-        padding: 2em 0;
+        padding-bottom: 2em;
 
         font-family: $font-archivo;
         font-size: 14px;
