@@ -6,15 +6,87 @@
     <title>Hotel Miranda</title>
     <link rel="icon" type="image/vnd.icon" href="../public/images/favicon.ico">
     <link rel="stylesheet" href="../styles.css" type="text/css">
+    <link rel="stylesheet" href="../styles/pages/abutUs.css" type="text/css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 </head>
 <body>
-    <h1 style="font-weight: 700;">ESTAS EN EL ABOUT</h1>
-    <ul style="padding: 2em;">
-        <li><a href="../index.html">HOME</a></li>
-    </ul>
+    <header class="header">
+        <section class="header__menuBar">
+            <div class="menuBar--button">
+                <img src="../public/images/hamburger.png" alt="icon__menu" />
+            </div>
+            <div class="menuBar--logo">
+                <div class="logo--H">
+                    <img src="../public/images/H.png" alt="H" />
+                </div>
+                <div class="logo--HotelMiranda">
+                    <img src="../public/images/Hotel Miranda.png" alt="Hotel Miranda" />
+                </div>
+            </div>
+        </section>
+        <section class="header__sectionBar">
+            <div>
+                <img class="" src="../public/images/contact.png" alt="icon__contact" />
+            </div>
+            <div>
+                <img class="" src="../public/images/search.png" alt="icon__search" />
+            </div>
+        </section>
+    </header>
+    <nav class="nav">
+        <ul class="navbar">
+            <li class="navbar__item"><a href="aboutUs.html">    About Us    </a></li>
+            <li class="navbar__item"><a href="rooms.html">      Rooms       </a></li>
+            <li class="navbar__item"><a href="offers.html">     Offers      </a></li>
+            <li class="navbar__item"><a href="contact.html">    Contact     </a></li>
+        </ul>
+    </nav>
+    <section class="banner">
+        <p class="banner__subtitle">THE ULTIMATE LUXURY</p>
+        <h1 class="banner__title">About Us</h1>
+        <div class="banner__paragraf">
+            <span>Home  |   About</span>
+        </div>
+    </section>
+    <article class="card">
+        <div class="card__video">
+            <video src="../public/video/Video presentación Hoteles.mp4" id="video" controls></video>
+        </div>
+        <h1 class="card__description__name">Hello. Our hotel has been present for over 20 years. We make the best for all our customers.</h1>
+    </article>
+    <section class="features">
+        <div class="features__box">
+            <article class="features__container features__container--breakfast">
+                <div>
+                    <img src="../public/images/breakfast.png" alt="Breakfast-icon">
+                </div>
+                <p class="features__name">BREAKFAST</p>
+            </article>
+            <article class="features__container features__container--airport">
+                <div>
+                    <img src="../public/images/plane.png" alt="airport delivery">
+                </div>
+                <p class="features__name">AIRPORT PICKUP</p>
+            </article>
+        </div>
+        <div class="features__box">
+            <article class="features__container features__container--cityGuide">
+                <div>
+                    <img src="../public/images/pointerUbi.png" alt="cityGuide">
+                </div>
+                <p class="features__name">CITY GUIDE</p>
+            </article>
+            <article class="features__container features__container--luxuryRoom">
+                <div>
+                    <img src="../public/images/roomLuxury-icon.png" alt="room">
+                </div>
+                <p class="features__name">LUXURY ROOM</p>
+            </article>
+        </div>
+    </section>
+    <script src="../scripts/about.js"></script>
 </body>
 </html>

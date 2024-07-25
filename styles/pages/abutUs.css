@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.banner__title {
+  padding-top: 0.5em;
+}
+.banner__paragraf {
+  position: relative;
+  padding: 1em;
+  width: 150px;
+  top: 50px;
+  left: 55%;
+  background-color: rgb(255, 255, 255);
+}
+.banner__paragraf span {
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.41px;
+}
+
+.card__video {
+  position: relative;
+  margin: 0 auto; /* Centra el contenedor */
+  width: 100%;
+}
+.card__video video {
+  width: 100%; /* Ancho completo del contenedor */
+  height: auto; /* Ajusta la altura automáticamente */
+  display: block;
+}
+.card__description__name {
+  padding-top: 1em;
+  line-height: 39px;
+}
+
+.features {
+  padding: 0 1.5em;
+}
+.features__box {
+  display: flex;
+  justify-content: space-between;
+}
+.features__container {
+  padding: 2em 1em;
+}
+.features__container--breakfast, .features__container--cityGuide {
+  width: 55%;
+}
+.features__container--airport {
+  width: 45%;
+  background-color: rgb(190, 173, 142);
+}
+.features__container--luxuryRoom {
+  width: 45%;
+}
+.features__name {
+  font-family: "Archivo", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 2.4px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=abutUs.css.map */
