@@ -231,21 +231,18 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.swiper {
+.rooms__swiper {
+  position: relative;
   width: auto;
   height: 400px;
 }
-.swiper__imagenes {
+.rooms__swiper .swiper__imagenes {
   background-color: rgb(228, 228, 228);
 }
-.swiper__imagenes img {
-  width: 80%;
-  vertical-align: middle;
-}
-.swiper__description {
+.rooms__swiper .swiper__description {
   padding: 2em;
 }
-.swiper__description h2 {
+.rooms__swiper .swiper__description__title {
   font-family: "Old Standard TT", sans-serif;
   font-size: 28px;
   font-weight: 400;
@@ -253,21 +250,29 @@ body {
   letter-spacing: -1.2px;
   color: rgb(17, 17, 17);
 }
-.swiper__description--loremIpsu {
+.rooms__swiper .swiper__description__parragraf {
+  margin-top: 2em;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: rgb(119, 119, 119);
 }
-.swiper__description--price {
+.rooms__swiper .swiper__imagenes img {
+  width: 80%;
+  vertical-align: middle;
+}
+.rooms__swiper .swiper__description__parragraf--room {
+  margin-top: 0;
+}
+.rooms__swiper .swiper__description__price {
   font-family: "Archivo", sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 43px;
   color: rgb(190, 173, 142);
 }
-.swiper__description--price span {
+.rooms__swiper .swiper__description__price span {
   font-family: "Archivo", sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -275,29 +280,56 @@ body {
   text-align: center;
   color: rgb(190, 173, 142);
 }
-.swiper-button-prev {
-  top: var(--swiper-navigation-top-offset, 30%);
+.rooms__swiper__btn--prev, .rooms__swiper__btn--next {
+  position: absolute;
+  z-index: 9;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(255, 255, 255);
+  top: 6.63rem;
+  transition: background-color 0.6s ease-in-out;
 }
-.swiper-button-prev:after {
-  content: none;
+.rooms__swiper__btn--prev:hover, .rooms__swiper__btn--prev:active, .rooms__swiper__btn--next:hover, .rooms__swiper__btn--next:active {
+  background-color: rgb(190, 173, 142);
 }
-.swiper-button-next {
-  top: var(--swiper-navigation-top-offset, 30%);
+.rooms__swiper__btn--next {
+  right: 0.94rem;
 }
-.swiper-button-next:after {
-  content: none;
+.rooms__swiper__btn--prev {
+  left: 0.94rem;
 }
 
-.swiper__rating {
+.facilities__swiper {
+  position: relative;
   width: auto;
   height: 320px;
 }
-.swiper__rating__banner {
-  position: relative;
-  text-align: left;
-  vertical-align: bottom;
+.facilities__swiper .swiper__imagenes {
+  background-color: rgb(228, 228, 228);
 }
-.swiper__rating__banner h1 {
+.facilities__swiper .swiper__description {
+  padding: 2em;
+}
+.facilities__swiper .swiper__description__title {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+}
+.facilities__swiper .swiper__description__parragraf {
+  margin-top: 2em;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+.facilities__swiper .swiper__imagenes {
+  background-color: transparent;
+}
+.facilities__swiper .swiper__imagenes h1 {
   position: absolute;
   top: 0%;
   left: 50%;
@@ -307,26 +339,140 @@ body {
   line-height: 130px;
   color: rgba(34, 34, 34, 0.04);
 }
-.swiper__rating__title {
+.facilities__swiper .swiper__description__title--score {
   margin-top: 2em;
-  font-family: "Old Standard TT", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: -0.9px;
   text-align: left;
 }
-.swiper__rating__parragraf {
-  margin-top: 2em;
+.facilities__swiper .swiper__description__parragraf--score {
   width: 80%;
-  font-family: "Archivo", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
   text-align: left;
-  color: rgb(119, 119, 119);
+}
+.facilities__swiper__btn--prev, .facilities__swiper__btn--next {
+  position: absolute;
+  z-index: 9;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(255, 255, 255);
+  top: 6.63rem;
+  transition: background-color 0.6s ease-in-out;
+}
+.facilities__swiper__btn--prev:hover, .facilities__swiper__btn--prev:active, .facilities__swiper__btn--next:hover, .facilities__swiper__btn--next:active {
+  background-color: rgb(190, 173, 142);
+}
+.facilities__swiper__btn--next {
+  right: 0.94rem;
+}
+.facilities__swiper__btn--prev {
+  left: 0.94rem;
 }
 
+/*
+&__swiper {
+        margin-top: 2rem;
+        height: 23.13rem;
+        width: 100%;
+        position: relative;
+
+        &--dark {
+            padding: 0 1.25rem;
+        }
+    }
+
+    &__container {
+        position: relative;
+        padding: 0 2.23rem;
+
+        &--dark {
+            background-color: #292929;
+            padding: 0 1.13rem;
+        }
+    }
+
+    &__position {
+        position: absolute;
+        top: 0;
+        right: 2rem;
+        font-weight: 700;
+        font-size: 7.5rem;
+        line-height: 8.13rem;
+        color: rgb(34, 34, 34, .04);
+
+        &--dark {
+            color: $black;
+        }
+    }
+
+    &__image {
+        margin-top: 5.06rem;
+
+        & img {
+            width: 4.38rem;
+            height: 4.38rem;
+        }
+    }
+
+    &__text {
+        margin-top: 2.37rem;
+        font-family: $oldtt;
+        font-weight: 400;
+        font-size: 1.88rem;
+        line-height: 1.88rem;
+        letter-spacing: -0.06rem;
+        color: $black;
+
+        &--dark {
+            color: $white;
+        }
+    }
+
+    &__description {
+        margin-top: 1.75rem;
+        color: darkgray;
+        font-size: 0.88rem;
+        line-height: 1.5rem;
+
+        &--dark {
+            color: $white;
+        }
+
+    }
+
+    &__pagination {
+        position: relative;
+        z-index: 10;
+        height: 0.44rem;
+        width: 100%;
+        display: flex;
+        gap: 0.44rem;
+        justify-content: center;
+
+        &--dark {
+            margin-top: 2.5rem;
+        }
+    }
+
+    &__darkbullet {
+        background-color: #333333;
+        width: 0.44rem;
+        height: 0.44rem;
+        border-radius: 3rem;
+        transition: background-color 0.6s ease-in-out;
+        pointer-events: all !important;
+    }
+
+    &__bullet {
+        background-color: #EDEDED;
+        width: 0.44rem;
+        height: 0.44rem;
+        border-radius: 3rem;
+        transition: background-color 0.6s ease-in-out;
+        pointer-events: all !important;
+
+        &--active {
+            background-color: $brown;
+        }
+    }
+*/
 .promo {
   padding: 2em 1.5em;
   background-color: rgb(34, 34, 34);
