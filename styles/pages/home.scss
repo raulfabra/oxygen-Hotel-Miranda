@@ -5,18 +5,47 @@
 @import '../@mixins/subtitle.scss';
 
 
-.banner__button{
-    &--beige{
-        @include button($font-archivo, $color-white);
-        background-color: $background-beige;
+.banner{
+    &--promo{
+        padding: 2em 1.5em;
+        background-color: $background-grey-strong;
     }
 
-    &--grey{
-        @include button($font-archivo, $color-white);
-        border: 2px solid rgba(255, 255, 255, 0.33);
-        background-color: transparent;
+    &__subtitle--promo{
+        color: $background-beige;
+    }
+
+    &__paragraf--promo{
+        margin: 1em 0;
+        
+        font-family: $font-archivo;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: justify;
+
+        color: $color-grey;
+    }
+
+    &__video--promo{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__button{
+        &--beige{
+            @include button($font-archivo, $color-white);
+            background-color: $background-beige;
+        }
+    
+        &--grey{
+            @include button($font-archivo, $color-white);
+            border: 2px solid rgba(255, 255, 255, 0.33);
+            background-color: transparent;
+        }
     }
 }
+
 
 .calendar{
     background-color: $background-grey-strong;

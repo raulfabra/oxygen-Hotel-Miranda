@@ -1,3 +1,23 @@
+.banner--promo {
+  padding: 2em 1.5em;
+  background-color: rgb(34, 34, 34);
+}
+.banner__subtitle--promo {
+  color: rgb(190, 173, 142);
+}
+.banner__paragraf--promo {
+  margin: 1em 0;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+  color: rgb(119, 119, 119);
+}
+.banner__video--promo {
+  width: 100%;
+  overflow: hidden;
+}
 .banner__button--beige {
   display: block;
   width: 200px;
