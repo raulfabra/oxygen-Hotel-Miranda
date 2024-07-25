@@ -114,82 +114,8 @@
 
     @include btn-swiper();
 
-}
-
-
-
-/*
-&__swiper {
-        margin-top: 2rem;
-        height: 23.13rem;
-        width: 100%;
-        position: relative;
-
-        &--dark {
-            padding: 0 1.25rem;
-        }
-    }
-
-    &__container {
-        position: relative;
-        padding: 0 2.23rem;
-        
-        &--dark {
-            background-color: #292929;
-            padding: 0 1.13rem;
-        }
-    }
-
-    &__position {
-        position: absolute;
-        top: 0;
-        right: 2rem;
-        font-weight: 700;
-        font-size: 7.5rem;
-        line-height: 8.13rem;
-        color: rgb(34, 34, 34, .04);
-
-        &--dark {
-            color: $black;
-        }
-    }
-
-    &__image {
-        margin-top: 5.06rem;
-
-        & img {
-            width: 4.38rem;
-            height: 4.38rem;
-        }
-    }
-
-    &__text {
-        margin-top: 2.37rem;
-        font-family: $oldtt;
-        font-weight: 400;
-        font-size: 1.88rem;
-        line-height: 1.88rem;
-        letter-spacing: -0.06rem;
-        color: $black;
-
-        &--dark {
-            color: $white;
-        }
-    }
-
-    &__description {
-        margin-top: 1.75rem;
-        color: darkgray;
-        font-size: 0.88rem;
-        line-height: 1.5rem;
-        
-        &--dark {
-            color: $white;
-        }
-
-    }
-
     &__pagination {
+        margin-top: 2.5rem;
         position: relative;
         z-index: 10;
         height: 0.44rem;
@@ -197,10 +123,6 @@
         display: flex;
         gap: 0.44rem;
         justify-content: center;
-
-        &--dark {
-            margin-top: 2.5rem;
-        }
     }
 
     &__darkbullet {
@@ -221,7 +143,8 @@
         pointer-events: all !important;
 
         &--active {
-            background-color: $brown;
+            background-color: $background-beige;
         }
     }
-*/
+
+}

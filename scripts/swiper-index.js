@@ -18,9 +18,9 @@ const rateSwiper = new Swiper('.facilities__swiper', {
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
-    bulletClass: 'facilities__bullet',
-    bulletActiveClass: 'facilities__bullet--active',
+    el: '.facilities__swiper__pagination',
+    bulletClass: 'facilities__swiper__bullet',
+    bulletActiveClass: 'facilities__swiper__bullet--active',
     clickable: true
   },
 
