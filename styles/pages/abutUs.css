@@ -1,0 +1,264 @@
+@charset "UTF-8";
+.banner__title {
+  padding-top: 0.5em;
+}
+.banner__paragraf {
+  position: relative;
+  padding: 1em;
+  width: 150px;
+  top: 50px;
+  left: 55%;
+  background-color: rgb(255, 255, 255);
+}
+.banner__paragraf span {
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.41px;
+}
+
+.card__video {
+  position: relative;
+  margin: 0 auto; /* Centra el contenedor */
+  width: 100%;
+}
+.card__video video {
+  width: 100%; /* Ancho completo del contenedor */
+  height: auto; /* Ajusta la altura automáticamente */
+  display: block;
+}
+.card__description__name {
+  padding-top: 1em;
+  line-height: 39px;
+}
+
+.features {
+  padding: 0 1.5em;
+}
+.features__box {
+  display: flex;
+  justify-content: space-between;
+}
+.features__container {
+  padding: 2em 1em;
+}
+.features__container--breakfast, .features__container--cityGuide {
+  width: 55%;
+}
+.features__container--airport {
+  width: 45%;
+  background-color: rgb(190, 173, 142);
+}
+.features__container--luxuryRoom {
+  width: 45%;
+}
+.features__name {
+  font-family: "Archivo", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 2.4px;
+  width: 100%;
+}
+
+.aboutUS {
+  padding: 2em 1.5em;
+  margin-top: 3em;
+  background-color: rgb(248, 248, 248);
+}
+.aboutUS__subtitle {
+  padding-top: 1em;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  color: rgb(119, 119, 119);
+  /*font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.80px;
+
+  color: $color-grey;
+
+
+  padding-bottom: 2em;
+
+  font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-align: left;
+
+  color: $color-grey; */
+  text-align: left;
+}
+.aboutUS__title {
+  padding-top: 1em;
+  text-align: left;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+  font-size: 40px;
+  line-height: 50px;
+}
+.aboutUS__parragraf {
+  padding-top: 1em;
+  text-align: left;
+  width: 90%;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+.aboutUS__button {
+  display: block;
+  width: 200px;
+  margin: 2em 0;
+  padding: 1.5em;
+  border: none;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(190, 173, 142);
+}
+
+.facilities {
+  padding: 2em 1.5em;
+  background-color: rgb(34, 34, 34);
+}
+.facilities__subtitle {
+  padding-top: 1em;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  color: rgb(119, 119, 119);
+  /*font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.80px;
+
+  color: $color-grey;
+
+
+  padding-bottom: 2em;
+
+  font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-align: left;
+
+  color: $color-grey; */
+}
+.facilities__title {
+  padding-top: 1em;
+  text-align: center;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+.facilities__swiper {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  background-color: rgb(51, 51, 51);
+}
+
+.counter {
+  padding: 3em 1.5em;
+}
+.counter__subtitle {
+  padding-top: 1em;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  color: rgb(119, 119, 119);
+  /*font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.80px;
+
+  color: $color-grey;
+
+
+  padding-bottom: 2em;
+
+  font-family: $font-archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-align: left;
+
+  color: $color-grey; */
+  text-align: left;
+}
+.counter__title {
+  padding-top: 1em;
+  text-align: left;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+  padding-top: 0.5em;
+}
+.counter__article {
+  padding-top: 3em;
+  text-align: justify;
+  vertical-align: middle;
+  margin-left: 1em;
+}
+.counter__article__imagen {
+  display: inline-block;
+  width: 20%;
+}
+.counter__article__description {
+  display: inline-block;
+  width: 50%;
+  margin-left: 0.5em;
+}
+.counter__article__description h1 {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.8px;
+}
+.counter__article__description p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(119, 119, 119);
+}
+.counter__article__next {
+  display: inline-block;
+  width: 15%;
+  margin-left: 1em;
+  text-align: right;
+}
+
+/*# sourceMappingURL=abutUs.css.map */

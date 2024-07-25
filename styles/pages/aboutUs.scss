@@ -1,0 +1,200 @@
+@import '../constants/colors.scss';
+@import '../constants/fonts.scss';
+@import '../@mixins/button.scss';
+@import '../@mixins/title.scss';
+@import '../@mixins/subtitle.scss';
+
+.banner{
+    &__title{
+        padding-top: 0.5em;
+    }
+    &__paragraf{
+        position: relative;
+        padding: 1em;
+        width: 150px;
+        top: 50px;
+        left: 55%;
+
+        background-color: $color-white;
+
+        & span{
+            font-family: $font-archivo;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 17.41px;           
+        }
+    }
+}
+
+.card{
+
+    &__video{
+        position: relative;
+        margin: 0 auto; /* Centra el contenedor */
+        width: 100%;
+
+        & video{
+            width: 100%; /* Ancho completo del contenedor */
+            height: auto; /* Ajusta la altura automáticamente */
+            display: block;
+        }
+    }
+
+    &__description{
+
+        &__name{
+            padding-top: 1em;
+            line-height: 39px;
+        }
+    }
+}
+
+.features{
+    padding: 0 1.5em;
+
+    &__box{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__container{
+        padding: 2em 1em;
+
+        &--breakfast,
+        &--cityGuide{
+            width: 55%;
+        }
+        &--airport{
+            width: 45%;
+            background-color: $background-beige;
+        }
+        &--luxuryRoom{
+            width: 45%;
+        }
+    }
+
+    &__name{
+        font-family: $font-archivo;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14px;
+        letter-spacing: 2.40px;
+
+        width: 100%;
+    }
+}
+
+.aboutUS{
+    padding: 2em 1.5em;
+    margin-top: 3em;
+    background-color: $background-grey-light;
+
+    &__subtitle{
+        @include subtitle();
+        text-align: left;
+    }
+
+    &__title{
+        @include title(left);
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    &__parragraf{
+        padding-top: 1em;
+        text-align: left;
+        width: 90%;
+
+        font-family: $font-archivo;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+
+        color: $color-grey;
+        
+    }
+
+    &__button{
+        @include button($font-archivo, $color-white);
+        background-color: $background-beige;
+    }
+}
+
+.facilities{
+    padding: 2em 1.5em;
+
+    background-color: $background-grey-strong;
+
+    &__subtitle{
+        @include subtitle();        
+    }
+
+    &__title{
+        @include title();
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+    }
+
+    &__swiper{
+        margin-bottom: 2em;
+        padding-bottom: 2em;
+        background-color: $background-grey;
+    }
+}
+
+.counter{
+    padding: 3em 1.5em;
+
+    &__subtitle{
+        @include subtitle();
+        text-align: left;
+    }
+
+    &__title{
+        @include title(left);
+        padding-top: 0.5em;
+    }
+
+    &__article{
+        padding-top: 3em;
+        text-align: justify;
+        vertical-align: middle;
+        margin-left: 1em;
+        &__imagen{
+            display: inline-block;
+            width: 20%;
+        }
+    
+        &__description{
+            display: inline-block;
+            width: 50%;
+            margin-left: 0.5em;
+    
+            & h1{
+                font-family: $font-oldstandardTT;
+                font-size: 60px;
+                font-weight: 400;
+                line-height: 60px;
+                letter-spacing: -1.80px;
+            }
+    
+            & p{
+                font-family: $font-roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+                
+                color: $color-grey;
+            }
+        }
+    
+        &__next{
+            display: inline-block;
+            width: 15%;
+            margin-left: 1em;
+            text-align: right;
+    
+        }
+    }
+
+}
