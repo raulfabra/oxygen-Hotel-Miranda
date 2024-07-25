@@ -105,7 +105,6 @@
             }
 
             &__parragraf--score{
-                width: 80%;
                 text-align: left;
             }
 
@@ -115,7 +114,7 @@
     @include btn-swiper();
 
     &__pagination {
-        margin-top: 2.5rem;
+        margin-top: 4rem;
         position: relative;
         z-index: 10;
         height: 0.44rem;
