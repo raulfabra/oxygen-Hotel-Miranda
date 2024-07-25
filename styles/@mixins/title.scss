@@ -1,0 +1,12 @@
+@mixin title ($align: center, $color: $color-black) {
+    padding-top: 1em;
+    text-align: $align;
+
+    font-family: $font-oldstandardTT;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.2px;
+
+    color: $color;
+}

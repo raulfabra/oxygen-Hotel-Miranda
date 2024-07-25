@@ -1,56 +1,20 @@
 @import '../constants/colors.scss';
 @import '../constants/fonts.scss';
+@import '../@mixins/button.scss';
+@import '../@mixins/title.scss';
+@import '../@mixins/subtitle.scss';
 
-.banner{
-    padding: 3em 1.5em;
-    background-color: $background-grey;
-    color: $color-white;
-    
-    &__subtitle{
-        padding-top: 1em;
 
-        font-family: $font-archivo;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 16px;
-        letter-spacing: 3px;
-        text-align: left;
+.banner__button{
+    &--beige{
+        @include button($font-archivo, $color-white);
+        background-color: $background-beige;
     }
 
-    &__title{
-        padding-top: 1em;
-
-        font-family: $font-oldstandardTT;
-        font-size: 56px;
-        font-weight: 400;
-        line-height: 60px;
-        letter-spacing: -1.2px;
-        text-align: left;
-        
-    }
-
-    &__button{
-        display: block;
-        margin: 2em 0;
-        padding: 1.5em;
-        width: 200px;
-        border: none;
-
-        font-family: $font-archivo;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 15px;
-        letter-spacing: 2.80px;
-        color: $color-white;
-
-        &--beige{
-            background-color: $background-beige;
-        }
-
-        &--grey{
-            border: 2px solid rgba(255, 255, 255, 0.33);
-            background-color: transparent;
-        }
+    &--grey{
+        @include button($font-archivo, $color-white);
+        border: 2px solid rgba(255, 255, 255, 0.33);
+        background-color: transparent;
     }
 }
 
@@ -96,39 +60,30 @@
             }
         }
     }
+
+    &__button{
+        @include button($font-archivo, $color-white);
+        width: 250px;
+        background-color: $background-beige;
+    }
 }
 
 .aboutUS{
     padding: 2em 1.5em;
     margin-top: 3em;
-    
-    padding-bottom: 10em;
     background-color: $background-grey-light;
 
     &__subtitle{
-        font-family: $font-archivo;
-        font-size: 13px;
-        font-weight: 700;
-        line-height: 18px;
-        letter-spacing: 2.80px;
+        @include subtitle();
         text-align: left;
-
-        color: $color-grey;
     }
 
-    & h1{
-        padding-top: 0.5em;
-
-        font-family: $font-oldstandardTT;
-        font-size: 56px;
-        font-weight: 400;
-        line-height: 60px;
-        letter-spacing: -1.2px;
-        text-align: center;
+    &__title{
+        @include title();
         
     }
 
-    &__loremIpsum{
+    &__parragraf{
         padding-top: 1em;
 
         font-family: $font-archivo;
@@ -140,31 +95,22 @@
         color: $color-grey;
         
     }
+
+    &__button{
+        @include button($font-archivo, $color-white);
+        background-color: $background-beige;
+    }
 }
 
 .rooms{
     padding: 2em 0;
     &__subtitle{
-        font-family: $font-archivo;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 15.23px;
-        letter-spacing: 2.80px;
-
-        color: $color-grey;
-        
+        @include subtitle();        
     }
 
     &__title{
-        margin: 0.5em 0;
-        font-family: $font-oldstandardTT;
-        font-size: 56px;
-        font-weight: 400;
-        line-height: 60px;
-        letter-spacing: -1.20px;
-
-        color: $color-black;
-        
+        @include title();
+        padding-bottom: 0.5em;
     }
 }
 
@@ -172,27 +118,13 @@
     padding: 2em 1.5em;
 
     &__subtitle{
-        font-family: $font-archivo;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 15.23px;
-        letter-spacing: 2.80px;
-
-        color: $color-grey;
-        
+        @include subtitle();        
     }
 
     &__title{
-        margin: 0.5em 0;
+        @include title();
+        padding-top: 0.5em;
         padding-bottom: 1em;
-        font-family: $font-oldstandardTT;
-        font-size: 56px;
-        font-weight: 400;
-        line-height: 60px;
-        letter-spacing: -1.20px;
-
-        color: $color-black;
-        
     }
 }
 
@@ -200,32 +132,56 @@
     position: relative;
     padding: 2em 1.5em;
     color: $color-black;
-    text-align: left;
+    
 
     & img{
         position: relative;
-        left: 80%;
+        left: 44%;
     }
     
     &__subtitle{
-        padding-bottom: 2em;
-
-        font-family: $font-archivo;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 16px;
-        letter-spacing: 3px;
-
-        color: $color-grey;
-
+        @include subtitle();
+        text-align: left;
     }
 
     &__title{
-        font-family: $font-oldstandardTT;
-        font-size: 56px;
-        font-weight: 400;
-        line-height: 60px;
-        letter-spacing: -1.2px;
-        
+        @include title(left);
+        padding-top: 0.5em;
+    }
+}
+
+.stadistics{
+    padding: 3em;
+    background-color: $background-grey-strong;
+
+    .stadistic{
+        padding: 1.5em;
+
+        &__description{
+            & h1{
+                font-family: $font-roboto;
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 82px;
+
+                color: $color-white;
+                
+                & span{
+                    font-family: $font-roboto;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 22px;
+                                        
+                }
+            }
+            & p{
+                font-family: $font-roboto;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 22px;
+                
+                color: $color-grey;
+            }
+        }
     }
 }
