@@ -28,7 +28,7 @@
     }
 }
 
-.rooms__swiper {
+.rooms__swiper{
     position: relative;
     width: auto;
     height: 400px;
@@ -146,4 +146,78 @@
         }
     }
 
+}
+
+.cards__swiper{
+    position: relative;
+    margin-top: 3em;
+    width: auto;
+    height: 100%;
+
+    &__imagenes{
+        background-color: transparent;
+        & img{
+            width: 80%;
+            vertical-align: middle;
+        }
+    }
+
+    &__accesories{
+        position: relative;
+        margin: 0 auto;
+        padding: 0.5em 1em;
+        width: 200px;
+        bottom: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
+
+        
+        background-color: $color-white;
+    }
+
+    &__description{
+        padding: 2em;
+        padding-top: 0;
+
+        &__title{
+            font-family: $font-oldstandardTT;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: -1.20px;
+
+            color: $color-black;
+        }
+
+        &__parragraf{
+            margin-top: 2em;
+            font-family: $font-roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+
+            color: $color-grey;            
+        }
+
+        &__price{
+            padding-top: 1em;
+            display: inline-block;
+            font-family: $font-archivo;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 17.41px;            
+            
+            color: $background-beige;
+        }
+        &__span{
+            margin-left: 1em;
+            font-family: $font-archivo;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 17.41px;
+            text-align: right;
+            
+                            
+            color: rgba(189, 189, 189, 1);
+        }
+    }
 }
