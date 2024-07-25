@@ -1,3 +1,23 @@
+.banner--promo {
+  padding: 2em 1.5em;
+  background-color: rgb(34, 34, 34);
+}
+.banner__subtitle--promo {
+  color: rgb(190, 173, 142);
+}
+.banner__paragraf--promo {
+  margin: 1em 0;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+  color: rgb(119, 119, 119);
+}
+.banner__video--promo {
+  width: 100%;
+  overflow: hidden;
+}
 .banner__button--beige {
   display: block;
   width: 200px;
@@ -142,6 +162,36 @@
   letter-spacing: 2.8px;
   color: rgb(255, 255, 255);
   background-color: rgb(190, 173, 142);
+}
+
+.card--LuxuryRoom {
+  padding: 0 1.5em 3em 1.5em;
+}
+.card__description--LuxuryRoom {
+  margin: 0 auto;
+  background-color: rgb(34, 34, 34);
+  width: 75.5%;
+}
+.card__description__icon--2 {
+  position: relative;
+  transform: translate(20%, -60%);
+}
+.card__description__name--StrongTeam {
+  position: relative;
+  transform: translate(0, -250%);
+}
+.card__description__name--LuxuryRoom {
+  padding-top: 1em;
+  color: rgb(255, 255, 255);
+}
+.card__description__parragraf--StrongTeam {
+  position: relative;
+  transform: translate(0, -100%);
+}
+.card__description__parragraf--LuxuryRoom {
+  padding-top: 1em;
+  padding-bottom: 4em;
+  color: rgb(119, 119, 119);
 }
 
 .rooms {

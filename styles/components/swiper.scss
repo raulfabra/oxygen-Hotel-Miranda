@@ -1,119 +1,150 @@
-.swiper {
-    width: auto;
-    height: 400px;
-
-
+@mixin swiper () {
     &__imagenes{
         background-color: $background-grey-photo;
-        & img{
-            width: 80%;
-            vertical-align: middle;
-        }
     }
+
     &__description{
         padding: 2em;
-        & h2{
+
+        &__title{
             font-family: $font-oldstandardTT;
             font-size: 28px;
             font-weight: 400;
             line-height: 36px;
             letter-spacing: -1.20px;
-                        
+
             color: $color-black;
         }
 
-        &--loremIpsu{
+        &__parragraf{
+            margin-top: 2em;
             font-family: $font-roboto;
             font-size: 14px;
             font-weight: 400;
             line-height: 24px;
 
-            color: $color-grey;
-            
-        }
-
-        &--price{
-            font-family: $font-archivo;
-            font-size: 32px;
-            font-weight: 700;
-            line-height: 43px;
-            
-            color: $background-beige;
-
-            & span{
-                font-family: $font-archivo;
-                font-size: 13px;
-                font-weight: 700;
-                line-height: 43px;
-                text-align: center;
-                               
-                color: $background-beige;
-            }
-        }
-    }
-
-    &-button-prev{
-        top: var(--swiper-navigation-top-offset,30%);
-
-        &:after{
-            content: none;
-        }
-    }
-
-    &-button-next{
-        top: var(--swiper-navigation-top-offset,30%);
-
-        &:after{
-            content: none;
+            color: $color-grey;            
         }
     }
 }
 
-.swiper__rating{
+.rooms__swiper {
+    position: relative;
     width: auto;
-    height: 320px;
-    &__banner{
-        position: relative;
-        text-align: left;
-        vertical-align: bottom;
+    height: 400px;
 
-        & h1{
-            position: absolute;
-            top: 0%;
-            left: 50%;
+    .swiper{
+        @include swiper();
 
-            font-family: $font-archivo;
-            font-size: 120px;
-            font-weight: 700;
-            line-height: 130px;
+        &__imagenes{
+            & img{
+                width: 80%;
+                vertical-align: middle;
+            }
+        }
 
-            color: rgba(34, 34, 34, 0.04);
-            
+        &__description{
+
+            &__parragraf--room{
+                margin-top: 0;
+            }
+    
+            &__price{
+                font-family: $font-archivo;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 43px;
+                
+                color: $background-beige;
+    
+                & span{
+                    font-family: $font-archivo;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 43px;
+                    text-align: center;
+                                   
+                    color: $background-beige;
+                }
+            }
         }
     }
 
-    &__title{
-        margin-top: 2em;
-        font-family: $font-oldstandardTT;
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 30px;
-        letter-spacing: -0.90px;
-        text-align: left;
+    @include btn-swiper();
+}
+
+.facilities__swiper{
+    position: relative;
+    width: auto;
+    height: 320px;
+
+    .swiper{
+        @include swiper();
         
+        &__imagenes{
+            background-color: transparent;
+            
+            & h1{
+                position: absolute;
+                top: 0%;
+                left: 50%;
+        
+                font-family: $font-archivo;
+                font-size: 120px;
+                font-weight: 700;
+                line-height: 130px;
+        
+                color: rgba(34, 34, 34, 0.04); 
+            }
+        }
+    
+        &__description{
+            &__title--score{
+                margin-top: 2em;
+                text-align: left;
+            }
+
+            &__parragraf--score{
+                width: 80%;
+                text-align: left;
+            }
+
+        }
     }
 
-    &__parragraf{
-        margin-top: 2em;
-        width: 80%;
+    @include btn-swiper();
 
-        font-family: $font-archivo;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: left;
-        
-        color: $color-grey;
+    &__pagination {
+        margin-top: 2.5rem;
+        position: relative;
+        z-index: 10;
+        height: 0.44rem;
+        width: 100%;
+        display: flex;
+        gap: 0.44rem;
+        justify-content: center;
+    }
+
+    &__darkbullet {
+        background-color: #333333;
+        width: 0.44rem;
+        height: 0.44rem;
+        border-radius: 3rem;
+        transition: background-color 0.6s ease-in-out;
+        pointer-events: all !important;
+    }
+
+    &__bullet {
+        background-color: #EDEDED;
+        width: 0.44rem;
+        height: 0.44rem;
+        border-radius: 3rem;
+        transition: background-color 0.6s ease-in-out;
+        pointer-events: all !important;
+
+        &--active {
+            background-color: $background-beige;
+        }
     }
 
 }

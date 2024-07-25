@@ -12,5 +12,32 @@
     letter-spacing: 2.80px;
 
     color: $color;
+}
 
+
+@mixin btn-swiper () {
+
+    &__btn--prev, &__btn--next {
+        position: absolute;
+        z-index: 9;
+        width: 2rem;
+        height: 2rem;
+        background-color: $color-white;
+        top: 6.63rem;
+
+        transition: background-color 0.6s ease-in-out;
+
+        &:hover, &:active {
+            background-color: $background-beige;
+        }
+    }
+
+    &__btn--next {
+        right: 0.94rem;
+    }
+
+    &__btn--prev {
+        left: 0.94rem;
+    }
+    
 }

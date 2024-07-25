@@ -5,18 +5,47 @@
 @import '../@mixins/subtitle.scss';
 
 
-.banner__button{
-    &--beige{
-        @include button($font-archivo, $color-white);
-        background-color: $background-beige;
+.banner{
+    &--promo{
+        padding: 2em 1.5em;
+        background-color: $background-grey-strong;
     }
 
-    &--grey{
-        @include button($font-archivo, $color-white);
-        border: 2px solid rgba(255, 255, 255, 0.33);
-        background-color: transparent;
+    &__subtitle--promo{
+        color: $background-beige;
+    }
+
+    &__paragraf--promo{
+        margin: 1em 0;
+        
+        font-family: $font-archivo;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: justify;
+
+        color: $color-grey;
+    }
+
+    &__video--promo{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__button{
+        &--beige{
+            @include button($font-archivo, $color-white);
+            background-color: $background-beige;
+        }
+    
+        &--grey{
+            @include button($font-archivo, $color-white);
+            border: 2px solid rgba(255, 255, 255, 0.33);
+            background-color: transparent;
+        }
     }
 }
+
 
 .calendar{
     background-color: $background-grey-strong;
@@ -80,7 +109,6 @@
 
     &__title{
         @include title();
-        
     }
 
     &__parragraf{
@@ -99,6 +127,49 @@
     &__button{
         @include button($font-archivo, $color-white);
         background-color: $background-beige;
+    }
+}
+
+.card {
+    &--LuxuryRoom{
+        padding: 0 1.5em 3em 1.5em;
+    }
+
+    &__description{
+
+        &--LuxuryRoom{
+            margin: 0 auto;
+            background-color: $background-grey-strong;
+            width: 75.5%;
+        }
+
+        &__icon--2{
+            position: relative;
+            transform: translate(20%, -60%);
+        }
+        &__name{
+            &--StrongTeam{
+                position: relative;
+                transform: translate(0, -250%);
+            }
+            &--LuxuryRoom{
+                padding-top: 1em;
+                color: $color-white;
+            }
+        }
+
+        &__parragraf{
+            &--StrongTeam{
+                position: relative;
+                transform: translate(0,-100%);
+            }
+            &--LuxuryRoom{
+                padding-top: 1em;
+                padding-bottom: 4em;
+                color: $color-grey;
+            }
+        }
+
     }
 }
 
