@@ -186,6 +186,7 @@ body {
   position: relative;
   width: auto;
   height: 400px;
+  overflow: hidden;
 }
 .rooms__swiper .swiper__imagenes {
   background-color: rgb(228, 228, 228);
@@ -254,6 +255,7 @@ body {
   position: relative;
   width: auto;
   height: 320px;
+  overflow: hidden;
 }
 .facilities__swiper .swiper__imagenes {
   background-color: rgb(228, 228, 228);
@@ -350,6 +352,7 @@ body {
   margin-top: 3em;
   width: auto;
   height: 100%;
+  overflow: hidden;
 }
 .cards__swiper__imagenes {
   background-color: transparent;
