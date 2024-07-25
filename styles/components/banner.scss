@@ -10,9 +10,4 @@
     &__title{
         @include title (left, $color-white)
     }
-
-    &__container--video{
-        width: 100%;
-        overflow: hidden;
-    }
 }

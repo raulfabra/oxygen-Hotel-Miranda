@@ -5,22 +5,16 @@
 @import '../@mixins/subtitle.scss';
 
 
-.banner{
-    padding: 3em 1.5em;
-    background-color: $background-grey;
+.banner__button{
+    &--beige{
+        @include button($font-archivo, $color-white);
+        background-color: $background-beige;
+    }
 
-    &__button{
-
-        &--beige{
-            @include button($font-archivo, $color-white);
-            background-color: $background-beige;
-        }
-
-        &--grey{
-            @include button($font-archivo, $color-white);
-            border: 2px solid rgba(255, 255, 255, 0.33);
-            background-color: transparent;
-        }
+    &--grey{
+        @include button($font-archivo, $color-white);
+        border: 2px solid rgba(255, 255, 255, 0.33);
+        background-color: transparent;
     }
 }
 
@@ -77,8 +71,6 @@
 .aboutUS{
     padding: 2em 1.5em;
     margin-top: 3em;
-    
-    padding-bottom: 10em;
     background-color: $background-grey-light;
 
     &__subtitle{
@@ -91,7 +83,7 @@
         
     }
 
-    &__loremIpsum{
+    &__parragraf{
         padding-top: 1em;
 
         font-family: $font-archivo;
@@ -131,6 +123,7 @@
 
     &__title{
         @include title();
+        padding-top: 0.5em;
         padding-bottom: 1em;
     }
 }
@@ -152,7 +145,8 @@
     }
 
     &__title{
-        @include title(left)
+        @include title(left);
+        padding-top: 0.5em;
     }
 }
 

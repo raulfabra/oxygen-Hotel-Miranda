@@ -131,10 +131,6 @@ body {
   letter-spacing: -1.2px;
   color: rgb(255, 255, 255);
 }
-.banner__container--video {
-  width: 100%;
-  overflow: hidden;
-}
 
 .card {
   position: relative;
@@ -375,7 +371,7 @@ body {
   letter-spacing: -1.2px;
   color: rgb(255, 255, 255);
 }
-.promo__parraf {
+.promo__parragraf {
   margin: 1em 0;
   font-family: "Archivo", sans-serif;
   font-size: 14px;
@@ -450,7 +446,7 @@ body {
   background-color: rgb(190, 173, 142);
   color: rgb(255, 255, 255);
 }
-.footer .info p {
+.footer .parragraf {
   margin: 2em 0;
   font-size: 16px;
   font-weight: 400;
