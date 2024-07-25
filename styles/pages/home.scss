@@ -80,7 +80,6 @@
 
     &__title{
         @include title();
-        
     }
 
     &__parragraf{
@@ -99,6 +98,49 @@
     &__button{
         @include button($font-archivo, $color-white);
         background-color: $background-beige;
+    }
+}
+
+.card {
+    &--LuxuryRoom{
+        padding: 0 1.5em 3em 1.5em;
+    }
+
+    &__description{
+
+        &--LuxuryRoom{
+            margin: 0 auto;
+            background-color: $background-grey-strong;
+            width: 75.5%;
+        }
+
+        &__icon--2{
+            position: relative;
+            transform: translate(20%, -60%);
+        }
+        &__name{
+            &--StrongTeam{
+                position: relative;
+                transform: translate(0, -250%);
+            }
+            &--LuxuryRoom{
+                padding-top: 1em;
+                color: $color-white;
+            }
+        }
+
+        &__parragraf{
+            &--StrongTeam{
+                position: relative;
+                transform: translate(0,-100%);
+            }
+            &--LuxuryRoom{
+                padding-top: 1em;
+                padding-bottom: 4em;
+                color: $color-grey;
+            }
+        }
+
     }
 }
 

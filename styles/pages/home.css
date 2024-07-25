@@ -144,6 +144,36 @@
   background-color: rgb(190, 173, 142);
 }
 
+.card--LuxuryRoom {
+  padding: 0 1.5em 3em 1.5em;
+}
+.card__description--LuxuryRoom {
+  margin: 0 auto;
+  background-color: rgb(34, 34, 34);
+  width: 75.5%;
+}
+.card__description__icon--2 {
+  position: relative;
+  transform: translate(20%, -60%);
+}
+.card__description__name--StrongTeam {
+  position: relative;
+  transform: translate(0, -250%);
+}
+.card__description__name--LuxuryRoom {
+  padding-top: 1em;
+  color: rgb(255, 255, 255);
+}
+.card__description__parragraf--StrongTeam {
+  position: relative;
+  transform: translate(0, -100%);
+}
+.card__description__parragraf--LuxuryRoom {
+  padding-top: 1em;
+  padding-bottom: 4em;
+  color: rgb(119, 119, 119);
+}
+
 .rooms {
   padding: 2em 0;
 }
