@@ -10,4 +10,21 @@
     &__title{
         @include title (left, $color-white)
     }
+
+    &__paragraf{
+        position: relative;
+        padding: 1em;
+        width: 150px;
+        top: 50px;
+        left: 55%;
+
+        background-color: $color-white;
+
+        & span{
+            font-family: $font-archivo;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 17.41px;           
+        }
+    }
 }
