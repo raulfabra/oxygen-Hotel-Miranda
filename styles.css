@@ -284,8 +284,8 @@ body {
 }
 .facilities__swiper .swiper__imagenes h1 {
   position: absolute;
-  top: 0%;
-  left: 50%;
+  top: 0;
+  left: 40%;
   font-family: "Archivo", sans-serif;
   font-size: 120px;
   font-weight: 700;
@@ -333,7 +333,7 @@ body {
   height: 0.44rem;
   border-radius: 3rem;
   transition: background-color 0.6s ease-in-out;
-  pointer-events: all !important;
+  pointer-events: all;
 }
 .facilities__swiper__bullet {
   background-color: #EDEDED;
@@ -341,7 +341,7 @@ body {
   height: 0.44rem;
   border-radius: 3rem;
   transition: background-color 0.6s ease-in-out;
-  pointer-events: all !important;
+  pointer-events: all;
 }
 .facilities__swiper__bullet--active {
   background-color: rgb(190, 173, 142);

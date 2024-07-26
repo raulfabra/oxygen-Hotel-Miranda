@@ -174,7 +174,8 @@
 }
 .card__description__icon--2 {
   position: relative;
-  transform: translate(20%, -60%);
+  transform: translate(30%, -60%);
+  width: 80%;
 }
 .card__description__name--StrongTeam {
   position: relative;
@@ -288,7 +289,7 @@
 }
 .menuFoods img {
   position: relative;
-  left: 44%;
+  left: 40%;
 }
 .menuFoods__subtitle {
   padding-top: 1em;
