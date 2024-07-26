@@ -1,0 +1,12 @@
+@mixin Text($font, $size, $weight: 400, $height, $position: left, $color: $color-grey){
+    padding-top: 1em;
+    text-align: $position;
+    width: 90%;
+
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+
+    color: $color;
+}

@@ -1,29 +1,26 @@
 @import '../constants/colors.scss';
 @import '../constants/fonts.scss';
-@import '../@mixins/button.scss';
-@import '../@mixins/title.scss';
-@import '../@mixins/subtitle.scss';
+@import '../@mixins/Button.scss';
+@import '../@mixins/Title.scss';
+@import '../@mixins/Subtitle.scss';
+@import '../@mixins/Text.scss';
 
-.card{
-
-    &__video{
+.welcomeVideo{
+    padding: 3em 1.5em;
+    &__container{
         position: relative;
-        margin: 0 auto; /* Centra el contenedor */
+        margin: 0 auto;
         width: 100%;
 
         & video{
-            width: 100%; /* Ancho completo del contenedor */
-            height: auto; /* Ajusta la altura automáticamente */
+            width: 100%;
+            height: auto;
             display: block;
         }
     }
 
-    &__description{
-
-        &__name{
-            padding-top: 1em;
-            line-height: 39px;
-        }
+    &__title{
+        @include Title ($font-oldstandardTT, 32px, 400, 40px, center, black);  
     }
 }
 
@@ -62,75 +59,17 @@
     }
 }
 
-.aboutUS{
-    padding: 2em 1.5em;
-    margin-top: 3em;
-    background-color: $background-grey-light;
-
-    &__subtitle{
-        @include subtitle();
-        text-align: left;
-    }
-
-    &__title{
-        @include title(left);
-        font-size: 40px;
-        line-height: 50px;
-    }
-
-    &__parragraf{
-        padding-top: 1em;
-        text-align: left;
-        width: 90%;
-
-        font-family: $font-archivo;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-
-        color: $color-grey;
-        
-    }
-
-    &__button{
-        @include button($font-archivo, $color-white);
-        background-color: $background-beige;
-    }
-}
-
-.facilities{
-    padding: 2em 1.5em;
-
-    background-color: $background-grey-strong;
-
-    &__subtitle{
-        @include subtitle();        
-    }
-
-    &__title{
-        @include title();
-        padding-top: 0.5em;
-        padding-bottom: 1em;
-    }
-
-    &__swiper{
-        margin-bottom: 2em;
-        padding-bottom: 2em;
-        background-color: $background-grey;
-    }
-}
-
 .counter{
     padding: 3em 1.5em;
 
     &__subtitle{
-        @include subtitle();
-        text-align: left;
+        @include Subtitle($color-grey, left);
+        padding: 0;
     }
 
     &__title{
-        @include title(left);
-        padding-top: 0.5em;
+        @include Title($font-oldstandardTT, 56px, 400, 60px, left);
+        padding-bottom: 0;
     }
 
     &__article{
@@ -138,6 +77,7 @@
         text-align: justify;
         vertical-align: middle;
         margin-left: 1em;
+
         &__imagen{
             display: inline-block;
             width: 20%;
@@ -171,8 +111,45 @@
             width: 15%;
             margin-left: 1em;
             text-align: right;
-    
         }
     }
 
+    &__swiper{
+        margin-top: 3em;
+        overflow: hidden;
+
+        &__pagination{
+            margin-top: 1rem;
+            position: relative;
+            z-index: 10;
+            height: 0.44rem;
+            width: 100%;
+            display: flex;
+            gap: 0.44rem;
+            justify-content: center;
+        }
+
+        &__darkbullet {
+            background-color: #333333;
+            width: 0.44rem;
+            height: 0.44rem;
+            border-radius: 3rem;
+            transition: background-color 0.6s ease-in-out;
+            pointer-events: all;
+        }
+
+        
+        &__bullet {
+            background-color: #EDEDED;
+            width: 0.44rem;
+            height: 0.44rem;
+            border-radius: 3rem;
+            transition: background-color 0.6s ease-in-out;
+            pointer-events: all;
+
+            &--active {
+                background-color: $background-beige;
+            }
+        }
+    }
 }

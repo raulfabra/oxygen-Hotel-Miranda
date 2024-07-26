@@ -1,4 +1,4 @@
-const rateSwiper = new Swiper('.facilities__swiper', {
+const rateSwiper = new Swiper('.facilities__swiper--dark', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -18,6 +18,35 @@ const rateSwiper = new Swiper('.facilities__swiper', {
   },
   
 });
+
+const counterSwiper = new Swiper('.counter__swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+
+  // If we need pagination
+  pagination: {
+    el: '.counter__swiper__pagination',
+    bulletClass: 'counter__swiper__bullet',
+    bulletActiveClass: 'counter__swiper__bullet--active',
+    clickable: true
+  },
+/* 
+  // Navigation arrows
+  navigation: {
+    nextEl: '.facilities__swiper__btn--next',
+    prevEl: '.facilities__swiper__btn--prev',
+  }, */
+})
+
+
+
+
+
+
+
+
+
 /* const rateSwiper = new Swiper('.facilities__swiper', {
   // Optional parameters
   direction: 'horizontal',

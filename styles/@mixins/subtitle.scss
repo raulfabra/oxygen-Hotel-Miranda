@@ -1,5 +1,7 @@
-@mixin subtitle ($color: $color-grey) {
+@mixin Subtitle ($color: $color-grey, $position: center) {
     padding-top: 1em;
+    padding-bottom: 2em;
+    text-align: $position;
 
     font-family: $font-archivo;
     font-size: 14px;
@@ -8,27 +10,4 @@
     letter-spacing: 3px;
 
     color: $color;
-
-
-
-
-    /*font-family: $font-archivo;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 15.23px;
-    letter-spacing: 2.80px;
-
-    color: $color-grey;
-
-
-    padding-bottom: 2em;
-
-    font-family: $font-archivo;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 3px;
-    text-align: left;
-
-    color: $color-grey; */
 }

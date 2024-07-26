@@ -94,44 +94,35 @@ body {
 }
 .banner__subtitle {
   padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: left;
   font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 3px;
   color: rgb(255, 255, 255);
-  /*font-family: $font-archivo;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 15.23px;
-  letter-spacing: 2.80px;
-
-  color: $color-grey;
-
-
-  padding-bottom: 2em;
-
-  font-family: $font-archivo;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 3px;
-  text-align: left;
-
-  color: $color-grey; */
-  text-align: left;
 }
 .banner__title {
-  padding-top: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
   text-align: left;
-  font-family: "Old Standard TT", sans-serif;
+  font-family: undefined;
   font-size: 56px;
   font-weight: 400;
   line-height: 60px;
   letter-spacing: -1.2px;
   color: rgb(255, 255, 255);
 }
-.banner__paragraf {
+.banner__paragraph {
+  padding-top: 1em;
+  text-align: center;
+  width: 90%;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: black;
   position: relative;
   padding: 1em;
   width: 150px;
@@ -139,47 +130,56 @@ body {
   left: 55%;
   background-color: rgb(255, 255, 255);
 }
-.banner__paragraf span {
-  font-family: "Archivo", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 17.41px;
-}
 
 .card {
-  position: relative;
-  padding: 3em 1.5em;
+  padding: 2em 2.5em;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
 }
-.card__imagen {
-  margin: 0 auto;
-  width: 80%;
-  height: 400px;
+.card__subtitle {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: left;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  color: rgb(119, 119, 119);
 }
-.card__imagen img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}
-.card__description {
-  position: relative;
-}
-.card__description__icon {
-  padding-top: 2.5em;
-}
-.card__description__name {
+.card__title {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: left;
   font-family: "Old Standard TT", sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 400;
-  line-height: 30px;
-  letter-spacing: -1px;
+  line-height: 50px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
 }
-.card__description__parragraf {
-  margin: 0 auto;
-  width: 200px;
-  font-family: "Roboto", sans-serif;
+.card__paragraph {
+  padding-top: 1em;
+  text-align: left;
+  width: 90%;
+  font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+.card__button {
+  display: block;
+  width: 200px;
+  margin: 2em 0;
+  padding: 1.5em;
+  border: none;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(190, 173, 142);
 }
 
 .rooms__swiper {
@@ -251,102 +251,6 @@ body {
   left: 0.94rem;
 }
 
-.facilities__swiper {
-  position: relative;
-  width: auto;
-  height: 320px;
-  overflow: hidden;
-}
-.facilities__swiper .swiper__imagenes {
-  background-color: rgb(228, 228, 228);
-}
-.facilities__swiper .swiper__description {
-  padding: 2em;
-}
-.facilities__swiper .swiper__description__title {
-  font-family: "Old Standard TT", sans-serif;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: -1.2px;
-  color: rgb(17, 17, 17);
-}
-.facilities__swiper .swiper__description__parragraf {
-  margin-top: 2em;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: rgb(119, 119, 119);
-}
-.facilities__swiper .swiper__imagenes {
-  background-color: transparent;
-}
-.facilities__swiper .swiper__imagenes h1 {
-  position: absolute;
-  top: 0;
-  left: 40%;
-  font-family: "Archivo", sans-serif;
-  font-size: 120px;
-  font-weight: 700;
-  line-height: 130px;
-  color: rgba(34, 34, 34, 0.04);
-}
-.facilities__swiper .swiper__description__title--score {
-  margin-top: 2em;
-  text-align: left;
-}
-.facilities__swiper .swiper__description__parragraf--score {
-  text-align: left;
-}
-.facilities__swiper__btn--prev, .facilities__swiper__btn--next {
-  position: absolute;
-  z-index: 9;
-  width: 2rem;
-  height: 2rem;
-  background-color: rgb(255, 255, 255);
-  top: 6.63rem;
-  transition: background-color 0.6s ease-in-out;
-}
-.facilities__swiper__btn--prev:hover, .facilities__swiper__btn--prev:active, .facilities__swiper__btn--next:hover, .facilities__swiper__btn--next:active {
-  background-color: rgb(190, 173, 142);
-}
-.facilities__swiper__btn--next {
-  right: 0.94rem;
-}
-.facilities__swiper__btn--prev {
-  left: 0.94rem;
-}
-.facilities__swiper__pagination {
-  margin-top: 4rem;
-  position: relative;
-  z-index: 10;
-  height: 0.44rem;
-  width: 100%;
-  display: flex;
-  gap: 0.44rem;
-  justify-content: center;
-}
-.facilities__swiper__darkbullet {
-  background-color: #333333;
-  width: 0.44rem;
-  height: 0.44rem;
-  border-radius: 3rem;
-  transition: background-color 0.6s ease-in-out;
-  pointer-events: all;
-}
-.facilities__swiper__bullet {
-  background-color: #EDEDED;
-  width: 0.44rem;
-  height: 0.44rem;
-  border-radius: 3rem;
-  transition: background-color 0.6s ease-in-out;
-  pointer-events: all;
-}
-.facilities__swiper__bullet--active {
-  background-color: rgb(190, 173, 142);
-}
-
 .cards__swiper {
   position: relative;
   margin-top: 3em;
@@ -409,16 +313,195 @@ body {
   color: rgb(189, 189, 189);
 }
 
-.footer::before {
-  content: "";
+.facilities {
+  padding: 2em 1.5em;
+}
+.facilities--dark {
+  padding: 2em 1.5em;
+  background-color: rgb(34, 34, 34);
+}
+.facilities__subtitle {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  color: rgb(119, 119, 119);
+}
+.facilities__subtitle--dark {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  color: rgb(255, 255, 255);
+}
+.facilities__title {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+}
+.facilities__title--dark {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: undefined;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(255, 255, 255);
+  padding-top: 0;
+  padding-bottom: 0.5em;
+}
+.facilities__swiper {
+  position: relative;
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+}
+.facilities__swiper--dark {
+  position: relative;
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+  background-color: rgb(51, 51, 51);
+}
+.facilities__swiper__image {
+  background-color: transparent;
+}
+.facilities__swiper__image .image__bckground {
+  padding-top: 1em;
+  text-align: center;
+  width: 90%;
+  font-family: "Archivo", sans-serif;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 130px;
+  color: rgba(34, 34, 34, 0.04);
+}
+.facilities__swiper__image .image__bckground--dark {
+  padding-top: 1em;
+  text-align: center;
+  width: 90%;
+  font-family: "Archivo", sans-serif;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 130px;
+  color: rgb(34, 34, 34);
+  padding-top: 0;
+  width: 100%;
+}
+.facilities__swiper__description {
+  padding: 0 1.5em;
+}
+.facilities__swiper__description .description__title {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: left;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+  margin-top: 2em;
+  font-size: 28px;
+  line-height: 36px;
+}
+.facilities__swiper__description .description__title--dark {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: left;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  line-height: 36px;
+}
+.facilities__swiper__description .description__paragraph {
+  padding-top: 1em;
+  text-align: left;
+  width: 90%;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+.facilities__swiper__description .description__paragraph--dark {
+  padding-top: 1em;
+  text-align: left;
+  width: 90%;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  padding-top: 0;
+  width: 100%;
+}
+.facilities__swiper__pagination {
+  margin-top: 2em;
+  position: relative;
+  z-index: 10;
+  height: 0.44rem;
+  width: 100%;
+  display: flex;
+  gap: 0.44rem;
+  justify-content: center;
+}
+.facilities__swiper__darkbullet {
+  background-color: #333333;
+  width: 0.44rem;
+  height: 0.44rem;
+  border-radius: 3rem;
+  transition: background-color 0.6s ease-in-out;
+  pointer-events: all;
+}
+.facilities__swiper__bullet {
+  background-color: #EDEDED;
+  width: 0.44rem;
+  height: 0.44rem;
+  border-radius: 3rem;
+  transition: background-color 0.6s ease-in-out;
+  pointer-events: all;
+}
+.facilities__swiper__bullet--active {
+  background-color: rgb(190, 173, 142);
+}
+.facilities__swiper__btn--prev, .facilities__swiper__btn--next {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background-image: url("./public/images/Background-Footer.png");
-  opacity: 0.03;
+  z-index: 9;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(255, 255, 255);
+  top: 6.63rem;
+  transition: background-color 0.6s ease-in-out;
+}
+.facilities__swiper__btn--prev:hover, .facilities__swiper__btn--prev:active, .facilities__swiper__btn--next:hover, .facilities__swiper__btn--next:active {
+  background-color: rgb(190, 173, 142);
+}
+.facilities__swiper__btn--next {
+  right: 0.94rem;
+}
+.facilities__swiper__btn--prev {
+  left: 0.94rem;
 }
 
 .footer {
@@ -426,43 +509,48 @@ body {
   padding: 2em 1.5em;
   position: relative;
 }
-.footer__title,
-.footer .title {
-  font-family: "Archivo", sans-serif;
-  text-align: left;
+.footer--about {
+  margin-top: 0;
 }
-.footer__title h2,
-.footer .title h2 {
-  display: inline-block;
-  width: 50%;
-  vertical-align: middle;
-  margin-left: 1em;
+.footer__title {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: left;
+  font-family: "Archivo", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 28px;
-  letter-spacing: 3px;
+  letter-spacing: -1.2px;
+  color: black;
 }
-.footer__title h2 span,
-.footer .title h2 span {
-  font-weight: 400;
-}
-.footer__title--H,
-.footer .title--H {
+.footer__title .letter--H {
   display: inline-block;
   padding: 0.4em 0.6em;
   vertical-align: middle;
   font-size: 40px;
-  font-weight: 700;
   background-color: rgb(190, 173, 142);
   color: rgb(255, 255, 255);
 }
-.footer .parragraf {
-  margin: 2em 0;
+.footer__title .title--name {
+  display: inline-block;
+  margin-left: 1em;
+  vertical-align: middle;
+  width: 50%;
+  letter-spacing: 3px;
+}
+.footer__title .title--name span {
+  font-weight: 400;
+}
+.footer__paragraph {
+  padding-top: 1em;
+  text-align: justify;
+  width: 90%;
+  font-family: "Archivo", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  text-align: justify;
   color: rgb(119, 119, 119);
+  margin: 2em 0;
 }
 .footer .RedesSociales {
   width: 70%;
@@ -475,29 +563,35 @@ body {
 }
 .footer .Services {
   width: 100%;
-  text-align: left;
 }
 .footer .Services__title {
+  padding-top: 0.5em;
   padding-bottom: 1em;
+  text-align: left;
   font-family: "Old Standard TT", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: -1.2px;
   color: rgb(34, 34, 34);
 }
 .footer .Services__contenedor {
   display: inline-block;
 }
 .footer .Services__contenedor__list {
-  display: inline-block;
-  width: 49%;
-  list-style-type: none;
-  vertical-align: top;
+  padding-top: 1em;
+  text-align: left;
+  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 48px;
   color: rgb(119, 119, 119);
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: top;
+  padding-top: 0;
+  width: 49%;
 }
 .footer .Services__contenedor__list li {
   width: 165px;
@@ -508,36 +602,58 @@ body {
   text-align: left;
 }
 .footer .ContactUs__title {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: left;
   font-family: "Old Standard TT", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: -1.2px;
   color: rgb(34, 34, 34);
 }
-.footer .ContactUs__contenedor {
+.footer .ContactUs__information {
   display: inline-block;
   padding-top: 2em;
 }
-.footer .ContactUs__contenedor h5 {
+.footer .ContactUs__information .info__title {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: left;
+  font-family: undefined;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -1.2px;
+  color: black;
   display: inline-block;
   width: 49%;
   list-style-type: none;
   vertical-align: top;
   margin-left: 1em;
-  font-family: "Old Standard TT", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  color: rgb(17, 17, 17);
 }
-.footer .ContactUs__contenedor h5 span {
+.footer .ContactUs__information .info__title span {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: left;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 16.4px;
-  text-align: left;
+  line-height: 16px;
+  letter-spacing: -1.2px;
   color: rgb(119, 119, 119);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("./public/images/Background-Footer.png");
+  opacity: 0.03;
 }
 
 .Copyright_Terminos {
@@ -545,13 +661,17 @@ body {
   background-color: rgb(248, 248, 248);
 }
 .Copyright_Terminos p {
-  padding: 0.5em 0;
+  padding-top: 1em;
+  text-align: left;
+  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 18.8px;
+  line-height: 19px;
+  color: black;
+  padding-top: 0;
+  padding: 0.5em 0;
   letter-spacing: -0.5px;
-  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */
