@@ -8,17 +8,6 @@ body {
   text-align: center;
 }
 
-/* 
-    font-family: $font;
-    font-size: 56px;
-    font-weight: 400;
-    line-height: 60px;
-    letter-spacing: -1.2px;
-
-    color: $color;
-
-    undefined, 56px, 400, 60px
-*/
 .header {
   display: inline-block;
   width: 100%;
@@ -193,30 +182,6 @@ body {
   background-color: rgb(190, 173, 142);
 }
 
-/* .aboutUS{
-
-
-
-    &__subtitle{
-        @include Subtitle(undefined, left);
-    }
-
-    &__title{
-        @include Title(undefined, 56px, 400, 60px, left);
-        font-size: 40px;
-        line-height: 50px;
-    }
-
-    &__parragraf{
-        @include Text ($font-archivo, 14px, 400, 24px, undefined, undefined);
-        width: 90%;
-    }
-
-    &__button{
-        @include Button($font-archivo, $color-white);
-        background-color: $background-beige;
-    }
-} */
 .rooms__swiper {
   position: relative;
   width: auto;
@@ -398,6 +363,8 @@ body {
   line-height: 60px;
   letter-spacing: -1.2px;
   color: rgb(255, 255, 255);
+  padding-top: 0;
+  padding-bottom: 0.5em;
 }
 .facilities__swiper {
   position: relative;
@@ -438,7 +405,7 @@ body {
   width: 100%;
 }
 .facilities__swiper__description {
-  padding: 2em;
+  padding: 0 1.5em;
 }
 .facilities__swiper__description .description__title {
   padding-top: 0.5em;
@@ -464,7 +431,6 @@ body {
   line-height: 60px;
   letter-spacing: -1.2px;
   color: rgb(255, 255, 255);
-  margin-top: 2em;
   font-size: 28px;
   line-height: 36px;
 }
@@ -477,7 +443,6 @@ body {
   font-weight: 400;
   line-height: 24px;
   color: rgb(119, 119, 119);
-  margin-top: 2em;
 }
 .facilities__swiper__description .description__paragraph--dark {
   padding-top: 1em;
@@ -488,9 +453,11 @@ body {
   font-weight: 400;
   line-height: 24px;
   color: rgb(255, 255, 255);
+  padding-top: 0;
+  width: 100%;
 }
 .facilities__swiper__pagination {
-  margin-top: 4rem;
+  margin-top: 2em;
   position: relative;
   z-index: 10;
   height: 0.44rem;
@@ -542,14 +509,18 @@ body {
   padding: 2em 1.5em;
   position: relative;
 }
+.footer--about {
+  margin-top: 0;
+}
 .footer__title {
-  padding-top: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
   text-align: left;
-  width: 90%;
   font-family: "Archivo", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 28px;
+  letter-spacing: -1.2px;
   color: black;
 }
 .footer__title .letter--H {
@@ -592,13 +563,12 @@ body {
 }
 .footer .Services {
   width: 100%;
-  text-align: left;
 }
 .footer .Services__title {
   padding-top: 0.5em;
   padding-bottom: 1em;
-  text-align: undefined;
-  font-family: undefined;
+  text-align: left;
+  font-family: "Old Standard TT", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -609,19 +579,19 @@ body {
   display: inline-block;
 }
 .footer .Services__contenedor__list {
-  display: inline-block;
-  width: 49%;
-  list-style-type: none;
-  vertical-align: top;
   padding-top: 1em;
-  text-align: center;
+  text-align: left;
   width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 48px;
   color: rgb(119, 119, 119);
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: top;
   padding-top: 0;
+  width: 49%;
 }
 .footer .Services__contenedor__list li {
   width: 165px;
@@ -635,7 +605,7 @@ body {
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: left;
-  font-family: undefined;
+  font-family: "Old Standard TT", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -647,11 +617,6 @@ body {
   padding-top: 2em;
 }
 .footer .ContactUs__information .info__title {
-  display: inline-block;
-  width: 49%;
-  list-style-type: none;
-  vertical-align: top;
-  margin-left: 1em;
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: left;
@@ -661,6 +626,11 @@ body {
   line-height: 24px;
   letter-spacing: -1.2px;
   color: black;
+  display: inline-block;
+  width: 49%;
+  list-style-type: none;
+  vertical-align: top;
+  margin-left: 1em;
 }
 .footer .ContactUs__information .info__title span {
   padding-top: 0.5em;

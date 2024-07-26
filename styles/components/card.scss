@@ -2,6 +2,7 @@
     padding: 2em 2.5em;
     box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
 
+
     &__picture{}
 
     &__subtitle{
@@ -22,28 +23,3 @@
     }
 
 }
-
-/* .aboutUS{
-
-
-
-    &__subtitle{
-        @include Subtitle(undefined, left);
-    }
-
-    &__title{
-        @include Title(undefined, 56px, 400, 60px, left);
-        font-size: 40px;
-        line-height: 50px;
-    }
-
-    &__parragraf{
-        @include Text ($font-archivo, 14px, 400, 24px, undefined, undefined);
-        width: 90%;
-    }
-
-    &__button{
-        @include Button($font-archivo, $color-white);
-        background-color: $background-beige;
-    }
-} */
