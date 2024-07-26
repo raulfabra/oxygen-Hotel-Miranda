@@ -96,7 +96,7 @@
         background-color: $background-beige;
     }
 }
-
+ 
 .aboutUS{
     padding: 2em 1.5em;
     margin-top: 3em;
@@ -145,7 +145,8 @@
 
         &__icon--2{
             position: relative;
-            transform: translate(20%, -60%);
+            transform: translate(30%, -60%);
+            width: 80%;
         }
         &__name{
             &--StrongTeam{
@@ -207,7 +208,7 @@
 
     & img{
         position: relative;
-        left: 44%;
+        left: 40%;
     }
     
     &__subtitle{
