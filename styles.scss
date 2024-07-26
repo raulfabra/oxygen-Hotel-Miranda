@@ -13,15 +13,17 @@ body{
 @import 'styles/constants/fonts.scss';
 
 // Mixins
-@import 'styles/@mixins/title.scss';
-@import 'styles/@mixins/subtitle.scss';
-@import 'styles/@mixins/button.scss';
+@import 'styles/@mixins/Title.scss';
+@import 'styles/@mixins/Subtitle.scss';
+@import 'styles/@mixins/Text.scss';
+@import 'styles/@mixins/Button.scss';
 
 // Components
 @import 'styles/components/header.scss';
 @import 'styles/components/banner.scss';
-@import 'styles/components/cards.scss';
+@import 'styles/components/card.scss';
 @import 'styles/components/swiper.scss';
+@import 'styles/components/facilities.scss';
 @import 'styles/components/footer.scss';
 
 

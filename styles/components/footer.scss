@@ -1,63 +1,38 @@
-%background-footer {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background-image: url("./public/images/Background-Footer.png");
-    opacity: 0.03;
-}
-
 .footer{
     margin-top: 4em;
     padding: 2em 1.5em;
     position: relative;
 
-    &__title,
-    .title{
-        font-family: $font-archivo;
-        text-align: left;
+    &__title{
+        @include Text ($font-archivo, 26px, 700, 28px, left, black);
 
-        & h2{
-            display: inline-block;
-            width: 50%;
-            vertical-align: middle;
-            margin-left: 1em;
-
-            font-size: 26px;
-            font-weight: 700;
-            line-height: 28px;
-            letter-spacing: 3px;
-
-            & span{
-                font-weight: 400;              
-            }
-        }
-
-        &--H {
+        .letter--H {
             display: inline-block;
             padding: 0.4em 0.6em;
             vertical-align: middle;
 
             font-size: 40px;
-            font-weight: 700;
 
             background-color: $background-beige;
             color: $color-white;
         }
-        
+
+        .title--name{
+            display: inline-block;
+            margin-left: 1em;
+            vertical-align: middle;
+            width: 50%;
+            letter-spacing: 3px;
+
+            & span{
+                font-weight: 400;              
+            }
+        } 
     }
 
-    .parragraf{
+    &__paragraph{
+        @include Text($font-archivo, 16px, 400, 26px, justify);
         margin: 2em 0;
-
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 26px;
-        text-align: justify;
-        color: $color-grey;
     }
 
     .RedesSociales{
@@ -77,14 +52,7 @@
         text-align: left;
 
         &__title{
-            padding-bottom: 1em;
-
-            font-family: $font-oldstandardTT;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 24px;
-
-            color: $color-grey-strong;
+            @include Title(undefined, 24px, 400, 24px, undefined, $color-grey-strong);
         }
 
         &__contenedor{
@@ -96,12 +64,8 @@
                 list-style-type: none;
                 vertical-align: top;
 
-                font-family: $font-roboto;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 48px;
-                
-                color: $color-grey;
+                @include Text ($font-roboto, 16px, 400, 48px, center);
+                padding-top: 0;
 
                 & li{
                     width: 165px;
@@ -116,66 +80,52 @@
         text-align: left;
 
         &__title{
-            font-family: $font-oldstandardTT;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 24px;
-
-            color: $color-grey-strong;
+            @include Title (undefined, 24px, 400, 24px, left, $color-grey-strong);
         }
 
-        &__contenedor{
+        &__information{
             display: inline-block;
             padding-top: 2em;
 
-            & h5{
+            .info__title{
                 display: inline-block;
                 width: 49%;
                 list-style-type: none;
                 vertical-align: top;
                 margin-left: 1em;
 
-                font-family: $font-oldstandardTT;
-                font-size: 20px;
-                font-weight: 400;
-                line-height: 24px;
-                text-align: left;
-                
-                color: $color-black;
+                @include Title (undefined, 20px, 400, 24px, left, black);
 
                 & span{
-                    font-family: $font-roboto;
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 16.40px;
-                    text-align: left;
-
-                    color: $color-grey;
-                    
+                    @include Title($font-roboto, 14px, 400, 16px, left, $color-grey);                    
                 }
-                
             }
         }
     }
 }
 
 .footer::before{
-    @extend %background-footer;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url("./public/images/Background-Footer.png");
+    opacity: 0.03;
 }
+
 
 .Copyright_Terminos{
     padding: 1em 1.5em;
     background-color: $background-grey-light;
 
     & p{
+        @include Text ($font-roboto, 16px, 700, 19px, left, black);
+        padding-top: 0;
         padding: 0.5em 0;
-
-        font-family: $font-roboto;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 18.80px;
         letter-spacing: -0.50px;
-        text-align: left;
     }
     
 }

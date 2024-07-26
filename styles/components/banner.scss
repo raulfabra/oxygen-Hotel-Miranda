@@ -3,15 +3,15 @@
     background-color: $background-grey;
     
     &__subtitle{
-        @include subtitle($color-white);
-        text-align: left;
+        @include Subtitle($color-white, left);
     }
 
     &__title{
-        @include title (left, $color-white)
+        @include Title (undefined, 56px, 400, 60px,left,$color-white);
     }
 
-    &__paragraf{
+    &__paragraph{
+        @include Text ($font-archivo, 16px, 700, 18px, center, black);
         position: relative;
         padding: 1em;
         width: 150px;
@@ -19,12 +19,5 @@
         left: 55%;
 
         background-color: $color-white;
-
-        & span{
-            font-family: $font-archivo;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 17.41px;           
-        }
     }
 }
