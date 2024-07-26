@@ -1,22 +1,4 @@
 @charset "UTF-8";
-.banner__title {
-  padding-top: 0.5em;
-}
-.banner__paragraf {
-  position: relative;
-  padding: 1em;
-  width: 150px;
-  top: 50px;
-  left: 55%;
-  background-color: rgb(255, 255, 255);
-}
-.banner__paragraf span {
-  font-family: "Archivo", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 17.41px;
-}
-
 .card__video {
   position: relative;
   margin: 0 auto; /* Centra el contenedor */
