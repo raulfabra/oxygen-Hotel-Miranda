@@ -3,9 +3,11 @@
     padding: 2em 1.5em;
     position: relative;
 
-    &__title{
-        @include Text ($font-archivo, 26px, 700, 28px, left, black);
+    &--about{margin-top: 0;}
 
+    &__title{
+        @include Title ($font-archivo, 26px, 700, 28px, left, black);
+        
         .letter--H {
             display: inline-block;
             padding: 0.4em 0.6em;
@@ -49,23 +51,21 @@
 
     .Services{
         width: 100%;
-        text-align: left;
 
         &__title{
-            @include Title(undefined, 24px, 400, 24px, undefined, $color-grey-strong);
+            @include Title($font-oldstandardTT, 24px, 400, 24px, left, $color-grey-strong);
         }
 
         &__contenedor{
             display: inline-block;
 
             &__list{
+                @include Text ($font-roboto, 16px, 400, 48px, left);
                 display: inline-block;
-                width: 49%;
                 list-style-type: none;
                 vertical-align: top;
-
-                @include Text ($font-roboto, 16px, 400, 48px, center);
                 padding-top: 0;
+                width: 49%;               
 
                 & li{
                     width: 165px;
@@ -80,7 +80,7 @@
         text-align: left;
 
         &__title{
-            @include Title (undefined, 24px, 400, 24px, left, $color-grey-strong);
+            @include Title ($font-oldstandardTT, 24px, 400, 24px, left, $color-grey-strong);
         }
 
         &__information{
@@ -88,13 +88,13 @@
             padding-top: 2em;
 
             .info__title{
+                @include Title (undefined, 20px, 400, 24px, left, black);
                 display: inline-block;
                 width: 49%;
                 list-style-type: none;
                 vertical-align: top;
                 margin-left: 1em;
 
-                @include Title (undefined, 20px, 400, 24px, left, black);
 
                 & span{
                     @include Title($font-roboto, 14px, 400, 16px, left, $color-grey);                    
