@@ -1,4 +1,4 @@
-@mixin button($font, $color){
+@mixin Button($font, $color){
     display: block;
     width: 200px;
     margin: 2em 0;
@@ -15,7 +15,7 @@
 }
 
 
-@mixin btn-swiper () {
+@mixin Button_Swiper () {
 
     &__btn--prev, &__btn--next {
         position: absolute;

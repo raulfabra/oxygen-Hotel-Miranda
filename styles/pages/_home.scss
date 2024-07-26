@@ -1,8 +1,9 @@
 @import '../constants/colors.scss';
 @import '../constants/fonts.scss';
-@import '../@mixins/button.scss';
-@import '../@mixins/title.scss';
-@import '../@mixins/subtitle.scss';
+@import '../@mixins/Button.scss';
+@import '../@mixins/Title.scss';
+@import '../@mixins/Subtitle.scss';
+@import '../@mixins/Text.scss';
 
 
 .banner{
@@ -15,16 +16,10 @@
         color: $background-beige;
     }
 
-    &__paragraf--promo{
-        margin: 1em 0;
-        
-        font-family: $font-archivo;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: justify;
+    &__paragraph--promo{
+        @include Text ($font-archivo, 14px, 400, 24px, justify, undefined);
 
-        color: $color-grey;
+        margin: 1em 0;
     }
 
     &__video--promo{
@@ -34,12 +29,12 @@
 
     &__button{
         &--beige{
-            @include button($font-archivo, $color-white);
+            @include Button($font-archivo, $color-white);
             background-color: $background-beige;
         }
     
         &--grey{
-            @include button($font-archivo, $color-white);
+            @include Button($font-archivo, $color-white);
             border: 2px solid rgba(255, 255, 255, 0.33);
             background-color: transparent;
         }
@@ -91,7 +86,7 @@
     }
 
     &__button{
-        @include button($font-archivo, $color-white);
+        @include Button($font-archivo, $color-white);
         width: 250px;
         background-color: $background-beige;
     }
@@ -103,100 +98,101 @@
     background-color: $background-grey-light;
 
     &__subtitle{
-        @include subtitle();
-        text-align: left;
+        @include Subtitle(undefined, left);
     }
 
     &__title{
-        @include title();
+        @include Title(undefined, 56px, 400, 60px);
     }
 
-    &__parragraf{
-        padding-top: 1em;
-
-        font-family: $font-archivo;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: justify;
-
-        color: $color-grey;
-        
+    &__paragraph{
+        @include Text ($font-archivo, 14px, 400, 24px, justify, undefined);        
     }
 
     &__button{
-        @include button($font-archivo, $color-white);
+        @include Button($font-archivo, $color-white);
         background-color: $background-beige;
     }
 }
 
-.card {
-    &--LuxuryRoom{
-        padding: 0 1.5em 3em 1.5em;
+.strongTeam{
+    position: relative;
+    padding: 3em 1.5em;
+
+    &__imagen {
+        margin: 0 auto;
+        width: 80%;
+        height: 400px;
+
+        & img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__logo{
+        position: relative;
+        .logo--primary{}
+        .logo--secondary{}
     }
 
     &__description{
-
-        &--LuxuryRoom{
+        .description__title{
+            @include Text ($font-oldstandardTT, 30px, 400, 30px);
+            letter-spacing: -1.0px;
+        }
+        .description__paragraph{
+            @include Text ($font-roboto, 14px, 400, 22px, center, black);
             margin: 0 auto;
-            background-color: $background-grey-strong;
-            width: 75.5%;
+            width: 200px;
         }
-
-        &__icon--2{
-            position: relative;
-            transform: translate(30%, -60%);
-            width: 80%;
-        }
-        &__name{
-            &--StrongTeam{
-                position: relative;
-                transform: translate(0, -250%);
-            }
-            &--LuxuryRoom{
-                padding-top: 1em;
-                color: $color-white;
-            }
-        }
-
-        &__parragraf{
-            &--StrongTeam{
-                position: relative;
-                transform: translate(0,-100%);
-            }
-            &--LuxuryRoom{
-                padding-top: 1em;
-                padding-bottom: 4em;
-                color: $color-grey;
-            }
-        }
-
     }
 }
+.luxuryRoom{
+    position: relative;
+    padding: 3em 1.5em;
+
+    &__imagen {
+        margin: 0 auto;
+        width: 80%;
+        height: 400px;
+
+        & img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__logo{
+        position: relative;
+        .logo--primary{}
+        .logo--secondary{}
+    }
+
+    &__description{
+        .description__title{
+            @include Text ($font-oldstandardTT, 30px, 400, 30px);
+            letter-spacing: -1.0px;
+        }
+        .description__paragraph{
+            @include Text ($font-roboto, 14px, 400, 22px, center, black);
+            margin: 0 auto;
+            width: 200px;
+        }
+    }
+}
+
 
 .rooms{
     padding: 2em 0;
     &__subtitle{
-        @include subtitle();        
+        @include Subtitle();        
     }
 
     &__title{
-        @include title();
-        padding-bottom: 0.5em;
-    }
-}
-
-.facilities{
-    padding: 2em 1.5em;
-
-    &__subtitle{
-        @include subtitle();        
-    }
-
-    &__title{
-        @include title();
-        padding-top: 0.5em;
-        padding-bottom: 1em;
+        @include Title(undefined, 56px, 400, 60px);
     }
 }
 
@@ -212,13 +208,11 @@
     }
     
     &__subtitle{
-        @include subtitle();
-        text-align: left;
+        @include Subtitle(undefined, left);
     }
 
     &__title{
-        @include title(left);
-        padding-top: 0.5em;
+        @include Title(undefined, 56px, 400, 60px, left);
     }
 }
 
