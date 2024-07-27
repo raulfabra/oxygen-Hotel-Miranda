@@ -516,68 +516,6 @@ body {
   background-color: rgb(190, 173, 142);
 }
 
-.cards__swiper {
-  position: relative;
-  margin-top: 3em;
-  width: auto;
-  height: 100%;
-  overflow: hidden;
-}
-.cards__swiper__imagenes {
-  background-color: transparent;
-}
-.cards__swiper__imagenes img {
-  width: 80%;
-  vertical-align: middle;
-}
-.cards__swiper__accesories {
-  position: relative;
-  margin: 0 auto;
-  padding: 0.5em 1em;
-  width: 200px;
-  bottom: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
-  background-color: rgb(255, 255, 255);
-}
-.cards__swiper__description {
-  padding: 2em;
-  padding-top: 0;
-}
-.cards__swiper__description__title {
-  font-family: "Old Standard TT", sans-serif;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: -1.2px;
-  color: rgb(17, 17, 17);
-}
-.cards__swiper__description__parragraf {
-  margin-top: 2em;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: rgb(119, 119, 119);
-}
-.cards__swiper__description__price {
-  padding-top: 1em;
-  display: inline-block;
-  font-family: "Archivo", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 17.41px;
-  color: rgb(190, 173, 142);
-}
-.cards__swiper__description__span {
-  margin-left: 1em;
-  font-family: "Archivo", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 17.41px;
-  text-align: right;
-  color: rgb(189, 189, 189);
-}
-
 .footer {
   margin-top: 4em;
   padding: 2em 1.5em;
