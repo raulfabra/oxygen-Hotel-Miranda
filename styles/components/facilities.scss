@@ -1,4 +1,5 @@
-.facilities{
+.facilities,
+.popularRooms{
     padding: 2em 1.5em;
 
     &--dark{
@@ -12,6 +13,11 @@
         &--dark{
             @include Subtitle($color-white);
         }
+
+        &--beige{
+            @include Subtitle($background-beige);
+
+        }
     }
 
     &__title{
@@ -20,7 +26,13 @@
         padding-bottom: 0.5em;
         
         &--dark{
-            @include Title($font-oldstandardTT, 56px, 400, 60px,undefined, $color-white);
+            @include Title($font-oldstandardTT, 56px, 400, 60px, center, $color-white);
+            padding-top: 0;
+            padding-bottom: 0.5em;
+        }
+
+        &--littledark{
+            @include Title($font-oldstandardTT, 40px, 400, 48px, center, $color-white);
             padding-top: 0;
             padding-bottom: 0.5em;
         }
@@ -39,6 +51,15 @@
             overflow: hidden;
 
             background-color: $background-grey;
+        }
+
+        &--white{
+            position: relative;
+            width: auto;
+            height: 550px;
+            overflow: hidden;
+
+            background-color: $color-white;
         }
 
         &__image{
@@ -136,5 +157,67 @@
             }
         }
     
+    }
+
+    &__swiper--white{
+        margin-top: 1em;
+        position: relative;
+        width: auto;
+        height: 400px;
+        overflow: hidden;
+
+        &__image{
+            background-color: transparent;
+
+            & img{
+                width: 100%;
+                vertical-align: middle;
+            }
+        }
+
+        &__accesories{
+            position: relative;
+            margin: 0 auto;
+            padding: 0.5em 1em;
+            width: 200px;
+            bottom: 20px;
+            box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
+            
+            background-color: $color-white;
+        }
+
+        &__description{
+
+            .description__title{
+                @include Title ($font-oldstandardTT, 28px, 400, 36px, center, black);
+                padding: 0;
+                padding-bottom: 0.5em;
+            }
+
+            .description__paragraph{
+                @include Text ($font-roboto, 14px, 400, 24px, center);
+                padding: 0;
+                padding-bottom: 0.5em;
+                margin: 0 auto;
+                width: 90%;
+            }
+
+            .description__price{
+                @include Text ($font-archivo, 16px, 700, 17.5px, center, $background-beige);
+                display: inline-block;
+            }
+
+            .description__span{
+                @include Text ($font-archivo, 16px, 700, 17.5px, right, rgba(189, 189, 189, 1));
+                margin-left: 1em;
+
+                & a{
+                    text-decoration: none;
+                    color: rgba(189, 189, 189, 1);
+                }
+            }
+        }
+
+        @include Button-Swiper();
     }
 }
