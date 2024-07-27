@@ -1,0 +1,68 @@
+@import '../constants/colors.scss';
+@import '../constants/fonts.scss';
+@import '../@mixins/Button.scss';
+@import '../@mixins/Title.scss';
+@import '../@mixins/Subtitle.scss';
+@import '../@mixins/Text.scss';
+
+.card{
+    padding: 2em 1.5em;
+    &__picture{
+        position: relative;
+        padding: 1em 0;
+
+        & img{
+            width: 100%;
+        }
+
+        &__offer{
+            position: absolute;
+            width: 150px;
+            top: 68%;
+            left: 53%;
+            background-color: $background-grey-light;
+
+            .offer__oldPrice{
+                @include Text ($font-archivo, 23px, 700, 25px, center, $background-beige);
+                text-decoration: line-through;
+                padding-top: 0;
+                & span{
+                    font-size: 11px;
+                    line-height: 12px;
+                }                
+            }
+            .offer__newPrice{
+                @include Text ($font-archivo, 30px, 700, 33px, center, rgba(222, 87, 119, 1));
+                padding-top: 0.5em;
+                & span{
+                    font-size: 12px;
+                    line-height: 13px;
+                }   
+            }
+        }
+    }
+
+    &__paragraph{
+        width: 90%;
+    }
+
+    &__listAmenities{
+        margin-top: 2em;
+        @include Text ($font-roboto, 15px, 500, 18px, left);
+        display: inline-block;
+        list-style-type: none;
+        vertical-align: top;
+        padding-top: 0;
+        width: 49%;
+
+        & li{
+            width: 170px;
+            padding: 0.5em;
+
+            & img{
+                margin-right: 0.5em;
+            }
+        }
+    }
+
+}

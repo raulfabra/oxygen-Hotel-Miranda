@@ -308,14 +308,17 @@ body {
   left: 0.94rem;
 }
 
-.facilities {
+.facilities,
+.popularRooms {
   padding: 2em 1.5em;
 }
-.facilities--dark {
+.facilities--dark,
+.popularRooms--dark {
   padding: 2em 1.5em;
   background-color: rgb(34, 34, 34);
 }
-.facilities__subtitle {
+.facilities__subtitle,
+.popularRooms__subtitle {
   padding-top: 1em;
   padding-bottom: 2em;
   text-align: center;
@@ -326,7 +329,8 @@ body {
   letter-spacing: 3px;
   color: rgb(119, 119, 119);
 }
-.facilities__subtitle--dark {
+.facilities__subtitle--dark,
+.popularRooms__subtitle--dark {
   padding-top: 1em;
   padding-bottom: 2em;
   text-align: center;
@@ -337,7 +341,20 @@ body {
   letter-spacing: 3px;
   color: rgb(255, 255, 255);
 }
-.facilities__title {
+.facilities__subtitle--beige,
+.popularRooms__subtitle--beige {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  color: rgb(190, 173, 142);
+}
+.facilities__title,
+.popularRooms__title {
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: center;
@@ -350,10 +367,11 @@ body {
   padding-top: 0;
   padding-bottom: 0.5em;
 }
-.facilities__title--dark {
+.facilities__title--dark,
+.popularRooms__title--dark {
   padding-top: 0.5em;
   padding-bottom: 1em;
-  text-align: undefined;
+  text-align: center;
   font-family: "Old Standard TT", sans-serif;
   font-size: 56px;
   font-weight: 400;
@@ -363,30 +381,57 @@ body {
   padding-top: 0;
   padding-bottom: 0.5em;
 }
-.facilities__swiper {
+.facilities__title--littledark,
+.popularRooms__title--littledark {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.2px;
+  color: rgb(255, 255, 255);
+  padding-top: 0;
+  padding-bottom: 0.5em;
+}
+.facilities__swiper,
+.popularRooms__swiper {
   position: relative;
   width: auto;
   height: 350px;
   overflow: hidden;
 }
-.facilities__swiper--dark {
+.facilities__swiper--dark,
+.popularRooms__swiper--dark {
   position: relative;
   width: auto;
   height: 350px;
   overflow: hidden;
   background-color: rgb(51, 51, 51);
 }
-.facilities__swiper__image {
+.facilities__swiper--white,
+.popularRooms__swiper--white {
+  position: relative;
+  width: auto;
+  height: 550px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+.facilities__swiper__image,
+.popularRooms__swiper__image {
   position: relative;
   display: flex;
   justify-content: flex-end;
 }
-.facilities__swiper__image .image__icon {
+.facilities__swiper__image .image__icon,
+.popularRooms__swiper__image .image__icon {
   position: absolute;
   top: 60%;
   left: 5%;
 }
-.facilities__swiper__image .image__bckground {
+.facilities__swiper__image .image__bckground,
+.popularRooms__swiper__image .image__bckground {
   padding-top: 1em;
   text-align: center;
   font-family: "Archivo", sans-serif;
@@ -396,7 +441,8 @@ body {
   color: rgba(34, 34, 34, 0.04);
   padding-top: 0;
 }
-.facilities__swiper__image .image__bckground--dark {
+.facilities__swiper__image .image__bckground--dark,
+.popularRooms__swiper__image .image__bckground--dark {
   padding-top: 1em;
   text-align: center;
   font-family: "Archivo", sans-serif;
@@ -406,10 +452,12 @@ body {
   color: rgb(34, 34, 34);
   padding-top: 0;
 }
-.facilities__swiper__description {
+.facilities__swiper__description,
+.popularRooms__swiper__description {
   padding: 0 1.5em;
 }
-.facilities__swiper__description .description__title {
+.facilities__swiper__description .description__title,
+.popularRooms__swiper__description .description__title {
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: left;
@@ -423,7 +471,8 @@ body {
   font-size: 28px;
   line-height: 36px;
 }
-.facilities__swiper__description .description__title--dark {
+.facilities__swiper__description .description__title--dark,
+.popularRooms__swiper__description .description__title--dark {
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: left;
@@ -437,7 +486,8 @@ body {
   font-size: 28px;
   line-height: 36px;
 }
-.facilities__swiper__description .description__paragraph {
+.facilities__swiper__description .description__paragraph,
+.popularRooms__swiper__description .description__paragraph {
   padding-top: 1em;
   text-align: left;
   font-family: "Roboto", sans-serif;
@@ -447,7 +497,8 @@ body {
   color: rgb(119, 119, 119);
   padding: 0;
 }
-.facilities__swiper__description .description__paragraph--dark {
+.facilities__swiper__description .description__paragraph--dark,
+.popularRooms__swiper__description .description__paragraph--dark {
   padding-top: 1em;
   text-align: left;
   font-family: "Roboto", sans-serif;
@@ -458,7 +509,8 @@ body {
   padding-top: 0;
   width: 100%;
 }
-.facilities__swiper__pagination {
+.facilities__swiper__pagination,
+.popularRooms__swiper__pagination {
   position: relative;
   z-index: 10;
   height: 0.44rem;
@@ -467,7 +519,8 @@ body {
   gap: 0.44rem;
   justify-content: center;
 }
-.facilities__swiper__pagination--dark {
+.facilities__swiper__pagination--dark,
+.popularRooms__swiper__pagination--dark {
   margin-top: 2em;
   position: relative;
   z-index: 10;
@@ -477,7 +530,8 @@ body {
   gap: 0.44rem;
   justify-content: center;
 }
-.facilities__swiper__darkbullet {
+.facilities__swiper__darkbullet,
+.popularRooms__swiper__darkbullet {
   background-color: #333333;
   width: 0.44rem;
   height: 0.44rem;
@@ -485,7 +539,8 @@ body {
   transition: background-color 0.6s ease-in-out;
   pointer-events: all;
 }
-.facilities__swiper__bullet {
+.facilities__swiper__bullet,
+.popularRooms__swiper__bullet {
   background-color: #EDEDED;
   width: 0.44rem;
   height: 0.44rem;
@@ -493,8 +548,117 @@ body {
   transition: background-color 0.6s ease-in-out;
   pointer-events: all;
 }
-.facilities__swiper__bullet--active {
+.facilities__swiper__bullet--active,
+.popularRooms__swiper__bullet--active {
   background-color: rgb(190, 173, 142);
+}
+.facilities__swiper--white,
+.popularRooms__swiper--white {
+  margin-top: 1em;
+  position: relative;
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+}
+.facilities__swiper--white__image,
+.popularRooms__swiper--white__image {
+  background-color: transparent;
+}
+.facilities__swiper--white__image img,
+.popularRooms__swiper--white__image img {
+  width: 100%;
+  vertical-align: middle;
+}
+.facilities__swiper--white__accesories,
+.popularRooms__swiper--white__accesories {
+  position: relative;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  width: 200px;
+  bottom: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
+  background-color: rgb(255, 255, 255);
+}
+.facilities__swiper--white__description .description__title,
+.popularRooms__swiper--white__description .description__title {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+  color: black;
+  padding: 0;
+  padding-bottom: 0.5em;
+}
+.facilities__swiper--white__description .description__paragraph,
+.popularRooms__swiper--white__description .description__paragraph {
+  padding-top: 1em;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+  padding: 0;
+  padding-bottom: 0.5em;
+  margin: 0 auto;
+  width: 90%;
+}
+.facilities__swiper--white__description .description__price,
+.popularRooms__swiper--white__description .description__price {
+  padding-top: 1em;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.5px;
+  color: rgb(190, 173, 142);
+  display: inline-block;
+}
+.facilities__swiper--white__description .description__span,
+.popularRooms__swiper--white__description .description__span {
+  padding-top: 1em;
+  text-align: right;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.5px;
+  color: rgb(189, 189, 189);
+  margin-left: 1em;
+}
+.facilities__swiper--white__description .description__span a,
+.popularRooms__swiper--white__description .description__span a {
+  text-decoration: none;
+  color: rgb(189, 189, 189);
+}
+.facilities__swiper--white__btn--prev, .facilities__swiper--white__btn--next,
+.popularRooms__swiper--white__btn--prev,
+.popularRooms__swiper--white__btn--next {
+  position: absolute;
+  z-index: 9;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(255, 255, 255);
+  top: 6.63rem;
+  transition: background-color 0.6s ease-in-out;
+}
+.facilities__swiper--white__btn--prev:hover, .facilities__swiper--white__btn--prev:active, .facilities__swiper--white__btn--next:hover, .facilities__swiper--white__btn--next:active,
+.popularRooms__swiper--white__btn--prev:hover,
+.popularRooms__swiper--white__btn--prev:active,
+.popularRooms__swiper--white__btn--next:hover,
+.popularRooms__swiper--white__btn--next:active {
+  background-color: rgb(190, 173, 142);
+}
+.facilities__swiper--white__btn--next,
+.popularRooms__swiper--white__btn--next {
+  right: 0.94rem;
+}
+.facilities__swiper--white__btn--prev,
+.popularRooms__swiper--white__btn--prev {
+  left: 0.94rem;
 }
 
 .imageSwiper {

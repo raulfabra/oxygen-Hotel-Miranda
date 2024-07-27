@@ -1,0 +1,73 @@
+.card {
+  padding: 2em 1.5em;
+}
+.card__picture {
+  position: relative;
+  padding: 1em 0;
+}
+.card__picture img {
+  width: 100%;
+}
+.card__picture__offer {
+  position: absolute;
+  width: 150px;
+  top: 68%;
+  left: 53%;
+  background-color: rgb(248, 248, 248);
+}
+.card__picture__offer .offer__oldPrice {
+  padding-top: 1em;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 25px;
+  color: rgb(190, 173, 142);
+  text-decoration: line-through;
+  padding-top: 0;
+}
+.card__picture__offer .offer__oldPrice span {
+  font-size: 11px;
+  line-height: 12px;
+}
+.card__picture__offer .offer__newPrice {
+  padding-top: 1em;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+  color: rgb(222, 87, 119);
+  padding-top: 0.5em;
+}
+.card__picture__offer .offer__newPrice span {
+  font-size: 12px;
+  line-height: 13px;
+}
+.card__paragraph {
+  width: 90%;
+}
+.card__listAmenities {
+  margin-top: 2em;
+  padding-top: 1em;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  color: rgb(119, 119, 119);
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: top;
+  padding-top: 0;
+  width: 49%;
+}
+.card__listAmenities li {
+  width: 170px;
+  padding: 0.5em;
+}
+.card__listAmenities li img {
+  margin-right: 0.5em;
+}
+
+/*# sourceMappingURL=offers.css.map */
