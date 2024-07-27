@@ -7,7 +7,8 @@
     }
 
     &__title{
-        @include Title (undefined, 56px, 400, 60px,left,$color-white);
+        @include Title ($font-oldstandardTT, 56px, 400, 60px,left,$color-white);
+        padding: 0;
     }
 
     &__paragraph{
@@ -19,5 +20,21 @@
         left: 55%;
 
         background-color: $color-white;
+
+        &--XL {
+            width: 200px;
+            left: 40%;
+        }
+
+        & span > a{
+            text-decoration: none;
+            color: black;
+        }
+
+        & span:last-child{
+            color: $background-beige;
+        }
     }
+
+    
 }

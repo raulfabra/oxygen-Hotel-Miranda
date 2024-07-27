@@ -35,7 +35,7 @@
         &--dark{
             position: relative;
             width: auto;
-            height: 400px;
+            height: 350px;
             overflow: hidden;
 
             background-color: $background-grey;
@@ -59,7 +59,6 @@
                 &--dark{
                     @include Text ($font-archivo, 120px, 700, 130px, center, $background-grey-strong);
                     padding-top: 0;
-                    width: 100%;
                 }
             }
         }
@@ -75,6 +74,7 @@
 
                 &--dark{
                     @include Title($font-oldstandardTT, 56px, 400, 60px,left, $color-white);
+                    margin-top: 1em;
                     font-size: 28px;
                     line-height: 36px;
                 }
@@ -100,6 +100,17 @@
             display: flex;
             gap: 0.44rem;
             justify-content: center;
+
+            &--dark{
+                margin-top: 2em;
+                position: relative;
+                z-index: 10;
+                height: 0.44rem;
+                width: 100%;
+                display: flex;
+                gap: 0.44rem;
+                justify-content: center;
+            }
         }
 
         &__darkbullet {

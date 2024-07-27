@@ -1,0 +1,96 @@
+@import '../constants/colors.scss';
+@import '../constants/fonts.scss';
+@import '../@mixins/Button.scss';
+@import '../@mixins/Title.scss';
+@import '../@mixins/Subtitle.scss';
+@import '../@mixins/Text.scss';
+
+.card{
+    padding: 2em 1.5em;
+
+    &__subtitle{
+        padding-bottom: 0;
+    }
+
+    &__picture{
+        & img{
+            width: 100%;
+        }
+    }
+
+    &__calendar{
+
+        .calendar__title{
+            @include Title ($font-archivo, 18px, 700, 20px, center, $color-black);
+            letter-spacing: -0.54px;
+        }
+    }
+
+    &__button{
+        @include Button ($font-archivo, $color-white);
+        margin: 2em auto;
+        width: 300px;
+        font-weight: 400;
+    }
+}
+
+.info{
+    padding: 2em 1.5em;
+
+    &__title{
+        @include Title ($font-oldstandardTT, 30px, 400, 30px, left, $color-black);
+        padding-bottom: 0;
+    }
+
+    &__amenities{
+        margin: 2em 0;
+        
+        &__list{
+            @include Text ($font-roboto, 15px, 500, 18px, left);
+            display: inline-block;
+            list-style-type: none;
+            vertical-align: top;
+            padding-top: 0;
+            width: 49%;
+
+            & li{
+                width: 170px;
+                padding: 0.5em;
+
+                & img{
+                    margin-right: 0.5em;
+                }
+            }
+        }
+    }
+
+    &__contact{
+
+        &__picture{
+            & img{
+                border-radius: 50%;
+            }
+        }
+
+        &__name{
+            @include Title ($font-oldstandardTT, 30px, 400, 30px, center, black);
+            padding-bottom: 0;
+            padding-top: 1em;            
+        }
+
+        &__job{
+            @include Subtitle ($background-beige, center);
+        }
+
+        &__description{
+            @include Text ($font-archivo, 16px, 400, 24px, center);
+            padding-top: 0;
+        }
+    }
+
+    &__paragraph{
+        @include Text ($font-roboto, 16px, 400, 24px, left, rgba(119, 119, 119, 1));
+        margin-top: 1em;
+    }
+}
+
