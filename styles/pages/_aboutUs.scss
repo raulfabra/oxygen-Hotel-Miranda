@@ -21,6 +21,7 @@
 
     &__title{
         @include Title ($font-oldstandardTT, 32px, 400, 40px, center, black);  
+        margin-top: 1em;
     }
 }
 
@@ -69,11 +70,11 @@
 
     &__title{
         @include Title($font-oldstandardTT, 56px, 400, 60px, left);
-        padding-bottom: 0;
+        padding-bottom: 0.5em;
     }
 
     &__article{
-        padding-top: 3em;
+        padding: 2em 0;
         text-align: justify;
         vertical-align: middle;
         margin-left: 1em;

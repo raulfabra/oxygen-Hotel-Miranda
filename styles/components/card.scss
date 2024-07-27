@@ -3,14 +3,19 @@
     box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
 
 
-    &__picture{}
+    &__picture{
+        padding-top: 1em
+    }
 
     &__subtitle{
         @include Subtitle($color-grey, left);
+        margin-top: 1em;
     }
 
     &__title{
         @include Title ($font-oldstandardTT, 40px, 400, 50px, left, $color-black);
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     &__paragraph{
