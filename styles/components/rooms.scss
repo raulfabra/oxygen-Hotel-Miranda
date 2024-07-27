@@ -1,0 +1,57 @@
+.rooms{
+    padding: 2em 1.5em;
+
+    &__subtitle{
+        @include Subtitle ();
+        padding-bottom: 0;
+    }
+
+    &__title{
+        @include Title ($font-oldstandardTT, 56px, 400, 60px)
+    }
+
+    &__swiper{
+        position: relative;
+        width: auto;
+        height: 400px;
+        overflow: hidden;
+
+        &__accesories{
+        }
+
+        &__image{
+            background-color: $background-grey-photo;
+            & img{
+                width: 80%;
+                vertical-align: middle;
+            }
+        }
+
+        &__description{
+            padding: 2em;
+
+            .description__title{
+                @include Title ($font-oldstandardTT, 28px, 400, 36px, center, black);
+                padding: 0;
+                padding-bottom: 0.5em;
+            }
+
+            .description__paragraph{
+                @include Text ($font-roboto, 14px, 400, 24px, center);
+                padding: 0;
+                padding-bottom: 0.5em;
+            }
+
+            .description__price{
+                @include Text ($font-archivo, 32px, 700, 43px, center, $background-beige);
+                padding: 0;
+                & span{
+                    font-size: 13px;
+                }
+            }
+        }
+        
+        @include Button-Swiper();
+    }
+
+}

@@ -7,26 +7,6 @@
 
 
 .banner{
-    &--promo{
-        padding: 2em 1.5em;
-        background-color: $background-grey-strong;
-    }
-
-    &__subtitle--promo{
-        color: $background-beige;
-    }
-
-    &__paragraph--promo{
-        @include Text ($font-archivo, 14px, 400, 24px, justify, undefined);
-
-        margin: 1em 0;
-    }
-
-    &__video--promo{
-        width: 100%;
-        overflow: hidden;
-    }
-
     &__button{
         &--beige{
             @include Button($font-archivo, $color-white);
@@ -102,11 +82,11 @@
     }
 
     &__title{
-        @include Title(undefined, 56px, 400, 60px);
+        @include Title(undefined, 56px, 400, 60px, left);
     }
 
     &__paragraph{
-        @include Text ($font-archivo, 14px, 400, 24px, justify, undefined);        
+        @include Text ($font-archivo, 14px, 400, 24px, justify);        
     }
 
     &__button{
@@ -133,14 +113,23 @@
 
     &__logo{
         position: relative;
+        margin-top: 4em;
+        margin-bottom: 2em;
         .logo--primary{}
-        .logo--secondary{}
+        .logo--secondary{
+            position: absolute;
+            z-index: -2;
+            top: -10%;
+            left: 45%;
+
+        }
     }
 
     &__description{
         .description__title{
-            @include Text ($font-oldstandardTT, 30px, 400, 30px);
-            letter-spacing: -1.0px;
+            @include Title ($font-oldstandardTT, 30px, 400, 30px);
+            padding: 0;
+            letter-spacing: -0.90px;
         }
         .description__paragraph{
             @include Text ($font-roboto, 14px, 400, 22px, center, black);
@@ -152,6 +141,13 @@
 .luxuryRoom{
     position: relative;
     padding: 3em 1.5em;
+
+    &--dark{
+        margin: 0 auto;
+        padding: 3em 1.5em;
+        width: 75.5%;
+        background-color: $background-grey-strong;
+    }
 
     &__imagen {
         margin: 0 auto;
@@ -167,32 +163,43 @@
 
     &__logo{
         position: relative;
-        .logo--primary{}
-        .logo--secondary{}
     }
 
     &__description{
         .description__title{
-            @include Text ($font-oldstandardTT, 30px, 400, 30px);
-            letter-spacing: -1.0px;
+            @include Title ($font-oldstandardTT, 30px, 400, 30px, center, $color-white);
+            letter-spacing: -0.90px;
         }
         .description__paragraph{
-            @include Text ($font-roboto, 14px, 400, 22px, center, black);
+            @include Text ($font-roboto, 14px, 400, 22px, center, $color-white);
+            padding: 0;
             margin: 0 auto;
             width: 200px;
         }
     }
 }
 
+.introVideo{
+    padding: 3em 1.5em;
+    background-color: $background-grey-strong;
 
-.rooms{
-    padding: 2em 0;
     &__subtitle{
-        @include Subtitle();        
+        @include Subtitle($background-beige, left);
     }
 
     &__title{
-        @include Title(undefined, 56px, 400, 60px);
+        @include Title ($font-oldstandardTT, 56px, 400, 60px,left,$color-white);
+        padding: 0;
+    }
+
+    &__paragraph{
+        @include Text ($font-archivo, 14px, 400, 24px, justify);
+        padding-bottom: 2em;
+    }
+
+    &__video{
+        width: 100%;
+        overflow: hidden;
     }
 }
 

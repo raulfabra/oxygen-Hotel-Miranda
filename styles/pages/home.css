@@ -1,36 +1,3 @@
-/* 
-    font-family: $font;
-    font-size: 56px;
-    font-weight: 400;
-    line-height: 60px;
-    letter-spacing: -1.2px;
-
-    color: $color;
-
-    undefined, 56px, 400, 60px
-*/
-.banner--promo {
-  padding: 2em 1.5em;
-  background-color: rgb(34, 34, 34);
-}
-.banner__subtitle--promo {
-  color: rgb(190, 173, 142);
-}
-.banner__paragraph--promo {
-  padding-top: 1em;
-  text-align: justify;
-  width: 90%;
-  font-family: "Archivo", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: undefined;
-  margin: 1em 0;
-}
-.banner__video--promo {
-  width: 100%;
-  overflow: hidden;
-}
 .banner__button--beige {
   display: block;
   width: 200px;
@@ -128,7 +95,7 @@
 .aboutUS__title {
   padding-top: 0.5em;
   padding-bottom: 1em;
-  text-align: center;
+  text-align: left;
   font-family: undefined;
   font-size: 56px;
   font-weight: 400;
@@ -139,12 +106,11 @@
 .aboutUS__paragraph {
   padding-top: 1em;
   text-align: justify;
-  width: 90%;
   font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: undefined;
+  color: rgb(119, 119, 119);
 }
 .aboutUS__button {
   display: block;
@@ -177,22 +143,31 @@
 }
 .strongTeam__logo {
   position: relative;
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+.strongTeam__logo .logo--secondary {
+  position: absolute;
+  z-index: -2;
+  top: -10%;
+  left: 45%;
 }
 .strongTeam__description .description__title {
-  padding-top: 1em;
-  text-align: left;
-  width: 90%;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: center;
   font-family: "Old Standard TT", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
-  color: rgb(119, 119, 119);
-  letter-spacing: -1px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+  padding: 0;
+  letter-spacing: -0.9px;
 }
 .strongTeam__description .description__paragraph {
   padding-top: 1em;
   text-align: center;
-  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -205,6 +180,12 @@
 .luxuryRoom {
   position: relative;
   padding: 3em 1.5em;
+}
+.luxuryRoom--dark {
+  margin: 0 auto;
+  padding: 3em 1.5em;
+  width: 75.5%;
+  background-color: rgb(34, 34, 34);
 }
 .luxuryRoom__imagen {
   margin: 0 auto;
@@ -220,53 +201,70 @@
   position: relative;
 }
 .luxuryRoom__description .description__title {
-  padding-top: 1em;
-  text-align: left;
-  width: 90%;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: center;
   font-family: "Old Standard TT", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
-  color: rgb(119, 119, 119);
-  letter-spacing: -1px;
+  letter-spacing: -1.2px;
+  color: rgb(255, 255, 255);
+  letter-spacing: -0.9px;
 }
 .luxuryRoom__description .description__paragraph {
   padding-top: 1em;
   text-align: center;
-  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
-  color: black;
+  color: rgb(255, 255, 255);
+  padding: 0;
   margin: 0 auto;
   width: 200px;
 }
 
-.rooms {
-  padding: 2em 0;
+.introVideo {
+  padding: 3em 1.5em;
+  background-color: rgb(34, 34, 34);
 }
-.rooms__subtitle {
+.introVideo__subtitle {
   padding-top: 1em;
   padding-bottom: 2em;
-  text-align: center;
+  text-align: left;
   font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 3px;
-  color: rgb(119, 119, 119);
+  color: rgb(190, 173, 142);
 }
-.rooms__title {
+.introVideo__title {
   padding-top: 0.5em;
   padding-bottom: 1em;
-  text-align: center;
-  font-family: undefined;
+  text-align: left;
+  font-family: "Old Standard TT", sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 60px;
   letter-spacing: -1.2px;
-  color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
+  padding: 0;
+}
+.introVideo__paragraph {
+  padding-top: 1em;
+  text-align: justify;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+  padding-bottom: 2em;
+}
+.introVideo__video {
+  width: 100%;
+  overflow: hidden;
 }
 
 .menuFoods {

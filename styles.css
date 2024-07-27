@@ -117,7 +117,6 @@ body {
 .banner__paragraph {
   padding-top: 1em;
   text-align: center;
-  width: 90%;
   font-family: "Archivo", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -160,7 +159,6 @@ body {
 .card__paragraph {
   padding-top: 1em;
   text-align: left;
-  width: 90%;
   font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -182,55 +180,84 @@ body {
   background-color: rgb(190, 173, 142);
 }
 
+.rooms {
+  padding: 2em 1.5em;
+}
+.rooms__subtitle {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  color: rgb(119, 119, 119);
+  padding-bottom: 0;
+}
+.rooms__title {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+}
 .rooms__swiper {
   position: relative;
   width: auto;
   height: 400px;
   overflow: hidden;
 }
-.rooms__swiper .swiper__imagenes {
+.rooms__swiper__image {
   background-color: rgb(228, 228, 228);
 }
-.rooms__swiper .swiper__description {
+.rooms__swiper__image img {
+  width: 80%;
+  vertical-align: middle;
+}
+.rooms__swiper__description {
   padding: 2em;
 }
-.rooms__swiper .swiper__description__title {
+.rooms__swiper__description .description__title {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: center;
   font-family: "Old Standard TT", sans-serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 36px;
   letter-spacing: -1.2px;
-  color: rgb(17, 17, 17);
+  color: black;
+  padding: 0;
+  padding-bottom: 0.5em;
 }
-.rooms__swiper .swiper__description__parragraf {
-  margin-top: 2em;
+.rooms__swiper__description .description__paragraph {
+  padding-top: 1em;
+  text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: rgb(119, 119, 119);
+  padding: 0;
+  padding-bottom: 0.5em;
 }
-.rooms__swiper .swiper__imagenes img {
-  width: 80%;
-  vertical-align: middle;
-}
-.rooms__swiper .swiper__description__parragraf--room {
-  margin-top: 0;
-}
-.rooms__swiper .swiper__description__price {
+.rooms__swiper__description .description__price {
+  padding-top: 1em;
+  text-align: center;
   font-family: "Archivo", sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 43px;
   color: rgb(190, 173, 142);
+  padding: 0;
 }
-.rooms__swiper .swiper__description__price span {
-  font-family: "Archivo", sans-serif;
+.rooms__swiper__description .description__price span {
   font-size: 13px;
-  font-weight: 700;
-  line-height: 43px;
-  text-align: center;
-  color: rgb(190, 173, 142);
 }
 .rooms__swiper__btn--prev, .rooms__swiper__btn--next {
   position: absolute;
@@ -249,68 +276,6 @@ body {
 }
 .rooms__swiper__btn--prev {
   left: 0.94rem;
-}
-
-.cards__swiper {
-  position: relative;
-  margin-top: 3em;
-  width: auto;
-  height: 100%;
-  overflow: hidden;
-}
-.cards__swiper__imagenes {
-  background-color: transparent;
-}
-.cards__swiper__imagenes img {
-  width: 80%;
-  vertical-align: middle;
-}
-.cards__swiper__accesories {
-  position: relative;
-  margin: 0 auto;
-  padding: 0.5em 1em;
-  width: 200px;
-  bottom: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
-  background-color: rgb(255, 255, 255);
-}
-.cards__swiper__description {
-  padding: 2em;
-  padding-top: 0;
-}
-.cards__swiper__description__title {
-  font-family: "Old Standard TT", sans-serif;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: -1.2px;
-  color: rgb(17, 17, 17);
-}
-.cards__swiper__description__parragraf {
-  margin-top: 2em;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: rgb(119, 119, 119);
-}
-.cards__swiper__description__price {
-  padding-top: 1em;
-  display: inline-block;
-  font-family: "Archivo", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 17.41px;
-  color: rgb(190, 173, 142);
-}
-.cards__swiper__description__span {
-  margin-left: 1em;
-  font-family: "Archivo", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 17.41px;
-  text-align: right;
-  color: rgb(189, 189, 189);
 }
 
 .facilities {
@@ -352,6 +317,7 @@ body {
   line-height: 60px;
   letter-spacing: -1.2px;
   color: rgb(17, 17, 17);
+  padding-top: 0;
 }
 .facilities__title--dark {
   padding-top: 0.5em;
@@ -385,7 +351,6 @@ body {
 .facilities__swiper__image .image__bckground {
   padding-top: 1em;
   text-align: center;
-  width: 90%;
   font-family: "Archivo", sans-serif;
   font-size: 120px;
   font-weight: 700;
@@ -395,7 +360,6 @@ body {
 .facilities__swiper__image .image__bckground--dark {
   padding-top: 1em;
   text-align: center;
-  width: 90%;
   font-family: "Archivo", sans-serif;
   font-size: 120px;
   font-weight: 700;
@@ -437,7 +401,6 @@ body {
 .facilities__swiper__description .description__paragraph {
   padding-top: 1em;
   text-align: left;
-  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -447,7 +410,6 @@ body {
 .facilities__swiper__description .description__paragraph--dark {
   padding-top: 1em;
   text-align: left;
-  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -544,7 +506,6 @@ body {
 .footer__paragraph {
   padding-top: 1em;
   text-align: justify;
-  width: 90%;
   font-family: "Archivo", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -581,7 +542,6 @@ body {
 .footer .Services__contenedor__list {
   padding-top: 1em;
   text-align: left;
-  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -663,7 +623,6 @@ body {
 .Copyright_Terminos p {
   padding-top: 1em;
   text-align: left;
-  width: 90%;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;

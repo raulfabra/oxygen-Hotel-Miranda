@@ -16,7 +16,8 @@
 
     &__title{
         @include Title($font-oldstandardTT, 56px, 400, 60px);
-
+        padding-top: 0;
+        
         &--dark{
             @include Title($font-oldstandardTT, 56px, 400, 60px,undefined, $color-white);
             padding-top: 0;
