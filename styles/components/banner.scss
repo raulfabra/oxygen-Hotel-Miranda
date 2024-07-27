@@ -21,6 +21,11 @@
 
         background-color: $color-white;
 
+        &--XL {
+            width: 200px;
+            left: 40%;
+        }
+
         & span > a{
             text-decoration: none;
             color: black;
@@ -30,4 +35,6 @@
             color: $background-beige;
         }
     }
+
+    
 }

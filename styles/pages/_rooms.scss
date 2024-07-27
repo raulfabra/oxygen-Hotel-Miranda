@@ -46,6 +46,11 @@
             .description__span{
                 @include Text ($font-archivo, 16px, 700, 17.5px, right, rgba(189, 189, 189, 1));
                 margin-left: 1em;
+
+                & a{
+                    text-decoration: none;
+                    color: rgba(189, 189, 189, 1);
+                }
             }
         }
 

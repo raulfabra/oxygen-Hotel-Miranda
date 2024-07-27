@@ -45,6 +45,10 @@
   color: rgb(189, 189, 189);
   margin-left: 1em;
 }
+.rooms__swiper__description .description__span a {
+  text-decoration: none;
+  color: rgb(189, 189, 189);
+}
 .rooms__swiper__pagination {
   display: flex;
   margin: 3em auto;
