@@ -23,6 +23,10 @@ const counterSwiper = new Swiper('.counter__swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false
+  },
 
   // If we need pagination
   pagination: {

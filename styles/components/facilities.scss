@@ -16,7 +16,9 @@
 
     &__title{
         @include Title($font-oldstandardTT, 56px, 400, 60px);
-
+        padding-top: 0;
+        padding-bottom: 0.5em;
+        
         &--dark{
             @include Title($font-oldstandardTT, 56px, 400, 60px,undefined, $color-white);
             padding-top: 0;
@@ -27,7 +29,7 @@
     &__swiper{
         position: relative;
         width: auto;
-        height: 400px;
+        height: 350px;
         overflow: hidden;
 
         &--dark{
@@ -40,11 +42,19 @@
         }
 
         &__image{
-            background-color: transparent;
-            .image__icon{}
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
 
+            .image__icon{
+                position: absolute;
+                top: 60%;
+                left: 5%;
+
+            }
             .image__bckground{
                 @include Text ($font-archivo, 120px, 700, 130px, center, rgba(34, 34, 34, 0.04));
+                padding-top: 0;
 
                 &--dark{
                     @include Text ($font-archivo, 120px, 700, 130px, center, $background-grey-strong);
@@ -59,7 +69,7 @@
 
             .description__title{
                 @include Title($font-oldstandardTT, 56px, 400, 60px,left);
-                margin-top: 2em;
+                margin-top: 1em;
                 font-size: 28px;
                 line-height: 36px;
 
@@ -72,7 +82,8 @@
 
             .description__paragraph{
                 @include Text($font-roboto, 14px, 400, 24px, left);
-
+                padding: 0;
+                
                 &--dark{
                     @include Text($font-roboto, 14px, 400, 24px, left, $color-white);
                     padding-top: 0;
@@ -82,7 +93,6 @@
         }
 
         &__pagination{
-            margin-top: 2em;
             position: relative;
             z-index: 10;
             height: 0.44rem;
@@ -114,8 +124,6 @@
                 background-color: $background-beige;
             }
         }
-
-        @include Button-Swiper();
     
     }
 }

@@ -1,79 +1,44 @@
-@mixin swiper () {
-    &__imagenes{
-        background-color: $background-grey-photo;
-    }
-
-    &__description{
-        padding: 2em;
-
-        &__title{
-            font-family: $font-oldstandardTT;
-            font-size: 28px;
-            font-weight: 400;
-            line-height: 36px;
-            letter-spacing: -1.20px;
-
-            color: $color-black;
-        }
-
-        &__parragraf{
-            margin-top: 2em;
-            font-family: $font-roboto;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-
-            color: $color-grey;            
-        }
-    }
-}
-
-.rooms__swiper{
+.imageSwiper{
     position: relative;
     width: auto;
-    height: 400px;
     overflow: hidden;
 
-    .swiper{
-        @include swiper();
-
-        &__imagenes{
-
-            & img{
-                width: 80%;
-                vertical-align: middle;
-            }
-        }
-
-        &__description{
-
-            &__parragraf--room{
-                margin-top: 0;
-            }
-    
-            &__price{
-                font-family: $font-archivo;
-                font-size: 32px;
-                font-weight: 700;
-                line-height: 43px;
-                
-                color: $background-beige;
-    
-                & span{
-                    font-family: $font-archivo;
-                    font-size: 13px;
-                    font-weight: 700;
-                    line-height: 43px;
-                    text-align: center;
-                                   
-                    color: $background-beige;
-                }
-            }
-        }
+    &__pagination{
+        padding: 2em;
+        position: relative;
+        z-index: 10;
+        height: 0.44rem;
+        width: 100%;
+        display: flex;
+        gap: 0.44rem;
+        justify-content: center;
     }
 
-    @include Button-Swiper();
+    &__darkbullet {
+        background-color: #333333;
+        width: 0.44rem;
+        height: 0.44rem;
+        border-radius: 3rem;
+        transition: background-color 0.6s ease-in-out;
+        pointer-events: all;
+    }
+
+    
+    &__bullet {
+        background-color: #EDEDED;
+        width: 0.44rem;
+        height: 0.44rem;
+        border-radius: 3rem;
+        transition: background-color 0.6s ease-in-out;
+        pointer-events: all;
+
+        &--active {
+            background-color: $background-beige;
+        }
+    }
 }
+
+    
 
 .cards__swiper{
     position: relative;
