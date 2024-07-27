@@ -1,5 +1,21 @@
+const swiper = new Swiper('.imageSwiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay:{
+    delay: 3500,
+    disableOnInteraction: false,
+  },
 
-const swiper = new Swiper('.rooms__swiper', {
+  pagination: {
+      el: '.imageSwiper__pagination',
+      bulletClass: 'imageSwiper__bullet',
+      bulletActiveClass: 'imageSwiper__bullet--active',
+      clickable: true,
+    },
+})
+
+const roomSwiper = new Swiper('.rooms__swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -9,12 +25,18 @@ const swiper = new Swiper('.rooms__swiper', {
       nextEl: '.rooms__swiper__btn--next',
       prevEl: '.rooms__swiper__btn--prev',
     }
-});
+})
 
 const rateSwiper = new Swiper('.facilities__swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  slidesPerView: "1",
+  spaceBetween: 30,
+  autoplay:{
+    delay: 3500,
+    disableOnInteraction: false,
+  },
 
   // If we need pagination
   pagination: {
@@ -23,38 +45,17 @@ const rateSwiper = new Swiper('.facilities__swiper', {
     bulletActiveClass: 'facilities__swiper__bullet--active',
     clickable: true
   },
+  
+})
+
+const menuSwiper = new Swiper('.menuFoods__swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.facilities__swiper__btn--next',
-    prevEl: '.facilities__swiper__btn--prev',
-  },
-  
-});
-
-/* const menuSwiper = new Swiper('.index__menu__swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  spaceBetween: 30,
-
-  navigation: {
-      nextEl: '.index__menu__right',
-      prevEl: '.index__menu__left'
-  },
-});
-
-const imagesSwiper = new Swiper('.index__images__swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  initialSlide: 1,
-  spaceBetween: 10,
-
-  pagination: {
-      el: '.index__images__pagination',
-      bulletClass: 'index__images__bullet',
-      bulletActiveClass: 'index__images__bullet--active',
-      clickable: true,
-    },
-}); */
+    nextEl: '.controls__btn--next',
+    prevEl: '.controls__btn--prev',
+  }
+})

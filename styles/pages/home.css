@@ -268,13 +268,11 @@
 }
 
 .menuFoods {
-  position: relative;
   padding: 2em 1.5em;
-  color: rgb(17, 17, 17);
 }
-.menuFoods img {
+.menuFoods__icon {
   position: relative;
-  left: 40%;
+  left: 43%;
 }
 .menuFoods__subtitle {
   padding-top: 1em;
@@ -285,18 +283,74 @@
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 3px;
-  color: undefined;
+  color: rgb(119, 119, 119);
+  padding-bottom: 0;
 }
 .menuFoods__title {
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: left;
-  font-family: undefined;
+  font-family: "Old Standard TT", sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 60px;
   letter-spacing: -1.2px;
   color: rgb(17, 17, 17);
+  padding-bottom: 0.5em;
+}
+.menuFoods__swiper {
+  position: relative;
+  width: auto;
+  overflow: hidden;
+}
+.menuFoods__swiper__container {
+  display: flex;
+  text-align: left;
+  padding: 1em 0;
+}
+.menuFoods__swiper__image img {
+  width: 120px;
+  height: 120px;
+}
+.menuFoods__swiper__description {
+  margin-left: 1.5em;
+}
+.menuFoods__swiper__description .description__title {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: left;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+  padding-bottom: 0;
+}
+.menuFoods__swiper__description .description__paragraph {
+  padding-top: 1em;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  padding-top: 0.5em;
+}
+.menuFoods__swiper__controls {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+.menuFoods__swiper__controls .controls__btn--prev {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(248, 248, 248);
+}
+.menuFoods__swiper__controls .controls__btn--next {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(190, 173, 142);
 }
 
 .stadistics {

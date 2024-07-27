@@ -283,25 +283,117 @@
             </div>
             <!-- If we need pagination -->
             <div class="facilities__swiper__pagination"></div>
-        
-            <!-- If we need navigation buttons -->
-            <div class="facilities__swiper__button--prev">
-                <img src="./public/images/arrow-left.png" alt="arrow-left">
-            </div>
-            <div class="facilities__swiper__button--next">
-                <img src="./public/images/arrow-right.png" alt="arrow-right">
-            </div>
 
         </div>
     </section>
     <section class="menuFoods">
-        <img src="./public/images/menuFoods-icon.png" alt="menu-foods-icon">
+        <img src="./public/images/menuFoods-icon.png" alt="menu-foods-icon" class="menuFoods__icon">
         <p class="menuFoods__subtitle">MENU</p>
         <h1 class="menuFoods__title">Our Foods Menu</h1>
         <!-- AQUI VA EL SWIPER -->
+        <div class="menuFoods__swiper">
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <section class="menuFoods__swiper__container">
+                        <div class="menuFoods__swiper__image">
+                            <img src="./public/images/eggs-menu.jfif" alt="eggs-food">
+                        </div>
+                        <div class="menuFoods__swiper__description">
+                            <h2 class="description__title">Eggs & Bacon</h2>
+                            <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </section>
+                    <section class="menuFoods__swiper__container">
+                        <div class="menuFoods__swiper__image">
+                            <img src="./public/images/coffee-menu.jfif" alt="coffee">
+                        </div>
+                        <div class="menuFoods__swiper__description">
+                            <h2 class="description__title">Tea or Coffee</h2>
+                            <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </section>
+                    <section class="menuFoods__swiper__container">
+                        <div class="menuFoods__swiper__image">
+                            <img src="./public/images/chia-menu.jfif" alt="chia-food">
+                        </div>
+                        <div class="menuFoods__swiper__description">
+                            <h2 class="description__title">Chia Oatmeal</h2>
+                            <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="swiper-slide">
+                    <section class="menuFoods__swiper__container">
+                        <div class="menuFoods__swiper__image">
+                            <img src="./public/images/fruit-image.jfif" alt="fruit-menu">
+                        </div>
+                        <div class="menuFoods__swiper__description">
+                            <h2 class="description__title">Fruit Parfait</h2>
+                            <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </section>
+                    <section class="menuFoods__swiper__container">
+                        <div class="menuFoods__swiper__image">
+                            <img src="./public/images/marmalade-image.jfif" alt="marmalade-food">
+                        </div>
+                        <div class="menuFoods__swiper__description">
+                            <h2 class="description__title">Marmalade Selectiong</h2>
+                            <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </section>
+                    <section class="menuFoods__swiper__container">
+                        <div class="menuFoods__swiper__image">
+                            <img src="./public/images/cheese-menu.jfif" alt="cheese-menu">
+                        </div>
+                        <div class="menuFoods__swiper__description">
+                            <h2 class="description__title">Cheese Plate</h2>
+                            <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <section class="menuFoods__swiper__controls">
+                <div class="controls__btn--prev">
+                    <img src="./public/images/arrow-left.png" alt="arrow-left">
+                </div>
+                <div class="controls__btn--next">
+                    <img src="./public/images/arrow-right.png" alt="arrow-right">
+                </div>
+            </section>
+
+        </div>
     </section>
-    <div class="slider img">
-        <!-- Aqui va el SWIPER IMAGENES -->
+    <!-- Aqui va el SWIPER IMAGENES -->
+    <div class="imageSwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="imagenesSwiper__picture">
+                    <img src="./public/images/room-10.jfif" alt="room-10">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imagenesSwiper__picture">
+                    <img src="./public/images/room-16.jfif" alt="room-16">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imagenesSwiper__picture">
+                    <img src="./public/images/room-11.jfif" alt="room-11">
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="imageSwiper__pagination"></div>
+
     </div>
     <section class="stadistics">
         <article class="stadistic">
@@ -381,11 +473,11 @@
                 <img src="./public/images/phone-icon.png" alt="phone-icon" />
                 <h5 class="info__title">Phone Number <span>+987 876 765 76 577</span></h5>
             </div>
-            <div class="ContactUs__contenedor">
+            <div class="ContactUs__information">
                 <img src="./public/images/email-icon.png" alt="email-icon" />
                 <h5 class="info__title">Phone Number <span>+987 876 765 76 577</span></h5>
             </div>
-            <div class="ContactUs__contenedor">
+            <div class="ContactUs__information">
                 <img src="./public/images/map-icon.png" alt="ubication-icon" />
                 <h5 class="info__title">Phone Number <span>+987 876 765 76 577</span></h5>
             </div>

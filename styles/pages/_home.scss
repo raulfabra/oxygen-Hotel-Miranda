@@ -115,7 +115,7 @@
         position: relative;
         margin-top: 4em;
         margin-bottom: 2em;
-        .logo--primary{}
+
         .logo--secondary{
             position: absolute;
             z-index: -2;
@@ -204,22 +204,74 @@
 }
 
 .menuFoods{
-    position: relative;
-    padding: 2em 1.5em;
-    color: $color-black;
+    padding: 2em 1.5em;    
     
-
-    & img{
+    &__icon{
         position: relative;
-        left: 40%;
+        left: 43%;
     }
     
     &__subtitle{
-        @include Subtitle(undefined, left);
+        @include Subtitle($color-grey, left);
+        padding-bottom: 0;
     }
 
     &__title{
-        @include Title(undefined, 56px, 400, 60px, left);
+        @include Title($font-oldstandardTT, 56px, 400, 60px, left);
+        padding-bottom: 0.5em;
+    }
+
+    &__swiper{
+        position: relative;
+        width: auto;
+        overflow: hidden;
+
+        &__container{
+            display: flex;
+            text-align: left;
+            padding: 1em 0;
+        }
+
+        &__image{
+            & img{
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        &__description{
+            margin-left: 1.5em;
+
+            .description__title{
+                @include Title ($font-oldstandardTT, 24px, 400, 24px, left);
+                padding-bottom: 0;
+            }
+
+            .description__paragraph{
+                @include Text ($font-roboto, 14px, 400, 24px, left, black);
+                padding-top: 0.5em;
+                            
+            }
+        }
+
+        &__controls{
+            display: flex;
+            justify-content: right;
+            gap: 10px;
+            
+            .controls__btn--prev{
+                width: 2rem;
+                height: 2rem;
+                background-color: $background-grey-light;
+            }
+
+            .controls__btn--next{
+                width: 2rem;
+                height: 2rem;
+                background-color: $background-beige;
+            }
+
+        }
     }
 }
 

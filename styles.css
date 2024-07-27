@@ -318,6 +318,7 @@ body {
   letter-spacing: -1.2px;
   color: rgb(17, 17, 17);
   padding-top: 0;
+  padding-bottom: 0.5em;
 }
 .facilities__title--dark {
   padding-top: 0.5em;
@@ -335,7 +336,7 @@ body {
 .facilities__swiper {
   position: relative;
   width: auto;
-  height: 400px;
+  height: 350px;
   overflow: hidden;
 }
 .facilities__swiper--dark {
@@ -346,7 +347,14 @@ body {
   background-color: rgb(51, 51, 51);
 }
 .facilities__swiper__image {
-  background-color: transparent;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.facilities__swiper__image .image__icon {
+  position: absolute;
+  top: 60%;
+  left: 5%;
 }
 .facilities__swiper__image .image__bckground {
   padding-top: 1em;
@@ -356,6 +364,7 @@ body {
   font-weight: 700;
   line-height: 130px;
   color: rgba(34, 34, 34, 0.04);
+  padding-top: 0;
 }
 .facilities__swiper__image .image__bckground--dark {
   padding-top: 1em;
@@ -381,7 +390,7 @@ body {
   line-height: 60px;
   letter-spacing: -1.2px;
   color: rgb(17, 17, 17);
-  margin-top: 2em;
+  margin-top: 1em;
   font-size: 28px;
   line-height: 36px;
 }
@@ -406,6 +415,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   color: rgb(119, 119, 119);
+  padding: 0;
 }
 .facilities__swiper__description .description__paragraph--dark {
   padding-top: 1em;
@@ -419,7 +429,6 @@ body {
   width: 100%;
 }
 .facilities__swiper__pagination {
-  margin-top: 2em;
   position: relative;
   z-index: 10;
   height: 0.44rem;
@@ -447,23 +456,102 @@ body {
 .facilities__swiper__bullet--active {
   background-color: rgb(190, 173, 142);
 }
-.facilities__swiper__btn--prev, .facilities__swiper__btn--next {
-  position: absolute;
-  z-index: 9;
-  width: 2rem;
-  height: 2rem;
-  background-color: rgb(255, 255, 255);
-  top: 6.63rem;
-  transition: background-color 0.6s ease-in-out;
+
+.imageSwiper {
+  position: relative;
+  width: auto;
+  overflow: hidden;
 }
-.facilities__swiper__btn--prev:hover, .facilities__swiper__btn--prev:active, .facilities__swiper__btn--next:hover, .facilities__swiper__btn--next:active {
+.imageSwiper__pagination {
+  padding: 2em;
+  position: relative;
+  z-index: 10;
+  height: 0.44rem;
+  width: 100%;
+  display: flex;
+  gap: 0.44rem;
+  justify-content: center;
+}
+.imageSwiper__darkbullet {
+  background-color: #333333;
+  width: 0.44rem;
+  height: 0.44rem;
+  border-radius: 3rem;
+  transition: background-color 0.6s ease-in-out;
+  pointer-events: all;
+}
+.imageSwiper__bullet {
+  background-color: #EDEDED;
+  width: 0.44rem;
+  height: 0.44rem;
+  border-radius: 3rem;
+  transition: background-color 0.6s ease-in-out;
+  pointer-events: all;
+}
+.imageSwiper__bullet--active {
   background-color: rgb(190, 173, 142);
 }
-.facilities__swiper__btn--next {
-  right: 0.94rem;
+
+.cards__swiper {
+  position: relative;
+  margin-top: 3em;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
 }
-.facilities__swiper__btn--prev {
-  left: 0.94rem;
+.cards__swiper__imagenes {
+  background-color: transparent;
+}
+.cards__swiper__imagenes img {
+  width: 80%;
+  vertical-align: middle;
+}
+.cards__swiper__accesories {
+  position: relative;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  width: 200px;
+  bottom: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
+  background-color: rgb(255, 255, 255);
+}
+.cards__swiper__description {
+  padding: 2em;
+  padding-top: 0;
+}
+.cards__swiper__description__title {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+}
+.cards__swiper__description__parragraf {
+  margin-top: 2em;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+.cards__swiper__description__price {
+  padding-top: 1em;
+  display: inline-block;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.41px;
+  color: rgb(190, 173, 142);
+}
+.cards__swiper__description__span {
+  margin-left: 1em;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.41px;
+  text-align: right;
+  color: rgb(189, 189, 189);
 }
 
 .footer {
