@@ -130,6 +130,10 @@ body {
   left: 55%;
   background-color: rgb(255, 255, 255);
 }
+.banner__paragraph--XL {
+  width: 200px;
+  left: 40%;
+}
 .banner__paragraph span > a {
   text-decoration: none;
   color: black;
@@ -178,6 +182,18 @@ body {
   font-weight: 400;
   line-height: 24px;
   color: rgb(119, 119, 119);
+}
+.card__price {
+  padding-top: 1em;
+  text-align: left;
+  font-family: "Archivo", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  color: rgb(190, 173, 142);
+}
+.card__price span {
+  font-size: 13px;
 }
 .card__button {
   display: block;

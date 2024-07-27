@@ -22,6 +22,14 @@
         @include Text ($font-archivo, 14px, 400, 24px, left);
     }
 
+    &__price{
+        @include Text ($font-archivo, 32px, 700, 43px, left, $background-beige);
+
+        & span{
+            font-size: 13px;
+        }
+    }
+
     &__button{
         @include Button($font-archivo, $color-white);
         background-color: $background-beige;
