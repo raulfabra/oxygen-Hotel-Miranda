@@ -1,62 +1,30 @@
+.rooms {
+  padding-bottom: 0;
+}
 .rooms__swiper {
   margin-top: 1em;
   height: 100%;
 }
-.rooms__swiper__image {
-  background-color: transparent;
-}
-.rooms__swiper__image img {
-  width: 100%;
-  vertical-align: middle;
-}
-.rooms__swiper__accesories {
-  position: relative;
-  margin: 0 auto;
-  padding: 0.5em 1em;
-  width: 200px;
-  bottom: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
-  background-color: rgb(255, 255, 255);
-}
 .rooms__swiper__description {
   padding: 0;
 }
-.rooms__swiper__description .description__paragraph {
-  margin: 0 auto;
-  width: 90%;
+.rooms__swiper__controls {
+  margin-top: 2em;
+  vertical-align: middle;
 }
-.rooms__swiper__description .description__price {
-  padding-top: 1em;
-  text-align: center;
-  font-family: "Archivo", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 17.5px;
-  color: rgb(190, 173, 142);
+.rooms__swiper__controls__prev, .rooms__swiper__controls__next {
   display: inline-block;
+  width: 10%;
+  vertical-align: middle;
 }
-.rooms__swiper__description .description__span {
-  padding-top: 1em;
-  text-align: right;
-  font-family: "Archivo", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 17.5px;
-  color: rgb(189, 189, 189);
-  margin-left: 1em;
+.rooms__swiper__controls__prev:hover, .rooms__swiper__controls__next:hover {
+  background-color: rgb(190, 173, 142);
 }
-.rooms__swiper__description .description__span a {
-  text-decoration: none;
-  color: rgb(189, 189, 189);
+.rooms__swiper__controls .rooms__swiper__paginationn {
+  display: inline-block;
+  width: 70%;
 }
-.rooms__swiper__pagination {
-  display: flex;
-  margin: 3em auto;
-  margin-bottom: 0;
-  width: 90%;
-  justify-content: space-between;
-}
-.rooms__swiper__pagination span {
+.rooms__swiper__controls .rooms__swiper__paginationn span {
   padding-top: 1em;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -64,6 +32,19 @@
   font-weight: 700;
   line-height: 19px;
   color: black;
+  margin: 0 1em;
+  padding: 0;
+}
+.rooms__swiper__controls .rooms__swiper__bullett {
+  width: 1rem;
+  height: 1rem;
+  padding: 1em !important;
+  transition: background-color 0.6s ease-in-out;
+  pointer-events: all;
+}
+.rooms__swiper__controls .rooms__swiper__bullett--active {
+  background-color: rgb(190, 173, 142);
+  color: rgb(255, 255, 255) !important;
 }
 
 /*# sourceMappingURL=rooms.css.map */

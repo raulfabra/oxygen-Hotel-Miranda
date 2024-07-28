@@ -1,71 +1,55 @@
-@import '../constants/colors.scss';
 @import '../constants/fonts.scss';
-@import '../@mixins/Button.scss';
-@import '../@mixins/Title.scss';
-@import '../@mixins/Subtitle.scss';
+@import '../constants/colors.scss';
 @import '../@mixins/Text.scss';
+@import '../@mixins/Pagination.scss';
 
 .rooms{
+    padding-bottom: 0;
     &__swiper{
         margin-top: 1em;
         height: 100%;
 
-        &__image{
-            background-color: transparent;
-
-            & img{
-                width: 100%;
-                vertical-align: middle;
-            }
-        }
-
-        &__accesories{
-            position: relative;
-            margin: 0 auto;
-            padding: 0.5em 1em;
-            width: 200px;
-            bottom: 20px;
-            box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
-            
-            background-color: $color-white;
-        }
-
         &__description{
             padding: 0;
+        }
 
-            .description__paragraph{
-                margin: 0 auto;
-                width: 90%;
-            }
-
-            .description__price{
-                @include Text ($font-archivo, 16px, 700, 17.5px, center, $background-beige);
+        &__controls{
+            margin-top: 2em;
+            vertical-align: middle;
+            &__prev,
+            &__next{
                 display: inline-block;
+                width: 10%;
+                vertical-align: middle;
+                
+                &:hover{
+                    background-color: $background-beige;
+                }
+            }
+    
+            .rooms__swiper__paginationn{
+                display: inline-block;
+                width: 70%;
+    
+                & span{
+                    @include Text ($font-roboto, 14px, 700, 19px, center, black);
+                    margin: 0 1em;
+                    padding: 0;
+                }
             }
 
-            .description__span{
-                @include Text ($font-archivo, 16px, 700, 17.5px, right, rgba(189, 189, 189, 1));
-                margin-left: 1em;
+            .rooms__swiper__bullett{
+                width: 1rem;
+                height: 1rem;
+                padding: 1em !important;
+                transition: background-color 0.6s ease-in-out;
+                pointer-events: all;
 
-                & a{
-                    text-decoration: none;
-                    color: rgba(189, 189, 189, 1);
+                &--active {
+                    background-color: $background-beige;
+                    color: $color-white !important;
                 }
             }
         }
-
-        &__pagination{
-
-            display: flex;
-            margin: 3em auto;
-            margin-bottom: 0;
-            width: 90%;
-            justify-content: space-between;
-
-            & span{
-                @include Text ($font-roboto, 14px, 700, 19px, center, black);
-            }
-        }
     }
-    
 }
