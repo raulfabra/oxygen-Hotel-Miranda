@@ -60,9 +60,9 @@
         <div class="card__picture">
             <img src="../public/images/room-7.jfif" alt="room-7">
         </div>
-        <section class="card__calendar">
-            <h3 class="calendar__title">Check Availability</h3>
-            <form>
+        <section class="card__form">
+            <h3 class="card__form__title">Check Availability</h3>
+            <form class="checkAvailability">
                 <label for="checkIn">Check In</label>
                 <input type="text" placeholder="Fri, 14th June 2020"/>
                 <input type="date" name="" id="" />
@@ -71,7 +71,24 @@
                 <input type="text" placeholder="Sun, 16th June 2020"/>
                 <input type="date" name="" id="" />
                 <br><br>
-                <button type="button" class="card__button">CHECK AVAILABILITY</button>
+                <button type="button" class="card__button" id="checkAvailabilityButton">CHECK AVAILABILITY</button>
+            </form>
+
+            <form class="booking booking--hidden">
+                <div class="booking__group">
+                    <label for="name">Full Name    </label>
+                    <label for="email">Email   </label>
+                    <label for="phone">Number Phone    </label>
+                    <label for="message">Message for contact   </label>
+                </div>
+                <div class="booking__group">
+                    <input type="text" name="name" id="name" />
+                    <input type="email" name="email" id="email" />
+                    <input type="number" name="phone" id="phone" />
+                    <textarea name="message" id="message"></textarea>
+                </div>
+
+                <button type="button" class="card__button" id="confirmBook">CONFIRM BOOK</button>
             </form>
         </section>
         <p class="card__paragraph">

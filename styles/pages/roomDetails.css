@@ -7,18 +7,6 @@
 .card__picture img {
   width: 100%;
 }
-.card__calendar .calendar__title {
-  padding-top: 0.5em;
-  padding-bottom: 1em;
-  text-align: center;
-  font-family: "Archivo", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: -1.2px;
-  color: rgb(17, 17, 17);
-  letter-spacing: -0.54px;
-}
 .card__button {
   display: block;
   width: 200px;
@@ -31,9 +19,47 @@
   line-height: 15px;
   letter-spacing: 2.8px;
   color: rgb(255, 255, 255);
-  margin: 2em auto;
-  width: 300px;
   font-weight: 400;
+  margin: 2em auto;
+  width: 100%;
+}
+.card__form__title {
+  padding-top: 1em;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(17, 17, 17);
+  letter-spacing: -0.55px;
+}
+.card__form .booking--hidden {
+  display: none;
+}
+.card__form .booking__group {
+  display: inline-block;
+  width: 45%;
+  overflow: hidden;
+}
+.card__form .booking__group label {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -1.2px;
+  color: rgb(119, 119, 119);
+  display: block;
+  margin: 1em 0;
+  padding: 0.5em 0;
+}
+.card__form .booking__group input, .card__form .booking__group textarea {
+  display: block;
+  width: 100%;
+  margin: 1em 0;
+  padding: 0.5em 0;
 }
 
 .info {

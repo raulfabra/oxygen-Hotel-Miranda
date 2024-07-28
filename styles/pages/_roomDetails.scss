@@ -18,19 +18,49 @@
         }
     }
 
-    &__calendar{
-
-        .calendar__title{
-            @include Title ($font-archivo, 18px, 700, 20px, center, $color-black);
-            letter-spacing: -0.54px;
-        }
-    }
-
     &__button{
         @include Button ($font-archivo, $color-white);
-        margin: 2em auto;
-        width: 300px;
         font-weight: 400;
+        margin: 2em auto;
+        width: 100%;
+    }
+
+    &__form{
+        
+        &__title{
+            @include Text ($font-archivo, 18px, 700, 20px, center, $color-black);
+            letter-spacing: -0.55px;            
+        }
+        .checkAvailability{}
+
+        .booking{
+            
+            &--hidden{
+                display: none;
+            }
+            
+            &__group{
+                display: inline-block;
+                width: 45%;
+                overflow: hidden;
+
+                & label{
+                    @include Title ($font-roboto, 16px, 700, 18px, left, $color-grey);
+                    display: block;
+                    margin: 1em 0;
+                    padding: 0.5em 0;
+                }
+            
+                & input,
+                & textarea {
+                    display: block;
+                    width: 100%;
+                    margin: 1em 0;
+                    padding: 0.5em 0;
+                }
+
+            }
+        }
     }
 }
 
