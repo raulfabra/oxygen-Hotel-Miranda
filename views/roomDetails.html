@@ -60,18 +60,39 @@
         <div class="card__picture">
             <img src="../public/images/room-7.jfif" alt="room-7">
         </div>
-        <section class="card__calendar">
-            <h3 class="calendar__title">Check Availability</h3>
-            <form>
+        <section class="card__form">
+
+            <h3 class="card__form__title">Check Availability</h3>
+
+            <form class="checkAvailability">
                 <label for="checkIn">Check In</label>
                 <input type="text" placeholder="Fri, 14th June 2020"/>
-                <input type="date" name="" id="" />
+                <input type="date" name="checkIn" id="checkIn" />
                 <br><br>
-                <label for="checkIn">Check Out</label>
+                <label for="checkOut">Check Out</label>
                 <input type="text" placeholder="Sun, 16th June 2020"/>
-                <input type="date" name="" id="" />
+                <input type="date" name="checkOut" id="checkOut" />
                 <br><br>
-                <button type="button" class="card__button">CHECK AVAILABILITY</button>
+                <button type="button" class="card__button" id="checkAvailabilityButton">CHECK AVAILABILITY</button>
+            </form>
+
+            <h3 class="card__form__title card__form__title--hidden" id="reservationFormTitle">Reservation Form</h3>
+
+            <form class="booking booking--hidden">
+                <div class="booking__group">
+                    <label for="name">Full Name    </label>
+                    <label for="email">Email   </label>
+                    <label for="phone">Number Phone    </label>
+                    <label for="message">Message for contact   </label>
+                </div>
+                <div class="booking__group">
+                    <input type="text" name="name" id="name" />
+                    <input type="email" name="email" id="email" />
+                    <input type="number" name="phone" id="phone" />
+                    <textarea name="message" id="message"></textarea>
+                </div>
+
+                <button type="button" class="card__button" id="confirmBook">CONFIRM BOOK</button>
             </form>
         </section>
         <p class="card__paragraph">
@@ -118,35 +139,74 @@
     <section class="info">
         <h2 class="info__title">Related Rooms</h2>
         <hr>
-        <div class="info__swiper">
-            <!-- Additional required wrapper -->
+        <div class="rooms__swiper--white">
             <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="rooms__swiper__image">
-                    <img src="../public/images/room-1.jfif" alt="room-1">
+                <div class="swiper-slide">
+                    <div class="rooms__swiper__image--white">
+                        <img src="../public/images/room-1.jfif" alt="room-1">
+                    </div>
+                    <div class="rooms__swiper__accesories">
+                        <img src="../public/images/8725460_bed_icon 1.png" alt="bed-icon" />
+                        <img src="../public/images/925808_wifi_icon 1.png" alt="wifi-icon" />
+                        <img src="../public/images/4920723_automobile_car_transport_transportation_travel_icon 1.png" alt="car-icon" />
+                        <img src="../public/images/384878_cold_new year_snowflake_wheather_winter_icon 1.png" alt="cold-icon" />
+                        <img src="../public/images/9042522_gym_icon 1.png" alt="gym-icon" />
+                        <img src="../public/images/9081473_smoking_no_icon 1.png" alt="smoke-icon" />
+                        <img src="../public/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.png" alt="cocktail-icon" />
+                    </div>
+                    <div class="rooms__swiper__description">
+                        <h2 class="description__title--white" >      Minimal Duplex Room</h2>
+                        <p  class="description__paragraph" >  Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                        <p  class="description__price" >      $345/Night          </p>
+                        <span class="description__span"><a href="roomDetails.html">Book Now</a></span>
+                    </div>
                 </div>
-                <div class="rooms__swiper__accesories">
-                    <img src="../public/images/8725460_bed_icon 1.png" alt="bed-icon" />
-                    <img src="../public/images/925808_wifi_icon 1.png" alt="wifi-icon" />
-                    <img src="../public/images/4920723_automobile_car_transport_transportation_travel_icon 1.png" alt="car-icon" />
-                    <img src="../public/images/384878_cold_new year_snowflake_wheather_winter_icon 1.png" alt="cold-icon" />
-                    <img src="../public/images/9042522_gym_icon 1.png" alt="gym-icon" />
-                    <img src="../public/images/9081473_smoking_no_icon 1.png" alt="smoke-icon" />
-                    <img src="../public/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.png" alt="cocktail-icon" />
+                <div class="swiper-slide">
+                    <div class="rooms__swiper__image--white">
+                        <img src="../public/images/room-6.jfif" alt="room-6">
+                    </div>
+                    <div class="rooms__swiper__accesories">
+                        <img src="../public/images/8725460_bed_icon 1.png" alt="bed-icon" />
+                        <img src="../public/images/925808_wifi_icon 1.png" alt="wifi-icon" />
+                        <img src="../public/images/4920723_automobile_car_transport_transportation_travel_icon 1.png" alt="car-icon" />
+                        <img src="../public/images/384878_cold_new year_snowflake_wheather_winter_icon 1.png" alt="cold-icon" />
+                        <img src="../public/images/9042522_gym_icon 1.png" alt="gym-icon" />
+                        <img src="../public/images/9081473_smoking_no_icon 1.png" alt="smoke-icon" />
+                        <img src="../public/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.png" alt="cocktail-icon" />
+                    </div>
+                    <div class="rooms__swiper__description">
+                        <h2 class="description__title--white" >      Minimal Duplex Room</h2>
+                        <p  class="description__paragraph" >  Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                        <p  class="description__price" >      $345/Night          </p>
+                        <span class="description__span"><a href="roomDetails.html">Book Now</a></span>
+                    </div>
                 </div>
-                <div class="rooms__swiper__description">
-                    <h2 class="description__title" >      Minimal Duplex Room</h2>
-                    <p  class="description__paragraph" >  Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <p  class="description__price" >      $345/Night          </p>
-                    <span class="description__span"><a href="roomDetails.html">Book Now</a></span>
+                <div class="swiper-slide">
+                    <div class="rooms__swiper__image--white">
+                        <img src="../public/images/room-10.jfif" alt="room-10">
+                    </div>
+                    <div class="rooms__swiper__accesories">
+                        <img src="../public/images/8725460_bed_icon 1.png" alt="bed-icon" />
+                        <img src="../public/images/925808_wifi_icon 1.png" alt="wifi-icon" />
+                        <img src="../public/images/4920723_automobile_car_transport_transportation_travel_icon 1.png" alt="car-icon" />
+                        <img src="../public/images/384878_cold_new year_snowflake_wheather_winter_icon 1.png" alt="cold-icon" />
+                        <img src="../public/images/9042522_gym_icon 1.png" alt="gym-icon" />
+                        <img src="../public/images/9081473_smoking_no_icon 1.png" alt="smoke-icon" />
+                        <img src="../public/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.png" alt="cocktail-icon" />
+                    </div>
+                    <div class="rooms__swiper__description">
+                        <h2 class="description__title--white" >      Minimal Duplex Room</h2>
+                        <p  class="description__paragraph" >  Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                        <p  class="description__price" >      $345/Night          </p>
+                        <span class="description__span"><a href="roomDetails.html">Book Now</a></span>
+                    </div>
                 </div>
             </div>
 
-            <div class="rooms__swiper__btn--prev">
+            <div class="rooms__swiper__white__btn--prev">
                 <img src="../public/images/arrow-left.png" alt="arrow-left">
             </div>
-            <div class="rooms__swiper__btn--next">
+            <div class="rooms__swiper__white__btn--next">
                 <img src="../public/images/arrow-right.png" alt="arrow-right">
             </div>
 
@@ -208,7 +268,7 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script src="../scripts/swiper-roomDetail.js"></script>
     <script src="../scripts/roomDetail.js"></script>
 </body>
 </html>

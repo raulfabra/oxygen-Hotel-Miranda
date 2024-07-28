@@ -527,8 +527,8 @@ body {
   z-index: 9;
   width: 2rem;
   height: 2rem;
-  background-color: rgb(255, 255, 255);
-  top: 6.63rem;
+  border: 1px solid rgb(17, 17, 17);
+  top: 6.5rem;
   transition: background-color 0.6s ease-in-out;
 }
 .facilities__swiper__white__btn--prev:hover, .facilities__swiper__white__btn--prev:active, .facilities__swiper__white__btn--next:hover, .facilities__swiper__white__btn--next:active,
