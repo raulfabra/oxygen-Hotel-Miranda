@@ -1,0 +1,23 @@
+@mixin Pagination ($margin: 0) {
+    margin-top: $margin;
+    position: relative;
+    z-index: 10;
+    height: 0.44rem;
+    width: 100%;
+    display: flex;
+    gap: 0.44rem;
+    justify-content: center;
+}
+
+@mixin Bullet ($backgroundColor: #EDEDED){
+    background-color: $backgroundColor;
+    width: 0.44rem;
+    height: 0.44rem;
+    border-radius: 3rem;
+    transition: background-color 0.6s ease-in-out;
+    pointer-events: all;
+
+    &--active {
+        background-color: $background-beige;
+    }
+}

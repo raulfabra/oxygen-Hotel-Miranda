@@ -1,4 +1,4 @@
-const swiper = new Swiper('.imageSwiper', {
+const swiper = new Swiper('.carrusel', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -8,9 +8,9 @@ const swiper = new Swiper('.imageSwiper', {
   },
 
   pagination: {
-      el: '.imageSwiper__pagination',
-      bulletClass: 'imageSwiper__bullet',
-      bulletActiveClass: 'imageSwiper__bullet--active',
+      el: '.carrusel__pagination',
+      bulletClass: 'carrusel__darkbullet',
+      bulletActiveClass: 'carrusel__darkbullet--active',
       clickable: true,
     },
 })
@@ -41,8 +41,8 @@ const rateSwiper = new Swiper('.facilities__swiper', {
   // If we need pagination
   pagination: {
     el: '.facilities__swiper__pagination',
-    bulletClass: 'facilities__swiper__bullet',
-    bulletActiveClass: 'facilities__swiper__bullet--active',
+    bulletClass: 'facilities__swiper__darkbullet',
+    bulletActiveClass: 'facilities__swiper__darkbullet--active',
     clickable: true
   },
   
