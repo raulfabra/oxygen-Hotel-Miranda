@@ -1,0 +1,98 @@
+@import '../constants/colors.scss';
+@import '../constants/fonts.scss';
+@import '../@mixins/Button.scss';
+@import '../@mixins/Title.scss';
+@import '../@mixins/Text.scss';
+
+.postal-card{
+    padding: 2em 1.5em;
+
+    &__item{
+        position: relative;
+        text-align: left;
+        vertical-align: middle;
+        height: 250px;
+        padding: 2.5em 0;
+
+        &__background{
+            @include Title ($font-roboto, 200px, 700, 234px, left, rgba(248, 248, 248, 1));
+            position: absolute;
+            top: -45%;
+            left: 40%;
+
+            z-index: -1;
+            letter-spacing: -6px;
+        }
+
+        .item__info__image{ //div
+            display: inline-block;
+            width: 15%;
+            text-align: left;
+            vertical-align: top;
+
+        }
+        
+        .item__info__description{ //div
+            display: inline-block;
+            width: 55%;
+            text-align: left;
+            margin-left: 2em;
+
+            .description__title{
+                @include Title ($font-oldstandardTT, 20px, 400, 24px, left, $color-black);
+                padding: 0;
+            }
+            
+            .description__text{
+                @include Text($font-roboto, 14px, 400, 16.5px, left, $color-grey);
+                padding: 0;
+                margin-top: 2em;            
+            }
+        }
+    }
+}
+
+.videoPromo{
+    margin-top: 2em;
+    padding: 1.5em;
+    background-color: $background-beige;
+
+    & video{
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.contact-us{
+    padding: 1.5em;
+    &__group{
+        position: relative;
+
+        & img{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            margin-left: 1em;
+    
+        }
+    
+        & input,
+        & textarea {
+            @include Text ($font-roboto, 16px, 400, 19px, left);            
+            width: 100%;
+            padding: 1.5em 3em;
+            border: none;
+            background-color: rgba(248, 248, 248, 1);
+            font-size: 16px;
+        }
+    }
+
+    & button {
+        @include Button($font-archivo, $color-white);
+        background-color: $background-beige;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+}
