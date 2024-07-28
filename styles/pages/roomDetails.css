@@ -33,6 +33,37 @@
   color: rgb(17, 17, 17);
   letter-spacing: -0.55px;
 }
+.card__form__title--hidden {
+  display: none;
+}
+.card__form .checkAvailability {
+  text-align: left;
+  margin-left: 0.5em;
+}
+.card__form .checkAvailability label {
+  display: block;
+  padding-top: 1em;
+  text-align: left;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  color: rgb(17, 17, 17);
+}
+.card__form .checkAvailability input[type=text] {
+  border: none;
+  outline: none;
+  width: 80%;
+  margin: 0.5em 0;
+  padding: 1.5em;
+  background-color: rgb(248, 248, 248);
+}
+.card__form .checkAvailability input[type=date] {
+  border: none;
+  outline: none;
+  color: rgb(190, 173, 142);
+  width: 5%;
+}
 .card__form .booking--hidden {
   display: none;
 }
@@ -75,7 +106,10 @@
   line-height: 30px;
   letter-spacing: -1.2px;
   color: rgb(17, 17, 17);
-  padding-bottom: 0;
+  padding-bottom: 0.5em;
+}
+.info hr {
+  margin-bottom: 0.5em;
 }
 .info__amenities {
   margin: 2em 0;

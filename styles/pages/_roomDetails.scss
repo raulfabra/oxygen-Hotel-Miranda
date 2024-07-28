@@ -29,9 +29,37 @@
         
         &__title{
             @include Text ($font-archivo, 18px, 700, 20px, center, $color-black);
-            letter-spacing: -0.55px;            
+            letter-spacing: -0.55px;
+            
+            &--hidden{
+                display: none;
+            }
         }
-        .checkAvailability{}
+        .checkAvailability{
+            text-align: left;
+            margin-left: 0.5em;
+            & label{
+                display: block;
+                @include Text ($font-archivo, 14px, 700, 15px, left, $color-black);             
+            }
+
+            & input[type = "text"]{
+                border: none;
+                outline: none;
+                width: 80%;
+                margin: 0.5em 0;
+                padding: 1.5em;
+                background-color: rgba(248, 248, 248, 1);
+
+            }
+
+            & input[type = "date"]{
+                border: none;
+                outline: none;
+                color: $background-beige;
+                width: 5%;
+            }
+        }
 
         .booking{
             
@@ -69,7 +97,10 @@
 
     &__title{
         @include Title ($font-oldstandardTT, 30px, 400, 30px, left, $color-black);
-        padding-bottom: 0;
+        padding-bottom: 0.5em;
+    }
+    & hr{
+        margin-bottom: 0.5em;
     }
 
     &__amenities{

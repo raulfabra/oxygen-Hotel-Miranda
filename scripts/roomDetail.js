@@ -6,6 +6,7 @@ const crossIcon = '../public/images/cross.png'
 const burgerIcon = '../public/images/hamburger.png'
 
 const checkAvailability = document.getElementById('checkAvailabilityButton')
+const reservationForm = document.getElementById('reservationFormTitle')
 const bookingForm = document.querySelector('.booking')
 
 const confirmBook = document.getElementById('confirmBook')
@@ -21,6 +22,7 @@ button.addEventListener('click', () => {
 })
 
 checkAvailability.addEventListener('click', () => {
+    reservationForm.classList.toggle('card__form__title--hidden')
     bookingForm.classList.toggle('booking--hidden')
 })
 
