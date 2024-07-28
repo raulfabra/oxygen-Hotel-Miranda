@@ -225,6 +225,13 @@
   width: 200px;
 }
 
+.rooms__swiper__description {
+  padding-top: 1em;
+}
+.rooms__swiper__description .description__paragraph {
+  text-align: center;
+}
+
 .introVideo {
   padding: 3em 1.5em;
   background-color: rgb(34, 34, 34);
