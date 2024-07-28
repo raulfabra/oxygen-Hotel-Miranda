@@ -6,23 +6,20 @@
     &--about{margin-top: 0;}
 
     &__title{
-        @include Title ($font-archivo, 26px, 700, 28px, left, black);
-        
+        text-align: left;
+        vertical-align: middle;
         .letter--H {
+            @include Title ($font-archivo, 40px, 700, 28px, left, $color-white);
             display: inline-block;
-            padding: 0.4em 0.6em;
-            vertical-align: middle;
-
-            font-size: 40px;
+            padding: 0.6em 0.6em;
 
             background-color: $background-beige;
-            color: $color-white;
         }
 
         .title--name{
+            @include Title ($font-archivo, 26px, 700, 28px, left, black);
             display: inline-block;
             margin-left: 1em;
-            vertical-align: middle;
             width: 50%;
             letter-spacing: 3px;
 
