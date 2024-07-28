@@ -115,38 +115,5 @@
   margin-left: 1em;
   text-align: right;
 }
-.counter__swiper {
-  margin-top: 3em;
-  overflow: hidden;
-}
-.counter__swiper__pagination {
-  margin-top: 1rem;
-  position: relative;
-  z-index: 10;
-  height: 0.44rem;
-  width: 100%;
-  display: flex;
-  gap: 0.44rem;
-  justify-content: center;
-}
-.counter__swiper__darkbullet {
-  background-color: #333333;
-  width: 0.44rem;
-  height: 0.44rem;
-  border-radius: 3rem;
-  transition: background-color 0.6s ease-in-out;
-  pointer-events: all;
-}
-.counter__swiper__bullet {
-  background-color: #EDEDED;
-  width: 0.44rem;
-  height: 0.44rem;
-  border-radius: 3rem;
-  transition: background-color 0.6s ease-in-out;
-  pointer-events: all;
-}
-.counter__swiper__bullet--active {
-  background-color: rgb(190, 173, 142);
-}
 
 /*# sourceMappingURL=aboutUs.css.map */

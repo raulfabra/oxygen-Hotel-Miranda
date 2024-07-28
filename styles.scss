@@ -17,6 +17,7 @@ body{
 @import 'styles/@mixins/Subtitle.scss';
 @import 'styles/@mixins/Text.scss';
 @import 'styles/@mixins/Button.scss';
+@import 'styles/@mixins/Pagination.scss';
 
 // Components
 @import 'styles/components/header.scss';
@@ -24,7 +25,7 @@ body{
 @import 'styles/components/card.scss';
 @import 'styles/components/rooms.scss';
 @import 'styles/components/facilities.scss';
-@import 'styles/components/imageSwiper.scss';
+@import 'styles/components/carrusel.scss';
 @import 'styles/components/footer.scss';
 
 

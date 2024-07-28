@@ -56,7 +56,7 @@
         &--white{
             position: relative;
             width: auto;
-            height: 550px;
+            height: 100%;
             overflow: hidden;
 
             background-color: $color-white;
@@ -66,6 +66,18 @@
             position: relative;
             display: flex;
             justify-content: flex-end;
+
+            &--white{
+                position: relative;
+                display: flex;
+                justify-content: flex-end;
+                background-color: transparent;
+                
+                & img{
+                    width: 100%;
+                    vertical-align: middle;
+                }
+            }
 
             .image__icon{
                 position: absolute;
@@ -84,6 +96,17 @@
             }
         }
 
+        &__accesories--white{
+            position: relative;
+            margin: 0 auto;
+            padding: 0.5em 1em;
+            width: 200px;
+            bottom: 20px;
+            box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
+            
+            background-color: $color-white;
+        }
+
         &__description{
             padding: 0 1.5em;
 
@@ -99,6 +122,12 @@
                     font-size: 28px;
                     line-height: 36px;
                 }
+
+                &--white{
+                    @include Title ($font-oldstandardTT, 28px, 400, 36px, center, black);
+                    padding: 0;
+                    padding-bottom: 0.5em;
+                }
             }
 
             .description__paragraph{
@@ -110,107 +139,27 @@
                     padding-top: 0;
                     width: 100%;
                 }
-            }
-        }
 
-        &__pagination{
-            position: relative;
-            z-index: 10;
-            height: 0.44rem;
-            width: 100%;
-            display: flex;
-            gap: 0.44rem;
-            justify-content: center;
-
-            &--dark{
-                margin-top: 2em;
-                position: relative;
-                z-index: 10;
-                height: 0.44rem;
-                width: 100%;
-                display: flex;
-                gap: 0.44rem;
-                justify-content: center;
-            }
-        }
-
-        &__darkbullet {
-            background-color: #333333;
-            width: 0.44rem;
-            height: 0.44rem;
-            border-radius: 3rem;
-            transition: background-color 0.6s ease-in-out;
-            pointer-events: all;
-        }
-
-        
-        &__bullet {
-            background-color: #EDEDED;
-            width: 0.44rem;
-            height: 0.44rem;
-            border-radius: 3rem;
-            transition: background-color 0.6s ease-in-out;
-            pointer-events: all;
-
-            &--active {
-                background-color: $background-beige;
-            }
-        }
-    
-    }
-
-    &__swiper--white{
-        margin-top: 1em;
-        position: relative;
-        width: auto;
-        height: 400px;
-        overflow: hidden;
-
-        &__image{
-            background-color: transparent;
-
-            & img{
-                width: 100%;
-                vertical-align: middle;
-            }
-        }
-
-        &__accesories{
-            position: relative;
-            margin: 0 auto;
-            padding: 0.5em 1em;
-            width: 200px;
-            bottom: 20px;
-            box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
-            
-            background-color: $color-white;
-        }
-
-        &__description{
-
-            .description__title{
-                @include Title ($font-oldstandardTT, 28px, 400, 36px, center, black);
-                padding: 0;
-                padding-bottom: 0.5em;
+                &--white{
+                    @include Text ($font-roboto, 14px, 400, 24px, center);
+                    padding: 0;
+                    padding-bottom: 0.5em;
+                    margin: 0 auto;
+                    width: 90%;
+                }
             }
 
-            .description__paragraph{
-                @include Text ($font-roboto, 14px, 400, 24px, center);
-                padding: 0;
-                padding-bottom: 0.5em;
-                margin: 0 auto;
-                width: 90%;
-            }
-
-            .description__price{
+            .description__price--white{
                 @include Text ($font-archivo, 16px, 700, 17.5px, center, $background-beige);
                 display: inline-block;
+                padding-bottom: 0;
             }
 
-            .description__span{
+            .description__span--white{
                 @include Text ($font-archivo, 16px, 700, 17.5px, right, rgba(189, 189, 189, 1));
                 margin-left: 1em;
-
+                padding-bottom: 0;
+    
                 & a{
                     text-decoration: none;
                     color: rgba(189, 189, 189, 1);
@@ -218,6 +167,23 @@
             }
         }
 
-        @include Button-Swiper();
+        &__white{
+            @include Button-Swiper();
+        }
+
+        &__pagination{
+            @include Pagination ();
+        }
+        &__pagination--marginTop{
+            @include Pagination (2em);
+        }
+
+        &__darkbullet{
+            @include Bullet (#333333);
+        }
+        &__bullet{
+            @include Bullet();
+        }
+    
     }
 }

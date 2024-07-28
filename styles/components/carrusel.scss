@@ -1,0 +1,39 @@
+.carrusel{
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    margin-bottom: 2em;
+
+    background-color: rgb(193, 187, 187);
+
+
+    &--counter{
+        margin-top: 3em;
+        position: relative;
+        width: auto;
+        overflow: hidden;
+        margin-bottom: 2em;
+        background-color: rgb(193, 187, 187);
+    }
+
+    &__picture{
+        padding: 2em;
+        & img{
+            width: 80%;
+        }
+    }
+
+    &__pagination{
+        @include Pagination ();
+    }
+    &__pagination--marginTop{
+        @include Pagination (2em);
+    }
+
+    &__darkbullet{
+        @include Bullet (#333333);
+    }
+    &__bullet{
+        @include Bullet();
+    }
+}
