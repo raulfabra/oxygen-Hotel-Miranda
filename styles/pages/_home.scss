@@ -179,6 +179,17 @@
     }
 }
 
+.rooms__swiper{
+
+    &__description{
+        padding-top: 1em;
+
+        .description__paragraph{
+            text-align: center;
+        }
+    }
+}
+
 .introVideo{
     padding: 3em 1.5em;
     background-color: $background-grey-strong;

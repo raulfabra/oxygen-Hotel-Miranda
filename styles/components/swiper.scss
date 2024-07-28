@@ -1,5 +1,6 @@
 .facilities,
-.popularRooms{
+.popularRooms,
+.rooms{
     padding: 2em 1.5em;
 
     &--dark{
@@ -96,7 +97,7 @@
             }
         }
 
-        &__accesories--white{
+        &__accesories{
             position: relative;
             margin: 0 auto;
             padding: 0.5em 1em;
@@ -149,13 +150,13 @@
                 }
             }
 
-            .description__price--white{
+            .description__price{
                 @include Text ($font-archivo, 16px, 700, 17.5px, center, $background-beige);
                 display: inline-block;
                 padding-bottom: 0;
             }
 
-            .description__span--white{
+            .description__span{
                 @include Text ($font-archivo, 16px, 700, 17.5px, right, rgba(189, 189, 189, 1));
                 margin-left: 1em;
                 padding-bottom: 0;
