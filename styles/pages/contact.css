@@ -1,0 +1,117 @@
+.postal-card {
+  padding: 2em 1.5em;
+}
+.postal-card__item {
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  height: 250px;
+  padding: 2.5em 0;
+}
+.postal-card__item__background {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 234px;
+  letter-spacing: -1.2px;
+  color: rgb(248, 248, 248);
+  position: absolute;
+  top: -45%;
+  left: 40%;
+  z-index: -1;
+  letter-spacing: -6px;
+}
+.postal-card__item .item__info__image {
+  display: inline-block;
+  width: 15%;
+  text-align: left;
+  vertical-align: top;
+}
+.postal-card__item .item__info__description {
+  display: inline-block;
+  width: 55%;
+  text-align: left;
+  margin-left: 2em;
+}
+.postal-card__item .item__info__description .description__title {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: left;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -1.2px;
+  color: rgb(17, 17, 17);
+  padding: 0;
+}
+.postal-card__item .item__info__description .description__text {
+  padding-top: 1em;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.5px;
+  color: rgb(119, 119, 119);
+  padding: 0;
+  margin-top: 2em;
+}
+
+.videoPromo {
+  margin-top: 2em;
+  padding: 1.5em;
+  background-color: rgb(190, 173, 142);
+}
+.videoPromo video {
+  width: 100%;
+  overflow: hidden;
+}
+
+.contact-us {
+  padding: 1.5em;
+}
+.contact-us__group {
+  position: relative;
+}
+.contact-us__group img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  margin-left: 1em;
+}
+.contact-us__group input, .contact-us__group textarea {
+  padding-top: 1em;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: rgb(119, 119, 119);
+  width: 100%;
+  padding: 1.5em 3em;
+  border: none;
+  background-color: rgb(248, 248, 248);
+  font-size: 16px;
+}
+.contact-us button {
+  display: block;
+  width: 200px;
+  margin: 2em 0;
+  padding: 1.5em;
+  border: none;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(190, 173, 142);
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=contact.css.map */
