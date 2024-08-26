@@ -106,12 +106,23 @@ body {
   .header__menuBar__pages--item,
   .header .menuBar__pages--item {
     display: inline;
+    padding-top: 1em;
+    text-align: left;
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    color: rgb(119, 119, 119);
   }
   .header__menuBar__pages--item a,
   .header .menuBar__pages--item a {
     text-decoration: none;
     padding: 1em;
     color: rgb(17, 17, 17);
+  }
+  .header__menuBar__pages--item a:hover,
+  .header .menuBar__pages--item a:hover {
+    color: rgb(190, 173, 142);
   }
 }
 .header__sectionBar {

@@ -78,11 +78,15 @@
 
         &--item {
           display: inline;
+          @include Text($font-archivo, 16px, 600, 18px, left);
         }
         &--item a {
           text-decoration: none;
           padding: 1em;
           color: $color-black;
+          &:hover {
+            color: $background-beige;
+          }
         }
       }
     }
