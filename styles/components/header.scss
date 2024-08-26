@@ -1,84 +1,137 @@
-.header{
-    display: inline-block;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 33;
-    padding: 1em 0.5em;
-    box-shadow: 0px 3px 6px 0px #0000004A;
-    background-color: $color-white;
+.backgroundHeader {
+  display: none;
 
-    &__menuBar,
-    .menuBar {
-        display: inline-block;
-        width: 45%;
-        text-align: left;
-
-        &--button{
-            display: inline-block;
-        }
-
-        &--logo,
-        .logo {
-            display: inline-block;
-            margin-left: 1em;
-            vertical-align: middle;
-
-            &--H{
-                display: inline-block;
-                padding: 0.5em;
-                box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.25);
-            }
-
-            &--HotelMiranda{
-                display: inline-block;
-                vertical-align: middle;
-                margin-left: 0.5em;
-            }
-        } 
-    }
-
-    &__sectionBar{
-        display: inline-block;
-        width: 45%;
-        text-align: right;
-        vertical-align: middle;
-        
-        & div{
-            display: inline-block;
-            width: 25%;
-        }
-    }
-
+  @media only screen and (min-width: 1000px) {
+    display: block;
+    background-color: $background-grey-strong;
+    height: 100px;
+  }
 }
 
-.nav{
-    display: none;
-    position: sticky;
-    top: 65px;
-    z-index: 33;
-    background-color: $color-white;
+.header {
+  display: inline-block;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 33;
+  padding: 1em 0.5em;
+  box-shadow: 0px 3px 6px 0px #0000004a;
+  background-color: $color-white;
 
-    &--mobile{
-        display: block;
+  @media only screen and (min-width: 1000px) {
+    position: absolute;
+    padding: 1.5em 0;
+
+    top: 5%;
+    left: 10%;
+    width: 80%;
+  }
+
+  &__menuBar,
+  .menuBar {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+
+    @media only screen and (min-width: 1000px) {
+      width: 55%;
     }
-    
-    .navbar{
-        &__item{
-            margin-top: 0.5em;
-            padding: 0.5em;
-            list-style-type: none;
 
-            font-family: $font-archivo;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 18px;
-            text-align: left;
+    &--button {
+      display: inline-block;
 
-            & a{
-                text-decoration: none;
-                color: $color-black;
-            }
+      @media only screen and (min-width: 1000px) {
+        display: none;
+      }
+    }
+
+    &--logo,
+    .logo {
+      display: inline-block;
+      margin-left: 1em;
+      vertical-align: middle;
+
+      &--H {
+        display: inline-block;
+        padding: 0.5em;
+        box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.25);
+      }
+
+      &--HotelMiranda {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 0.5em;
+      }
+
+      @media only screen and (min-width: 1000px) {
+        margin: 0;
+      }
+    }
+
+    &__pages {
+      display: none;
+
+      @media only screen and (min-width: 1000px) {
+        display: inline-block;
+        list-style-type: none;
+        margin-left: 2em;
+
+        &--item {
+          display: inline;
         }
+        &--item a {
+          text-decoration: none;
+          padding: 1em;
+          color: $color-black;
+        }
+      }
     }
+  }
+
+  &__sectionBar {
+    display: inline-block;
+    width: 45%;
+    text-align: right;
+    vertical-align: middle;
+
+    & div {
+      display: inline-block;
+      width: 25%;
+    }
+
+    @media only screen and (min-width: 1000px) {
+      width: 25%;
+    }
+  }
+}
+
+.nav {
+  display: none;
+  position: sticky;
+  top: 65px;
+  z-index: 33;
+  background-color: $color-white;
+
+  &--mobile {
+    display: block;
+  }
+
+  .navbar {
+    &__item {
+      margin-top: 0.5em;
+      padding: 0.5em;
+      list-style-type: none;
+
+      font-family: $font-archivo;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 18px;
+      text-align: left;
+
+      & a {
+        text-decoration: none;
+        color: $color-black;
+      }
+    }
+  }
 }
