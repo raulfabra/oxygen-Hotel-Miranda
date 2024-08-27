@@ -1,40 +1,51 @@
-.banner{
-    padding: 3em 1.5em;
-    background-color: $background-grey;
-    
-    &__subtitle{
-        @include Subtitle($color-white, left);
+.banner {
+  padding: 3em 1.5em;
+  background-color: $background-grey;
+
+  &__subtitle {
+    @include Subtitle($color-white, left);
+  }
+
+  &__title {
+    @include Title($font-oldstandardTT, 56px, 400, 60px, left, $color-white);
+    padding: 0;
+  }
+
+  &__paragraph {
+    @include Text($font-archivo, 16px, 700, 18px, center, black);
+    position: relative;
+    padding: 1em;
+    width: 150px;
+    top: 50px;
+    left: 55%;
+
+    background-color: $color-white;
+
+    &--XL {
+      width: 200px;
+      left: 40%;
     }
 
-    &__title{
-        @include Title ($font-oldstandardTT, 56px, 400, 60px,left,$color-white);
-        padding: 0;
+    & span > a {
+      text-decoration: none;
+      color: black;
     }
 
-    &__paragraph{
-        @include Text ($font-archivo, 16px, 700, 18px, center, black);
-        position: relative;
-        padding: 1em;
-        width: 150px;
-        top: 50px;
-        left: 55%;
+    & span:last-child {
+      color: $background-beige;
+    }
+  }
+}
 
-        background-color: $color-white;
-
-        &--XL {
-            width: 200px;
-            left: 40%;
-        }
-
-        & span > a{
-            text-decoration: none;
-            color: black;
-        }
-
-        & span:last-child{
-            color: $background-beige;
-        }
+@media only screen and (min-width: 1000px) {
+  .banner {
+    &__subtitle {
     }
 
-    
+    &__title {
+    }
+
+    &__paragraph {
+    }
+  }
 }
