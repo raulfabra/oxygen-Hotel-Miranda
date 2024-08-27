@@ -763,6 +763,24 @@ body {
   margin-top: 0;
 }
 .footer__title {
+  text-align: left;
+  vertical-align: middle;
+}
+.footer__title .letter--H {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: left;
+  font-family: "Archivo", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.2px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 0.6em 0.6em;
+  background-color: rgb(190, 173, 142);
+}
+.footer__title .title--name {
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: left;
@@ -772,19 +790,8 @@ body {
   line-height: 28px;
   letter-spacing: -1.2px;
   color: black;
-}
-.footer__title .letter--H {
-  display: inline-block;
-  padding: 0.4em 0.6em;
-  vertical-align: middle;
-  font-size: 40px;
-  background-color: rgb(190, 173, 142);
-  color: rgb(255, 255, 255);
-}
-.footer__title .title--name {
   display: inline-block;
   margin-left: 1em;
-  vertical-align: middle;
   width: 50%;
   letter-spacing: 3px;
 }
