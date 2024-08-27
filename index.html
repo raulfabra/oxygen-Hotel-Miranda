@@ -1,494 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Miranda</title>
-    <link rel="icon" type="image/vnd.icon" href="./public/images/favicon.ico">
+    <link rel="icon" type="image/vnd.icon" href="./public/images/favicon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./styles.css" type="text/css">
-    <link rel="stylesheet" href="./styles/pages/home.css" type="text/css">
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/pages/home.css" type="text/css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="backgroundHeader"></div>
     <header class="header">
-        <section class="header__menuBar">
-            <div class="menuBar--button">
-                <img src="./public/images/hamburger.png" alt="icon__menu" />
-            </div>
-            <div class="menuBar--logo">
-                <div class="logo--H">
-                    <img src="./public/images/H.png" alt="H" />
-                </div>
-                <div class="logo--HotelMiranda">
-                    <img src="./public/images/Hotel Miranda.png" alt="Hotel Miranda" />
-                </div>
-            </div>
-        </section>
-        <section class="header__sectionBar">
-            <div>
-                <img class="" src="./public/images/contact.png" alt="icon__contact" />
-            </div>
-            <div>
-                <img class="" src="./public/images/search.png" alt="icon__search" />
-            </div>
-        </section>
+      <section class="header__menuBar">
+        <div class="menuBar--button">
+          <img src="./public/images/hamburger.png" alt="icon__menu" />
+        </div>
+        <div class="menuBar--logo">
+          <div class="logo--H">
+            <img src="./public/images/H.png" alt="H" />
+          </div>
+          <div class="logo--HotelMiranda">
+            <img src="./public/images/Hotel Miranda.png" alt="Hotel Miranda" />
+          </div>
+        </div>
+        <ul class="menuBar__pages">
+          <li class="menuBar__pages--item"><a href="./views/aboutUs.html"> About Us </a></li>
+          <li class="menuBar__pages--item"><a href="./views/rooms.html"> Rooms </a></li>
+          <li class="menuBar__pages--item"><a href="./views/offers.html"> Offers </a></li>
+          <li class="menuBar__pages--item"><a href="./views/contact.html"> Contact </a></li>
+        </ul>
+      </section>
+      <section class="header__sectionBar">
+        <div>
+          <img class="" src="./public/images/contact.png" alt="icon__contact" />
+        </div>
+        <div>
+          <img class="" src="./public/images/search.png" alt="icon__search" />
+        </div>
+      </section>
     </header>
     <nav class="nav">
-        <ul class="navbar">
-            <li class="navbar__item"><a href="./views/aboutUs.html">    About Us    </a></li>
-            <li class="navbar__item"><a href="./views/rooms.html">      Rooms       </a></li>
-            <li class="navbar__item"><a href="./views/offers.html">     Offers      </a></li>
-            <li class="navbar__item"><a href="./views/contact.html">    Contact     </a></li>
-        </ul>
+      <ul class="navbar">
+        <li class="navbar__item"><a href="./views/aboutUs.html"> About Us </a></li>
+        <li class="navbar__item"><a href="./views/rooms.html"> Rooms </a></li>
+        <li class="navbar__item"><a href="./views/offers.html"> Offers </a></li>
+        <li class="navbar__item"><a href="./views/contact.html"> Contact </a></li>
+      </ul>
     </nav>
     <section class="banner">
-        <p class="banner__subtitle">THE ULTIMATE LUXURY EXPERIENCE</p>
+      <p class="banner__subtitle">THE ULTIMATE LUXURY EXPERIENCE</p>
 
-        <h1 class="banner__title">The Perfect
-            Base For You</h1>
+      <h1 class="banner__title">The Perfect Base For You</h1>
 
-        <button type="button" class="banner__button--beige">TAKE A TOUR</button>
-        <button type="button" class="banner__button--grey">LEARN MORE</button>
-
+      <button type="button" class="banner__button--beige">TAKE A TOUR</button>
+      <button type="button" class="banner__button--grey">LEARN MORE</button>
     </section>
     <section class="calendar">
-        <form class="formulario">
-            <div class="form">
-                <label for="arrival" class="form__title">Arrival Date</label><br><br>
-                <input type="date" class="form__input--calendar"/>
-                <input type="text" class="form__input--text" placeholder="24th march 2020" />
-            </div>
-            <br><br>
-            <div class="form">
-                <label for="departure" class="form__title">Departure Date</label><br><br>
-                <input type="date" class="form__input--calendar" />
-                <input type="text" class="form__input--text" placeholder="30th march 2020" />
-            </div>
-            <br>
-            <button type="button" class="formulario__button">CHECK AVAILABILITY</button>
-        </form>
+      <form class="formulario">
+        <div class="form">
+          <label for="arrival" class="form__title">Arrival Date</label><br /><br />
+          <input type="date" class="form__input--calendar" />
+          <input type="text" class="form__input--text" placeholder="24th march 2020" />
+        </div>
+        <br /><br />
+        <div class="form">
+          <label for="departure" class="form__title">Departure Date</label><br /><br />
+          <input type="date" class="form__input--calendar" />
+          <input type="text" class="form__input--text" placeholder="30th march 2020" />
+        </div>
+        <br />
+        <button type="button" class="formulario__button">CHECK AVAILABILITY</button>
+      </form>
     </section>
     <section class="aboutUS">
-        <p class="aboutUS__subtitle">ABOUT US</p>
-        <h1 class="aboutUS__title">Discover Our Underground.</h1>
-        <p class="aboutUS__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button class="aboutUS__button">BOOK NOW</button>
+      <p class="aboutUS__subtitle">ABOUT US</p>
+      <h1 class="aboutUS__title">Discover Our Underground.</h1>
+      <p class="aboutUS__paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <button class="aboutUS__button">BOOK NOW</button>
     </section>
     <article class="strongTeam">
-        <div class="strongTeam__imagen" >
-            <img src="./public/images/team-work.jpg" alt="team-work">
-        </div>
-        <div class="strongTeam__logo">
-            <img class="logo--primary" src="./public/images/team-work-icono.png" alt="icon-teamWork">
-            <img class="logo--secondary" src="./public/images/team-work-icono-scale.png" alt="icon-scale-team">
-        </div>
-        <div class="strongTeam__description">
-            <h2 class="description__title">Strong Team</h2>
-            <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-        </div>
+      <div class="strongTeam__imagen">
+        <img src="./public/images/team-work.jpg" alt="team-work" />
+      </div>
+      <div class="strongTeam__logo">
+        <img class="logo--primary" src="./public/images/team-work-icono.png" alt="icon-teamWork" />
+        <img class="logo--secondary" src="./public/images/team-work-icono-scale.png" alt="icon-scale-team" />
+      </div>
+      <div class="strongTeam__description">
+        <h2 class="description__title">Strong Team</h2>
+        <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+      </div>
     </article>
     <article class="luxuryRoom">
-        <div class="luxuryRoom__imagen">
-            <img src="./public/images/luxury-room.jpg" alt="luxury-room" />
+      <div class="luxuryRoom__imagen">
+        <img src="./public/images/luxury-room.jpg" alt="luxury-room" />
+      </div>
+      <section class="luxuryRoom--dark">
+        <div class="luxuryRoom__logo">
+          <img class="logo--primary" src="./public/images/Calendar.png" alt="calendario-icon" />
         </div>
-        <section class="luxuryRoom--dark">
-            <div class="luxuryRoom__logo">
-                <img class="logo--primary" src="./public/images/Calendar.png" alt="calendario-icon" />
-            </div>
-            <div class="luxuryRoom__description">
-                <h2 class="description__title">Luxury Room</h2>
-                <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            </div>
-        </section>
+        <div class="luxuryRoom__description">
+          <h2 class="description__title">Luxury Room</h2>
+          <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+        </div>
+      </section>
     </article>
     <section class="rooms">
-        <p class="rooms__subtitle">ROOMS</p>
-        <h1 class="rooms__title">Hand Picked Rooms</h1>
-        <div class="rooms__swiper--white">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="">
-                    <img src="./public/images/8725460_bed_icon 1.png" alt="bed-icon" />
-                    <img src="./public/images/925808_wifi_icon 1.png" alt="wifi-icon" />
-                    <img src="./public/images/4920723_automobile_car_transport_transportation_travel_icon 1.png" alt="car-icon" />
-                    <img src="./public/images/384878_cold_new year_snowflake_wheather_winter_icon 1.png" alt="cold-icon" />
-                    <img src="./public/images/9042522_gym_icon 1.png" alt="gym-icon" />
-                    <img src="./public/images/9081473_smoking_no_icon 1.png" alt="smoke-icon" />
-                    <img src="./public/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.png" alt="cocktail-icon" />
-                </div>
-                <div class="rooms__swiper__image--white">
-                    <img src="./public/images/room-1.jfif" alt="Room-1">
-                </div>
-                <div class="rooms__swiper__description">
-                    <h2 class="description__title--white">Minimal Duplex Room</h2>
-                    <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    <p class="description__price">$345<span>/Night</span></p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="">
-                    <img src="./public/images/8725460_bed_icon 1.png" alt="bed-icon" />
-                    <img src="./public/images/925808_wifi_icon 1.png" alt="wifi-icon" />
-                    <img src="./public/images/4920723_automobile_car_transport_transportation_travel_icon 1.png" alt="car-icon" />
-                    <img src="./public/images/384878_cold_new year_snowflake_wheather_winter_icon 1.png" alt="cold-icon" />
-                    <img src="./public/images/9042522_gym_icon 1.png" alt="gym-icon" />
-                    <img src="./public/images/9081473_smoking_no_icon 1.png" alt="smoke-icon" />
-                    <img src="./public/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.png" alt="cocktail-icon" />
-                </div>
-                <div class="rooms__swiper__image--white">
-                    <img src="./public/images/room-2.jfif" alt="Room-2">
-                </div>
-                <div class="rooms__swiper__description">
-                    <h2 class="description__title--white">Minimal Duplex Room</h2>
-                    <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    <p class="description__price">$345<span>/Night</span></p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="">
-                    <img src="./public/images/8725460_bed_icon 1.png" alt="bed-icon" />
-                    <img src="./public/images/925808_wifi_icon 1.png" alt="wifi-icon" />
-                    <img src="./public/images/4920723_automobile_car_transport_transportation_travel_icon 1.png" alt="car-icon" />
-                    <img src="./public/images/384878_cold_new year_snowflake_wheather_winter_icon 1.png" alt="cold-icon" />
-                    <img src="./public/images/9042522_gym_icon 1.png" alt="gym-icon" />
-                    <img src="./public/images/9081473_smoking_no_icon 1.png" alt="smoke-icon" />
-                    <img src="./public/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.png" alt="cocktail-icon" />
-                </div>
-                <div class="rooms__swiper__image--white">
-                    <img src="./public/images/room-3.jfif" alt="Room-3">
-                </div>
-                <div class="rooms__swiper__description">
-                    <h2 class="description__title--white">Minimal Duplex Room</h2>
-                    <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    <p class="description__price">$345<span>/Night</span></p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="">
-                    <img src="./public/images/8725460_bed_icon 1.png" alt="bed-icon" />
-                    <img src="./public/images/925808_wifi_icon 1.png" alt="wifi-icon" />
-                    <img src="./public/images/4920723_automobile_car_transport_transportation_travel_icon 1.png" alt="car-icon" />
-                    <img src="./public/images/384878_cold_new year_snowflake_wheather_winter_icon 1.png" alt="cold-icon" />
-                    <img src="./public/images/9042522_gym_icon 1.png" alt="gym-icon" />
-                    <img src="./public/images/9081473_smoking_no_icon 1.png" alt="smoke-icon" />
-                    <img src="./public/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.png" alt="cocktail-icon" />
-                </div>
-                <div class="rooms__swiper__image--white">
-                    <img src="./public/images/room-4.jfif" alt="Room-4">
-                </div>
-                <div class="rooms__swiper__description">
-                    <h2 class="description__title--white">Minimal Duplex Room</h2>
-                    <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    <p class="description__price">$345<span>/Night</span></p>
-                </div>
-              </div>
-
-            </div>
-            
-            <!-- If we need navigation buttons -->
-            <div class="rooms__swiper__white__btn--prev">
-                <img src="./public/images/arrow-left.png" alt="arrow-left">
-            </div>
-            <div class="rooms__swiper__white__btn--next">
-                <img src="./public/images/arrow-right.png" alt="arrow-right">
-            </div>
-          
-        </div>
-    </section>
-    <section class="introVideo">
-        <p class="introVideo__subtitle">INTRO VIDEO</p>
-        <h1 class="introVideo__title">Meet With Out Luxury Place.</h1>
-        <p class="introVideo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
-        <div class="introVideo__video">
-            <video src="./public/video/video_luxuryMeeting.mp4" autoplay loop muted></video>
-        </div>
-        <button type="button" class="banner__button--beige">BOOK NOW</button>
-    </section>
-    <section class="facilities">
-        <p class="facilities__subtitle">FACILITIES</p>
-        <h1 class="facilities__title">Core Features</h1>
-
-         <!-- Slider main container -->
-        <div class="facilities__swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <div class="facilities__swiper__image">
-                        <img src="./public/images/rate-01.png" alt="rate-01" class="image__icon">
-                        <h1 class="image__bckground">01</h1>
-                    </div>
-                    <div class="facilities__swiper__description">
-                        <h2 class="description__title">Have High Rating</h2>
-                        <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="facilities__swiper__image">
-                        <img src="./public/images/rate-02.png" alt="rate-02" class="image__icon">
-                        <h1 class="image__bckground">02</h1>
-                    </div>
-                    <div class="facilities__swiper__description">
-                        <h2 class="description__title">Have High Rating</h2>
-                        <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="facilities__swiper__image">
-                        <img src="./public/images/rate-03.png" alt="rate-03" class="image__icon">
-                        <h1 class="image__bckground">03</h1>
-                    </div>
-                    <div class="facilities__swiper__description">
-                        <h2 class="description__title">Have High Rating</h2>
-                        <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="facilities__swiper__image">
-                        <img src="./public/images/rate-04.png" alt="rate-04" class="image__icon">
-                        <h1 class="image__bckground">04</h1>
-                    </div>
-                    <div class="facilities__swiper__description">
-                        <h2 class="description__title">Have High Rating</h2>
-                        <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="facilities__swiper__image">
-                        <img src="./public/images/rate-05.png" alt="rate-05" class="image__icon">
-                        <h1 class="image__bckground">05</h1>
-                    </div>
-                    <div class="facilities__swiper__description">
-                        <h2 class="description__title">Have High Rating</h2>
-                        <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="facilities__swiper__image">
-                        <img src="./public/images/rate-06.png" alt="rate-06" class="image__icon">
-                        <h1 class="image__bckground">06</h1>
-                    </div>
-                    <div class="facilities__swiper__description">
-                        <h2 class="description__title">Have High Rating</h2>
-                        <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="facilities__swiper__pagination"></div>
-
-        </div>
-    </section>
-    <section class="menuFoods">
-        <img src="./public/images/menuFoods-icon.png" alt="menu-foods-icon" class="menuFoods__icon">
-        <p class="menuFoods__subtitle">MENU</p>
-        <h1 class="menuFoods__title">Our Foods Menu</h1>
-        <!-- AQUI VA EL SWIPER -->
-        <div class="menuFoods__swiper">
-
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <section class="menuFoods__swiper__container">
-                        <div class="menuFoods__swiper__image">
-                            <img src="./public/images/eggs-menu.jfif" alt="eggs-food">
-                        </div>
-                        <div class="menuFoods__swiper__description">
-                            <h2 class="description__title">Eggs & Bacon</h2>
-                            <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </section>
-                    <section class="menuFoods__swiper__container">
-                        <div class="menuFoods__swiper__image">
-                            <img src="./public/images/coffee-menu.jfif" alt="coffee">
-                        </div>
-                        <div class="menuFoods__swiper__description">
-                            <h2 class="description__title">Tea or Coffee</h2>
-                            <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </section>
-                    <section class="menuFoods__swiper__container">
-                        <div class="menuFoods__swiper__image">
-                            <img src="./public/images/chia-menu.jfif" alt="chia-food">
-                        </div>
-                        <div class="menuFoods__swiper__description">
-                            <h2 class="description__title">Chia Oatmeal</h2>
-                            <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </section>
-                </div>
-
-                <div class="swiper-slide">
-                    <section class="menuFoods__swiper__container">
-                        <div class="menuFoods__swiper__image">
-                            <img src="./public/images/fruit-image.jfif" alt="fruit-menu">
-                        </div>
-                        <div class="menuFoods__swiper__description">
-                            <h2 class="description__title">Fruit Parfait</h2>
-                            <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </section>
-                    <section class="menuFoods__swiper__container">
-                        <div class="menuFoods__swiper__image">
-                            <img src="./public/images/marmalade-image.jfif" alt="marmalade-food">
-                        </div>
-                        <div class="menuFoods__swiper__description">
-                            <h2 class="description__title">Marmalade Selectiong</h2>
-                            <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </section>
-                    <section class="menuFoods__swiper__container">
-                        <div class="menuFoods__swiper__image">
-                            <img src="./public/images/cheese-menu.jfif" alt="cheese-menu">
-                        </div>
-                        <div class="menuFoods__swiper__description">
-                            <h2 class="description__title">Cheese Plate</h2>
-                            <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </section>
-                </div>
-
-            </div>
-
-            <!-- If we need navigation buttons -->
-            <section class="menuFoods__swiper__controls">
-                <div class="controls__btn--prev">
-                    <img src="./public/images/arrow-left.png" alt="arrow-left">
-                </div>
-                <div class="controls__btn--next">
-                    <img src="./public/images/arrow-right.png" alt="arrow-right">
-                </div>
-            </section>
-
-        </div>
-    </section>
-    <div class="carrusel">
+      <p class="rooms__subtitle">ROOMS</p>
+      <h1 class="rooms__title">Hand Picked Rooms</h1>
+      <div class="rooms__swiper--white">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <div class="carrusel__picture">
-                    <img src="./public/images/room-1.jfif" alt="room-1">
-                </div>
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="">
+              <img src="./public/images/8725460_bed_icon 1.png" alt="bed-icon" />
+              <img src="./public/images/925808_wifi_icon 1.png" alt="wifi-icon" />
+              <img src="./public/images/4920723_automobile_car_transport_transportation_travel_icon 1.png" alt="car-icon" />
+              <img src="./public/images/384878_cold_new year_snowflake_wheather_winter_icon 1.png" alt="cold-icon" />
+              <img src="./public/images/9042522_gym_icon 1.png" alt="gym-icon" />
+              <img src="./public/images/9081473_smoking_no_icon 1.png" alt="smoke-icon" />
+              <img src="./public/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.png" alt="cocktail-icon" />
             </div>
-            <div class="swiper-slide">
-                <div class="carrusel__picture">
-                    <img src="./public/images/room-2.jfif" alt="room-2">
-                </div>
+            <div class="rooms__swiper__image--white">
+              <img src="./public/images/room-1.jfif" alt="Room-1" />
             </div>
-            <div class="swiper-slide">
-                <div class="carrusel__picture">
-                    <img src="./public/images/room-3.jfif" alt="room-3">
-                </div>
+            <div class="rooms__swiper__description">
+              <h2 class="description__title--white">Minimal Duplex Room</h2>
+              <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+              <p class="description__price">$345<span>/Night</span></p>
             </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="">
+              <img src="./public/images/8725460_bed_icon 1.png" alt="bed-icon" />
+              <img src="./public/images/925808_wifi_icon 1.png" alt="wifi-icon" />
+              <img src="./public/images/4920723_automobile_car_transport_transportation_travel_icon 1.png" alt="car-icon" />
+              <img src="./public/images/384878_cold_new year_snowflake_wheather_winter_icon 1.png" alt="cold-icon" />
+              <img src="./public/images/9042522_gym_icon 1.png" alt="gym-icon" />
+              <img src="./public/images/9081473_smoking_no_icon 1.png" alt="smoke-icon" />
+              <img src="./public/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.png" alt="cocktail-icon" />
+            </div>
+            <div class="rooms__swiper__image--white">
+              <img src="./public/images/room-2.jfif" alt="Room-2" />
+            </div>
+            <div class="rooms__swiper__description">
+              <h2 class="description__title--white">Minimal Duplex Room</h2>
+              <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+              <p class="description__price">$345<span>/Night</span></p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="">
+              <img src="./public/images/8725460_bed_icon 1.png" alt="bed-icon" />
+              <img src="./public/images/925808_wifi_icon 1.png" alt="wifi-icon" />
+              <img src="./public/images/4920723_automobile_car_transport_transportation_travel_icon 1.png" alt="car-icon" />
+              <img src="./public/images/384878_cold_new year_snowflake_wheather_winter_icon 1.png" alt="cold-icon" />
+              <img src="./public/images/9042522_gym_icon 1.png" alt="gym-icon" />
+              <img src="./public/images/9081473_smoking_no_icon 1.png" alt="smoke-icon" />
+              <img src="./public/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.png" alt="cocktail-icon" />
+            </div>
+            <div class="rooms__swiper__image--white">
+              <img src="./public/images/room-3.jfif" alt="Room-3" />
+            </div>
+            <div class="rooms__swiper__description">
+              <h2 class="description__title--white">Minimal Duplex Room</h2>
+              <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+              <p class="description__price">$345<span>/Night</span></p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="">
+              <img src="./public/images/8725460_bed_icon 1.png" alt="bed-icon" />
+              <img src="./public/images/925808_wifi_icon 1.png" alt="wifi-icon" />
+              <img src="./public/images/4920723_automobile_car_transport_transportation_travel_icon 1.png" alt="car-icon" />
+              <img src="./public/images/384878_cold_new year_snowflake_wheather_winter_icon 1.png" alt="cold-icon" />
+              <img src="./public/images/9042522_gym_icon 1.png" alt="gym-icon" />
+              <img src="./public/images/9081473_smoking_no_icon 1.png" alt="smoke-icon" />
+              <img src="./public/images/6623006_cocktail_drink_holidays_summer_vacation_icon 1.png" alt="cocktail-icon" />
+            </div>
+            <div class="rooms__swiper__image--white">
+              <img src="./public/images/room-4.jfif" alt="Room-4" />
+            </div>
+            <div class="rooms__swiper__description">
+              <h2 class="description__title--white">Minimal Duplex Room</h2>
+              <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+              <p class="description__price">$345<span>/Night</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="rooms__swiper__white__btn--prev">
+          <img src="./public/images/arrow-left.png" alt="arrow-left" />
+        </div>
+        <div class="rooms__swiper__white__btn--next">
+          <img src="./public/images/arrow-right.png" alt="arrow-right" />
+        </div>
+      </div>
+    </section>
+    <section class="introVideo">
+      <p class="introVideo__subtitle">INTRO VIDEO</p>
+      <h1 class="introVideo__title">Meet With Out Luxury Place.</h1>
+      <p class="introVideo__paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.
+      </p>
+      <div class="introVideo__video">
+        <video src="./public/video/video_luxuryMeeting.mp4" autoplay loop muted></video>
+      </div>
+      <button type="button" class="banner__button--beige">BOOK NOW</button>
+    </section>
+    <section class="facilities">
+      <p class="facilities__subtitle">FACILITIES</p>
+      <h1 class="facilities__title">Core Features</h1>
+
+      <!-- Slider main container -->
+      <div class="facilities__swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="facilities__swiper__image">
+              <img src="./public/images/rate-01.png" alt="rate-01" class="image__icon" />
+              <h1 class="image__bckground">01</h1>
+            </div>
+            <div class="facilities__swiper__description">
+              <h2 class="description__title">Have High Rating</h2>
+              <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="facilities__swiper__image">
+              <img src="./public/images/rate-02.png" alt="rate-02" class="image__icon" />
+              <h1 class="image__bckground">02</h1>
+            </div>
+            <div class="facilities__swiper__description">
+              <h2 class="description__title">Have High Rating</h2>
+              <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="facilities__swiper__image">
+              <img src="./public/images/rate-03.png" alt="rate-03" class="image__icon" />
+              <h1 class="image__bckground">03</h1>
+            </div>
+            <div class="facilities__swiper__description">
+              <h2 class="description__title">Have High Rating</h2>
+              <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="facilities__swiper__image">
+              <img src="./public/images/rate-04.png" alt="rate-04" class="image__icon" />
+              <h1 class="image__bckground">04</h1>
+            </div>
+            <div class="facilities__swiper__description">
+              <h2 class="description__title">Have High Rating</h2>
+              <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="facilities__swiper__image">
+              <img src="./public/images/rate-05.png" alt="rate-05" class="image__icon" />
+              <h1 class="image__bckground">05</h1>
+            </div>
+            <div class="facilities__swiper__description">
+              <h2 class="description__title">Have High Rating</h2>
+              <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="facilities__swiper__image">
+              <img src="./public/images/rate-06.png" alt="rate-06" class="image__icon" />
+              <h1 class="image__bckground">06</h1>
+            </div>
+            <div class="facilities__swiper__description">
+              <h2 class="description__title">Have High Rating</h2>
+              <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+          </div>
         </div>
         <!-- If we need pagination -->
-        <div class="carrusel__pagination"></div>
+        <div class="facilities__swiper__pagination"></div>
+      </div>
+    </section>
+    <section class="menuFoods">
+      <img src="./public/images/menuFoods-icon.png" alt="menu-foods-icon" class="menuFoods__icon" />
+      <p class="menuFoods__subtitle">MENU</p>
+      <h1 class="menuFoods__title">Our Foods Menu</h1>
+      <!-- AQUI VA EL SWIPER -->
+      <div class="menuFoods__swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <section class="menuFoods__swiper__container">
+              <div class="menuFoods__swiper__image">
+                <img src="./public/images/eggs-menu.jfif" alt="eggs-food" />
+              </div>
+              <div class="menuFoods__swiper__description">
+                <h2 class="description__title">Eggs & Bacon</h2>
+                <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </section>
+            <section class="menuFoods__swiper__container">
+              <div class="menuFoods__swiper__image">
+                <img src="./public/images/coffee-menu.jfif" alt="coffee" />
+              </div>
+              <div class="menuFoods__swiper__description">
+                <h2 class="description__title">Tea or Coffee</h2>
+                <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </section>
+            <section class="menuFoods__swiper__container">
+              <div class="menuFoods__swiper__image">
+                <img src="./public/images/chia-menu.jfif" alt="chia-food" />
+              </div>
+              <div class="menuFoods__swiper__description">
+                <h2 class="description__title">Chia Oatmeal</h2>
+                <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </section>
+          </div>
 
+          <div class="swiper-slide">
+            <section class="menuFoods__swiper__container">
+              <div class="menuFoods__swiper__image">
+                <img src="./public/images/fruit-image.jfif" alt="fruit-menu" />
+              </div>
+              <div class="menuFoods__swiper__description">
+                <h2 class="description__title">Fruit Parfait</h2>
+                <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </section>
+            <section class="menuFoods__swiper__container">
+              <div class="menuFoods__swiper__image">
+                <img src="./public/images/marmalade-image.jfif" alt="marmalade-food" />
+              </div>
+              <div class="menuFoods__swiper__description">
+                <h2 class="description__title">Marmalade Selectiong</h2>
+                <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </section>
+            <section class="menuFoods__swiper__container">
+              <div class="menuFoods__swiper__image">
+                <img src="./public/images/cheese-menu.jfif" alt="cheese-menu" />
+              </div>
+              <div class="menuFoods__swiper__description">
+                <h2 class="description__title">Cheese Plate</h2>
+                <p class="description__paragraph">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <section class="menuFoods__swiper__controls">
+          <div class="controls__btn--prev">
+            <img src="./public/images/arrow-left.png" alt="arrow-left" />
+          </div>
+          <div class="controls__btn--next">
+            <img src="./public/images/arrow-right.png" alt="arrow-right" />
+          </div>
+        </section>
+      </div>
+    </section>
+    <div class="carrusel">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="carrusel__picture">
+            <img src="./public/images/room-1.jfif" alt="room-1" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="carrusel__picture">
+            <img src="./public/images/room-2.jfif" alt="room-2" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="carrusel__picture">
+            <img src="./public/images/room-3.jfif" alt="room-3" />
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="carrusel__pagination"></div>
     </div>
     <section class="stadistics">
-        <article class="stadistic">
-            <div>
-                <img src="./public/images/cohete-icon.png" alt="cohete-icon" />
-            </div>
-            <div class="stadistic__description">
-                <h1>84K<span>+</span></h1>
-                <p>Projects are Completed</p>
-            </div>
-        </article>
-        <article class="stadistic">
-            <div>
-                <img src="./public/images/social-icon.png" alt="social-icon" />
-            </div>
-            <div class="stadistic__description">
-                <h1>10M<span>+</span></h1>
-                <p>Active Backers Around World</p>
-            </div>
-        </article>
-        <article class="stadistic">
-            <div>
-                <img src="./public/images/finanzas-icon.png" alt="finanzas" />
-            </div>
-            <div class="stadistic__description">
-                <h1>02K<span>+</span></h1>
-                <p>Categories Served</p>
-            </div>
-        </article>
-        <article class="stadistic">
-            <div>
-                <img src="./public/images/visitas-icon.png" alt="visitas-icon" />
-            </div>
-            <div class="stadistic__description">
-                <h1>100M<span>+</span></h1>
-                <p>Idea Raised Funds</p>
-            </div>
-        </article>
+      <article class="stadistic">
+        <div>
+          <img src="./public/images/cohete-icon.png" alt="cohete-icon" />
+        </div>
+        <div class="stadistic__description">
+          <h1>84K<span>+</span></h1>
+          <p>Projects are Completed</p>
+        </div>
+      </article>
+      <article class="stadistic">
+        <div>
+          <img src="./public/images/social-icon.png" alt="social-icon" />
+        </div>
+        <div class="stadistic__description">
+          <h1>10M<span>+</span></h1>
+          <p>Active Backers Around World</p>
+        </div>
+      </article>
+      <article class="stadistic">
+        <div>
+          <img src="./public/images/finanzas-icon.png" alt="finanzas" />
+        </div>
+        <div class="stadistic__description">
+          <h1>02K<span>+</span></h1>
+          <p>Categories Served</p>
+        </div>
+      </article>
+      <article class="stadistic">
+        <div>
+          <img src="./public/images/visitas-icon.png" alt="visitas-icon" />
+        </div>
+        <div class="stadistic__description">
+          <h1>100M<span>+</span></h1>
+          <p>Idea Raised Funds</p>
+        </div>
+      </article>
     </section>
     <footer class="footer">
-        <section class="footer__title">
-            <h1 class="letter--H">H</h1>
-            <h2 class="title--name">HOTEL <span>MIRANDA</span></h2>
-        </section>
-        <p class="footer__paragraph">
-            Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
-        </p>
-        <section class="RedesSociales">
-            <img src="./public/images/facebook.png" alt="facebook_icon" />
-            <img src="./public/images/twitter.png" alt="twitter_icon" />
-            <img src="./public/images/Bë.png" alt="Be_icon" />
-            <img src="./public/images/linkedin.png" alt="linkedin_icon" />
-            <img src="./public/images/youtube.png" alt="youtube_icon" />
-        </section>
-        <article class="Services">
-            <h1 class="Services__title">Services.</h1>
-            <div class="Services__contenedor">
-                <ul class="Services__contenedor__list">
-                    <li>+ Resturent & Bar       </li>
-                    <li>+ Swimming Pool         </li>
-                    <li>+ Wellness & Spa        </li>
-                    <li>+ Restaurant            </li>
-                    <li>+ Conference Room       </li>
-                    <li>+ Coctail Party Houser  </li>
-                </ul>
-                <ul class="Services__contenedor__list">
-                    <li>+ Gaming Zone</li>
-                    <li>+ Marrige Party</li>
-                    <li>+ Party Planning</li>
-                    <li>+ Tour Consultancy</li>
-                </ul>
-            </div>
-        </article>
-        <article class="ContactUs">
-            <h1 class="ContactUs__title">Contact Us.</h1>
-            <div class="ContactUs__information">
-                <img src="./public/images/phone-icon.png" alt="phone-icon" />
-                <h5 class="info__title">Phone Number <span>+987 876 765 76 577</span></h5>
-            </div>
-            <div class="ContactUs__information">
-                <img src="./public/images/email-icon.png" alt="email-icon" />
-                <h5 class="info__title">Phone Number <span>+987 876 765 76 577</span></h5>
-            </div>
-            <div class="ContactUs__information">
-                <img src="./public/images/map-icon.png" alt="ubication-icon" />
-                <h5 class="info__title">Phone Number <span>+987 876 765 76 577</span></h5>
-            </div>
-        </article>
+      <section class="footer__title">
+        <h1 class="letter--H">H</h1>
+        <h2 class="title--name">HOTEL <span>MIRANDA</span></h2>
+      </section>
+      <p class="footer__paragraph">
+        Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitat ion ullamco laboris nisi.
+      </p>
+      <section class="RedesSociales">
+        <img src="./public/images/facebook.png" alt="facebook_icon" />
+        <img src="./public/images/twitter.png" alt="twitter_icon" />
+        <img src="./public/images/Bë.png" alt="Be_icon" />
+        <img src="./public/images/linkedin.png" alt="linkedin_icon" />
+        <img src="./public/images/youtube.png" alt="youtube_icon" />
+      </section>
+      <article class="Services">
+        <h1 class="Services__title">Services.</h1>
+        <div class="Services__contenedor">
+          <ul class="Services__contenedor__list">
+            <li>+ Resturent & Bar</li>
+            <li>+ Swimming Pool</li>
+            <li>+ Wellness & Spa</li>
+            <li>+ Restaurant</li>
+            <li>+ Conference Room</li>
+            <li>+ Coctail Party Houser</li>
+          </ul>
+          <ul class="Services__contenedor__list">
+            <li>+ Gaming Zone</li>
+            <li>+ Marrige Party</li>
+            <li>+ Party Planning</li>
+            <li>+ Tour Consultancy</li>
+          </ul>
+        </div>
+      </article>
+      <article class="ContactUs">
+        <h1 class="ContactUs__title">Contact Us.</h1>
+        <div class="ContactUs__information">
+          <img src="./public/images/phone-icon.png" alt="phone-icon" />
+          <h5 class="info__title">Phone Number <span>+987 876 765 76 577</span></h5>
+        </div>
+        <div class="ContactUs__information">
+          <img src="./public/images/email-icon.png" alt="email-icon" />
+          <h5 class="info__title">Phone Number <span>+987 876 765 76 577</span></h5>
+        </div>
+        <div class="ContactUs__information">
+          <img src="./public/images/map-icon.png" alt="ubication-icon" />
+          <h5 class="info__title">Phone Number <span>+987 876 765 76 577</span></h5>
+        </div>
+      </article>
     </footer>
     <footer class="Copyright_Terminos">
-        <p>Copyright By@Example - 2020</p>
-        <p>Terms of use    |    Privacy Environmental Policy</p>
+      <p>Copyright By@Example - 2020</p>
+      <p>Terms of use | Privacy Environmental Policy</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/swiper-index.js"></script>
+    <script src="./scripts/header.js"></script>
     <script src="./scripts/index.js"></script>
-</body>
+  </body>
 </html>
