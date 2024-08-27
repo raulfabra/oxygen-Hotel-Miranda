@@ -8,6 +8,17 @@ body {
   text-align: center;
 }
 
+.backgroundHeader {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .backgroundHeader {
+    display: block;
+    background-color: rgb(34, 34, 34);
+    height: 100px;
+  }
+}
+
 .header {
   display: inline-block;
   width: 100%;
@@ -18,15 +29,41 @@ body {
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
   background-color: rgb(255, 255, 255);
 }
+@media only screen and (min-width: 1000px) {
+  .header {
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    padding: 1.5em 0;
+    transition: transform 0.6s ease;
+  }
+  .header__hidden {
+    top: 2%;
+    transform: translateY(-100%);
+  }
+}
 .header__menuBar,
 .header .menuBar {
   display: inline-block;
   width: 45%;
   text-align: left;
 }
+@media only screen and (min-width: 1000px) {
+  .header__menuBar,
+  .header .menuBar {
+    width: 55%;
+  }
+}
 .header__menuBar--button,
 .header .menuBar--button {
   display: inline-block;
+}
+@media only screen and (min-width: 1000px) {
+  .header__menuBar--button,
+  .header .menuBar--button {
+    display: none;
+  }
 }
 .header__menuBar--logo,
 .header__menuBar .logo,
@@ -52,6 +89,47 @@ body {
   vertical-align: middle;
   margin-left: 0.5em;
 }
+@media only screen and (min-width: 1000px) {
+  .header__menuBar--logo,
+  .header__menuBar .logo,
+  .header .menuBar--logo,
+  .header .menuBar .logo {
+    margin: 0;
+  }
+}
+.header__menuBar__pages,
+.header .menuBar__pages {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .header__menuBar__pages,
+  .header .menuBar__pages {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 2em;
+  }
+  .header__menuBar__pages--item,
+  .header .menuBar__pages--item {
+    display: inline;
+    padding-top: 1em;
+    text-align: left;
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    color: rgb(119, 119, 119);
+  }
+  .header__menuBar__pages--item a,
+  .header .menuBar__pages--item a {
+    text-decoration: none;
+    padding: 1em;
+    color: rgb(17, 17, 17);
+  }
+  .header__menuBar__pages--item a:hover,
+  .header .menuBar__pages--item a:hover {
+    color: rgb(190, 173, 142);
+  }
+}
 .header__sectionBar {
   display: inline-block;
   width: 45%;
@@ -61,6 +139,11 @@ body {
 .header__sectionBar div {
   display: inline-block;
   width: 25%;
+}
+@media only screen and (min-width: 1000px) {
+  .header__sectionBar {
+    width: 25%;
+  }
 }
 
 .nav {
