@@ -31,11 +31,16 @@ body {
 }
 @media only screen and (min-width: 1000px) {
   .header {
-    position: absolute;
-    padding: 1.5em 0;
+    position: fixed;
     top: 5%;
     left: 10%;
     width: 80%;
+    padding: 1.5em 0;
+    transition: transform 0.6s ease;
+  }
+  .header__hidden {
+    top: 2%;
+    transform: translateY(-100%);
   }
 }
 .header__menuBar,
