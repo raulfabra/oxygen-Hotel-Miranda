@@ -34,24 +34,24 @@
   padding: 2em 1.5em;
 }
 
-.formulario .form {
+.form__arrival, .form__departure {
   text-align: left;
 }
-.formulario .form__title {
+.form__arrival__title, .form__departure__title {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
   color: rgb(255, 255, 255);
 }
-.formulario .form__input--calendar {
+.form__arrival__input--calendar, .form__departure__input--calendar {
   background-color: rgb(34, 34, 34);
   border: none;
   outline: none;
   color: rgb(190, 173, 142);
   width: 5%;
 }
-.formulario .form__input--text {
+.form__arrival__input--text, .form__departure__input--text {
   border: none;
   border-bottom: 1px solid rgb(190, 173, 142);
   outline: none;
@@ -60,7 +60,7 @@
   width: 90%;
   background-color: rgb(34, 34, 34);
 }
-.formulario__button {
+.form__button {
   display: block;
   width: 200px;
   margin: 2em 0;
@@ -74,6 +74,21 @@
   color: rgb(255, 255, 255);
   width: 250px;
   background-color: rgb(190, 173, 142);
+}
+@media (min-width: 1000px) {
+  .form {
+    display: flex;
+    gap: 3em;
+    margin: 0 auto;
+    width: 80%;
+    padding: 2em 0;
+    position: relative;
+  }
+  .form__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 .aboutUS {
