@@ -1,190 +1,272 @@
 .facilities,
 .popularRooms,
-.rooms{
+.rooms {
+  position: relative;
+  padding: 2em 1.5em;
+
+  &--dark {
     padding: 2em 1.5em;
+    background-color: $background-grey-strong;
+  }
 
-    &--dark{
-        padding: 2em 1.5em;
-        background-color: $background-grey-strong;
+  &__Introduction {
+    @media (min-width: 1000px) {
+      margin-top: 1em;
+      padding: 2em 0;
+    }
+    &__subtitle {
+      @include Subtitle();
+
+      &--dark {
+        @include Subtitle($color-white);
+      }
+
+      &--beige {
+        @include Subtitle($background-beige);
+      }
     }
 
-    &__subtitle{
-        @include Subtitle();
+    &__title {
+      @include Title($font-oldstandardTT, 56px, 400, 60px);
+      padding-top: 0;
+      padding-bottom: 0.5em;
 
-        &--dark{
-            @include Subtitle($color-white);
-        }
-
-        &--beige{
-            @include Subtitle($background-beige);
-
-        }
-    }
-
-    &__title{
-        @include Title($font-oldstandardTT, 56px, 400, 60px);
+      &--dark {
+        @include Title($font-oldstandardTT, 56px, 400, 60px, center, $color-white);
         padding-top: 0;
         padding-bottom: 0.5em;
-        
-        &--dark{
-            @include Title($font-oldstandardTT, 56px, 400, 60px, center, $color-white);
-            padding-top: 0;
-            padding-bottom: 0.5em;
-        }
+      }
 
-        &--littledark{
-            @include Title($font-oldstandardTT, 40px, 400, 48px, center, $color-white);
-            padding-top: 0;
-            padding-bottom: 0.5em;
-        }
+      &--littledark {
+        @include Title($font-oldstandardTT, 40px, 400, 48px, center, $color-white);
+        padding-top: 0;
+        padding-bottom: 0.5em;
+      }
+
+      @media (min-width: 1000px) {
+        @include Title($font-oldstandardTT, 80px, 400, 80px);
+        letter-spacing: -2.4px;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__swiper {
+    position: relative;
+    width: auto;
+    height: 350px;
+    overflow: hidden;
+
+    &--dark {
+      position: relative;
+      width: auto;
+      height: 350px;
+      overflow: hidden;
+
+      background-color: $background-grey;
     }
 
-    &__swiper{
+    &--white {
+      position: relative;
+      width: auto;
+      height: 100%;
+      overflow: hidden;
+
+      background-color: $color-white;
+    }
+
+    &--laptop {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      /* .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height: calc((100% - 30px) / 2) !important;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } */
+    }
+
+    &__image {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+
+      &--white {
         position: relative;
-        width: auto;
-        height: 350px;
-        overflow: hidden;
+        display: flex;
+        background-color: transparent;
 
-        &--dark{
-            position: relative;
-            width: auto;
-            height: 350px;
-            overflow: hidden;
-
-            background-color: $background-grey;
+        & img {
+          width: 100%;
+          vertical-align: middle;
         }
 
-        &--white{
-            position: relative;
-            width: auto;
-            height: 100%;
-            overflow: hidden;
-
-            background-color: $color-white;
+        @media (min-width: 1000px) {
+          margin: 0 auto;
+          width: 50%;
         }
+      }
 
-        &__image{
-            position: relative;
-            display: flex;
-            justify-content: flex-end;
+      .image__icon {
+        position: absolute;
+        top: 60%;
+        left: 5%;
+      }
+      .image__bckground {
+        @include Text($font-archivo, 120px, 700, 130px, center, rgba(34, 34, 34, 0.04));
+        padding-top: 0;
 
-            &--white{
-                position: relative;
-                display: flex;
-                justify-content: flex-end;
-                background-color: transparent;
-                
-                & img{
-                    width: 100%;
-                    vertical-align: middle;
-                }
-            }
-
-            .image__icon{
-                position: absolute;
-                top: 60%;
-                left: 5%;
-
-            }
-            .image__bckground{
-                @include Text ($font-archivo, 120px, 700, 130px, center, rgba(34, 34, 34, 0.04));
-                padding-top: 0;
-
-                &--dark{
-                    @include Text ($font-archivo, 120px, 700, 130px, center, $background-grey-strong);
-                    padding-top: 0;
-                }
-            }
+        &--dark {
+          @include Text($font-archivo, 120px, 700, 130px, center, $background-grey-strong);
+          padding-top: 0;
         }
-
-        &__accesories{
-            position: relative;
-            margin: 0 auto;
-            padding: 0.5em 1em;
-            width: 200px;
-            bottom: 20px;
-            box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
-            
-            background-color: $color-white;
-        }
-
-        &__description{
-            padding: 0 1.5em;
-
-            .description__title{
-                @include Title($font-oldstandardTT, 56px, 400, 60px,left);
-                margin-top: 1em;
-                font-size: 28px;
-                line-height: 36px;
-
-                &--dark{
-                    @include Title($font-oldstandardTT, 56px, 400, 60px,left, $color-white);
-                    margin-top: 1em;
-                    font-size: 28px;
-                    line-height: 36px;
-                }
-
-                &--white{
-                    @include Title ($font-oldstandardTT, 28px, 400, 36px, center, black);
-                    padding: 0;
-                    padding-bottom: 0.5em;
-                }
-            }
-
-            .description__paragraph{
-                @include Text($font-roboto, 14px, 400, 24px, left);
-                padding: 0;
-                
-                &--dark{
-                    @include Text($font-roboto, 14px, 400, 24px, left, $color-white);
-                    padding-top: 0;
-                    width: 100%;
-                }
-
-                &--white{
-                    @include Text ($font-roboto, 14px, 400, 24px, center);
-                    padding: 0;
-                    padding-bottom: 0.5em;
-                    margin: 0 auto;
-                    width: 90%;
-                }
-            }
-
-            .description__price{
-                @include Text ($font-archivo, 16px, 700, 17.5px, center, $background-beige);
-                display: inline-block;
-                padding-bottom: 0;
-            }
-
-            .description__span{
-                @include Text ($font-archivo, 16px, 700, 17.5px, right, rgba(189, 189, 189, 1));
-                margin-left: 1em;
-                padding-bottom: 0;
-    
-                & a{
-                    text-decoration: none;
-                    color: rgba(189, 189, 189, 1);
-                }
-            }
-        }
-
-        &__white{
-            @include Button-Swiper();
-        }
-
-        &__pagination{
-            @include Pagination ();
-        }
-        &__pagination--marginTop{
-            @include Pagination (2em);
-        }
-
-        &__darkbullet{
-            @include Bullet (#333333);
-        }
-        &__bullet{
-            @include Bullet();
-        }
-    
+      }
     }
+
+    &__accessories {
+      position: absolute;
+      width: 70%;
+      height: 25px;
+      left: 15%;
+      z-index: 40;
+      background-color: white;
+
+      & img {
+        width: 25px;
+      }
+    }
+
+    &__accesories {
+      position: relative;
+      margin: 0 auto;
+      padding: 0.5em 1em;
+      width: 200px;
+      bottom: 20px;
+      box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
+
+      background-color: $color-white;
+    }
+
+    &__description {
+      position: relative;
+      transform: translate(0, -10%);
+      background-color: white;
+      margin: 0 auto;
+      width: 90%;
+
+      .description__name {
+        &__title {
+          @include Title($font-oldstandardTT, 56px, 400, 60px, left);
+          margin-top: 1em;
+          font-size: 28px;
+          line-height: 36px;
+
+          &--dark {
+            @include Title($font-oldstandardTT, 56px, 400, 60px, left, $color-white);
+            margin-top: 1em;
+            font-size: 28px;
+            line-height: 36px;
+          }
+
+          &--white {
+            @include Title($font-oldstandardTT, 28px, 400, 36px, center, black);
+            padding: 0;
+            padding-bottom: 0.5em;
+          }
+        }
+
+        &__paragraph {
+          @include Text($font-roboto, 14px, 400, 24px, left);
+          padding: 0;
+
+          &--dark {
+            @include Text($font-roboto, 14px, 400, 24px, left, $color-white);
+            padding-top: 0;
+            width: 100%;
+          }
+
+          &--white {
+            @include Text($font-roboto, 14px, 400, 24px, center);
+            padding: 0;
+            padding-bottom: 0.5em;
+            margin: 0 auto;
+            width: 90%;
+          }
+        }
+      }
+
+      .description__price {
+        @include Text($font-archivo, 16px, 700, 17.5px, center, $background-beige);
+        display: inline-block;
+        padding-bottom: 0;
+      }
+
+      .description__span {
+        @include Text($font-archivo, 16px, 700, 17.5px, right, rgba(189, 189, 189, 1));
+        margin-left: 1em;
+        padding-bottom: 0;
+
+        & a {
+          text-decoration: none;
+          color: rgba(189, 189, 189, 1);
+        }
+      }
+
+      @media (min-width: 1000px) {
+        margin: 0 auto;
+        display: flex;
+        width: 45%;
+        .room__container {
+          display: flex;
+          .description__name {
+            width: 70%;
+            padding: 0 1em;
+            &__title {
+              &--white {
+                @include Title($font-oldstandardTT, 36px, 400, 36px, left, black);
+              }
+            }
+            &__paragraph--white {
+              margin: 0;
+              width: 100%;
+              text-align: left;
+            }
+          }
+          .description__price {
+            @include Text($font-archivo, 40px, 700, 43px, center, $background-beige);
+            width: 25%;
+
+            &__span {
+              @include Text($font-archivo, 16px, 700, 17.5px, left, $background-beige);
+            }
+          }
+        }
+      }
+    }
+
+    &__white {
+      @include Button-Swiper();
+    }
+
+    &__pagination {
+      @include Pagination();
+    }
+    &__pagination--marginTop {
+      @include Pagination(2em);
+    }
+
+    &__darkbullet {
+      @include Bullet(#333333);
+    }
+    &__bullet {
+      @include Bullet();
+    }
+  }
 }
