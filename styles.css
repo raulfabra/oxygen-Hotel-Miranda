@@ -946,11 +946,11 @@ body {
 .footer--about {
   margin-top: 0;
 }
-.footer__title {
+.footer .Introduction__title {
   text-align: left;
   vertical-align: middle;
 }
-.footer__title .letter--H {
+.footer .Introduction__title .letter--H {
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: left;
@@ -964,7 +964,7 @@ body {
   padding: 0.6em 0.6em;
   background-color: rgb(190, 173, 142);
 }
-.footer__title .title--name {
+.footer .Introduction__title .title--name {
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: left;
@@ -979,10 +979,10 @@ body {
   width: 50%;
   letter-spacing: 3px;
 }
-.footer__title .title--name span {
+.footer .Introduction__title .title--name span {
   font-weight: 400;
 }
-.footer__paragraph {
+.footer .Introduction__paragraph {
   padding-top: 1em;
   text-align: justify;
   font-family: "Archivo", sans-serif;
@@ -1001,10 +1001,11 @@ body {
 .footer .RedesSociales img {
   padding: 0.5em;
 }
-.footer .Services {
+.footer .Services, .footer__Services {
   width: 100%;
+  text-align: left;
 }
-.footer .Services__title {
+.footer .Services__title, .footer__Services__title {
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: left;
@@ -1015,10 +1016,10 @@ body {
   letter-spacing: -1.2px;
   color: rgb(34, 34, 34);
 }
-.footer .Services__contenedor {
+.footer .Services__contenedor, .footer__Services__contenedor {
   display: inline-block;
 }
-.footer .Services__contenedor__list {
+.footer .Services__contenedor__list, .footer__Services__contenedor__list {
   padding-top: 1em;
   text-align: left;
   font-family: "Roboto", sans-serif;
@@ -1032,15 +1033,15 @@ body {
   padding-top: 0;
   width: 49%;
 }
-.footer .Services__contenedor__list li {
+.footer .Services__contenedor__list li, .footer__Services__contenedor__list li {
   width: 165px;
 }
-.footer .ContactUs {
+.footer .ContactUs, .footer__ContactUs {
   margin-top: 2em;
   width: 100%;
   text-align: left;
 }
-.footer .ContactUs__title {
+.footer .ContactUs__title, .footer__ContactUs__title {
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: left;
@@ -1051,11 +1052,11 @@ body {
   letter-spacing: -1.2px;
   color: rgb(34, 34, 34);
 }
-.footer .ContactUs__information {
+.footer .ContactUs__information, .footer__ContactUs__information {
   display: inline-block;
   padding-top: 2em;
 }
-.footer .ContactUs__information .info__title {
+.footer .ContactUs__information .info__title, .footer__ContactUs__information .info__title {
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: left;
@@ -1071,7 +1072,7 @@ body {
   vertical-align: top;
   margin-left: 1em;
 }
-.footer .ContactUs__information .info__title span {
+.footer .ContactUs__information .info__title span, .footer__ContactUs__information .info__title span {
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: left;
@@ -1110,6 +1111,30 @@ body {
   padding-top: 0;
   padding: 0.5em 0;
   letter-spacing: -0.5px;
+}
+
+@media (min-width: 1000px) {
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .footer__Introduction,
+  .footer .Introduction {
+    width: 60%;
+  }
+  .footer__Introduction__paragraph,
+  .footer .Introduction__paragraph {
+    width: 70%;
+  }
+  .footer__Services {
+    width: 70%;
+  }
+  .footer__ContactUs {
+    width: 60%;
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
