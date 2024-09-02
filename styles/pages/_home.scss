@@ -1,323 +1,328 @@
-@import '../constants/colors.scss';
-@import '../constants/fonts.scss';
-@import '../@mixins/Button.scss';
-@import '../@mixins/Title.scss';
-@import '../@mixins/Subtitle.scss';
-@import '../@mixins/Text.scss';
+@import "../constants/colors.scss";
+@import "../constants/fonts.scss";
+@import "../@mixins/Button.scss";
+@import "../@mixins/Title.scss";
+@import "../@mixins/Subtitle.scss";
+@import "../@mixins/Text.scss";
 
-
-.banner{
-    &__button{
-        &--beige{
-            @include Button($font-archivo, $color-white);
-            background-color: $background-beige;
-        }
-    
-        &--grey{
-            @include Button($font-archivo, $color-white);
-            border: 2px solid rgba(255, 255, 255, 0.33);
-            background-color: transparent;
-        }
+.banner {
+  &__button {
+    &--beige {
+      @include Button($font-archivo, $color-white);
+      background-color: $background-beige;
     }
+
+    &--grey {
+      @include Button($font-archivo, $color-white);
+      border: 2px solid rgba(255, 255, 255, 0.33);
+      background-color: transparent;
+    }
+  }
 }
 
-
-.calendar{
-    background-color: $background-grey-strong;
-    color: $color-white;
-    padding: 2em 1.5em;
+.calendar {
+  background-color: $background-grey-strong;
+  color: $color-white;
+  padding: 2em 1.5em;
 }
-.formulario{
-    .form{
-        text-align: left;
-        
-        &__title{
-            font-family: $font-roboto;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 18px;
+.form {
+  &__arrival,
+  &__departure {
+    text-align: left;
 
-            color: $color-white;
-            
-        }
-
-        &__input{
-
-            &--calendar{
-                background-color: $background-grey-strong;
-                border: none;
-                outline: none;
-                color: $background-beige;
-                width: 5%;
-            }
-
-            &--text{
-                border: none;
-                border-bottom: 1px solid $background-beige;
-                outline: none;
-                padding: 5px 0;
-                font-size: 16px;
-                width: 90%;
-
-                background-color: $background-grey-strong;
-                
-            }
-        }
+    &__title {
+      font-family: $font-roboto;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 18px;
+      color: $color-white;
     }
 
-    &__button{
-        @include Button($font-archivo, $color-white);
-        width: 250px;
-        background-color: $background-beige;
-    }
-}
- 
-.aboutUS{
-    padding: 2em 1.5em;
-    margin-top: 3em;
-    background-color: $background-grey-light;
-
-    &__subtitle{
-        @include Subtitle(undefined, left);
-    }
-
-    &__title{
-        @include Title(undefined, 56px, 400, 60px, left);
-    }
-
-    &__paragraph{
-        @include Text ($font-archivo, 14px, 400, 24px, justify);        
-    }
-
-    &__button{
-        @include Button($font-archivo, $color-white);
-        background-color: $background-beige;
-    }
-}
-
-.strongTeam{
-    position: relative;
-    padding: 3em 1.5em;
-
-    &__imagen {
-        margin: 0 auto;
-        width: 80%;
-        height: 400px;
-
-        & img{
-            object-fit: contain;
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    &__logo{
-        position: relative;
-        margin-top: 4em;
-        margin-bottom: 2em;
-
-        .logo--secondary{
-            position: absolute;
-            z-index: -2;
-            top: -10%;
-            left: 45%;
-
-        }
-    }
-
-    &__description{
-        .description__title{
-            @include Title ($font-oldstandardTT, 30px, 400, 30px);
-            padding: 0;
-            letter-spacing: -0.90px;
-        }
-        .description__paragraph{
-            @include Text ($font-roboto, 14px, 400, 22px, center, black);
-            margin: 0 auto;
-            width: 200px;
-        }
-    }
-}
-.luxuryRoom{
-    position: relative;
-    padding: 3em 1.5em;
-
-    &--dark{
-        margin: 0 auto;
-        padding: 3em 1.5em;
-        width: 75.5%;
+    &__input {
+      &--calendar {
         background-color: $background-grey-strong;
-    }
+        border: none;
+        outline: none;
+        color: $background-beige;
+        width: 5%;
+      }
 
-    &__imagen {
-        margin: 0 auto;
-        width: 80%;
-        height: 400px;
+      &--text {
+        border: none;
+        border-bottom: 1px solid $background-beige;
+        outline: none;
+        padding: 5px 0;
+        font-size: 16px;
+        width: 90%;
 
-        & img{
-            object-fit: contain;
-            width: 100%;
-            height: 100%;
-        }
+        background-color: $background-grey-strong;
+      }
     }
+  }
 
-    &__logo{
-        position: relative;
-    }
+  &__button {
+    @include Button($font-archivo, $color-white);
+    width: 250px;
+    background-color: $background-beige;
+  }
 
-    &__description{
-        .description__title{
-            @include Title ($font-oldstandardTT, 30px, 400, 30px, center, $color-white);
-            letter-spacing: -0.90px;
-        }
-        .description__paragraph{
-            @include Text ($font-roboto, 14px, 400, 22px, center, $color-white);
-            padding: 0;
-            margin: 0 auto;
-            width: 200px;
-        }
+  @media (min-width: 1000px) {
+    display: flex;
+    gap: 3em;
+    margin: 0 auto;
+    width: 80%;
+    padding: 2em 0;
+    position: relative;
+
+    &__button {
+      position: absolute;
+      top: 0;
+      right: 0;
     }
+  }
 }
 
-.rooms__swiper{
+.aboutUS {
+  padding: 2em 1.5em;
+  margin-top: 3em;
+  background-color: $background-grey-light;
 
-    &__description{
-        padding-top: 1em;
+  &__subtitle {
+    @include Subtitle(undefined, left);
+  }
 
-        .description__paragraph{
-            text-align: center;
-        }
-    }
+  &__title {
+    @include Title(undefined, 56px, 400, 60px, left);
+  }
+
+  &__paragraph {
+    @include Text($font-archivo, 14px, 400, 24px, justify);
+  }
+
+  &__button {
+    @include Button($font-archivo, $color-white);
+    background-color: $background-beige;
+  }
 }
 
-.introVideo{
+.strongTeam {
+  position: relative;
+  padding: 3em 1.5em;
+
+  &__imagen {
+    margin: 0 auto;
+    width: 80%;
+    height: 400px;
+
+    & img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    margin-top: 4em;
+    margin-bottom: 2em;
+
+    .logo--secondary {
+      position: absolute;
+      z-index: -2;
+      top: -10%;
+      left: 45%;
+    }
+  }
+
+  &__description {
+    .description__title {
+      @include Title($font-oldstandardTT, 30px, 400, 30px);
+      padding: 0;
+      letter-spacing: -0.9px;
+    }
+    .description__paragraph {
+      @include Text($font-roboto, 14px, 400, 22px, center, black);
+      margin: 0 auto;
+      width: 200px;
+    }
+  }
+}
+.luxuryRoom {
+  position: relative;
+  padding: 3em 1.5em;
+
+  &--dark {
+    margin: 0 auto;
     padding: 3em 1.5em;
+    width: 75.5%;
     background-color: $background-grey-strong;
+  }
 
-    &__subtitle{
-        @include Subtitle($background-beige, left);
-    }
+  &__imagen {
+    margin: 0 auto;
+    width: 80%;
+    height: 400px;
 
-    &__title{
-        @include Title ($font-oldstandardTT, 56px, 400, 60px,left,$color-white);
-        padding: 0;
+    & img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
     }
+  }
 
-    &__paragraph{
-        @include Text ($font-archivo, 14px, 400, 24px, justify);
-        padding-bottom: 2em;
-    }
+  &__logo {
+    position: relative;
+  }
 
-    &__video{
-        width: 100%;
-        overflow: hidden;
+  &__description {
+    .description__title {
+      @include Title($font-oldstandardTT, 30px, 400, 30px, center, $color-white);
+      letter-spacing: -0.9px;
     }
+    .description__paragraph {
+      @include Text($font-roboto, 14px, 400, 22px, center, $color-white);
+      padding: 0;
+      margin: 0 auto;
+      width: 200px;
+    }
+  }
 }
 
-.menuFoods{
-    padding: 2em 1.5em;    
-    
-    &__icon{
-        position: relative;
-        left: 43%;
+.rooms__swiper {
+  &__description {
+    padding-top: 1em;
+
+    .description__paragraph {
+      text-align: center;
     }
-    
-    &__subtitle{
-        @include Subtitle($color-grey, left);
+  }
+}
+
+.introVideo {
+  padding: 3em 1.5em;
+  background-color: $background-grey-strong;
+
+  &__subtitle {
+    @include Subtitle($background-beige, left);
+  }
+
+  &__title {
+    @include Title($font-oldstandardTT, 56px, 400, 60px, left, $color-white);
+    padding: 0;
+  }
+
+  &__paragraph {
+    @include Text($font-archivo, 14px, 400, 24px, justify);
+    padding-bottom: 2em;
+  }
+
+  &__video {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.menuFoods {
+  padding: 2em 1.5em;
+
+  &__icon {
+    position: relative;
+    left: 43%;
+  }
+
+  &__subtitle {
+    @include Subtitle($color-grey, left);
+    padding-bottom: 0;
+  }
+
+  &__title {
+    @include Title($font-oldstandardTT, 56px, 400, 60px, left);
+    padding-bottom: 0.5em;
+  }
+
+  &__swiper {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+
+    &__container {
+      display: flex;
+      text-align: left;
+      padding: 1em 0;
+    }
+
+    &__image {
+      & img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    &__description {
+      margin-left: 1.5em;
+
+      .description__title {
+        @include Title($font-oldstandardTT, 24px, 400, 24px, left);
         padding-bottom: 0;
+      }
+
+      .description__paragraph {
+        @include Text($font-roboto, 14px, 400, 24px, left, black);
+        padding-top: 0.5em;
+      }
     }
 
-    &__title{
-        @include Title($font-oldstandardTT, 56px, 400, 60px, left);
-        padding-bottom: 0.5em;
+    &__controls {
+      display: flex;
+      justify-content: right;
+      gap: 10px;
+
+      .controls__btn--prev {
+        width: 2rem;
+        height: 2rem;
+        background-color: $background-grey-light;
+      }
+
+      .controls__btn--next {
+        width: 2rem;
+        height: 2rem;
+        background-color: $background-beige;
+      }
     }
-
-    &__swiper{
-        position: relative;
-        width: auto;
-        overflow: hidden;
-
-        &__container{
-            display: flex;
-            text-align: left;
-            padding: 1em 0;
-        }
-
-        &__image{
-            & img{
-                width: 120px;
-                height: 120px;
-            }
-        }
-
-        &__description{
-            margin-left: 1.5em;
-
-            .description__title{
-                @include Title ($font-oldstandardTT, 24px, 400, 24px, left);
-                padding-bottom: 0;
-            }
-
-            .description__paragraph{
-                @include Text ($font-roboto, 14px, 400, 24px, left, black);
-                padding-top: 0.5em;
-                            
-            }
-        }
-
-        &__controls{
-            display: flex;
-            justify-content: right;
-            gap: 10px;
-            
-            .controls__btn--prev{
-                width: 2rem;
-                height: 2rem;
-                background-color: $background-grey-light;
-            }
-
-            .controls__btn--next{
-                width: 2rem;
-                height: 2rem;
-                background-color: $background-beige;
-            }
-
-        }
-    }
+  }
 }
 
-.stadistics{
-    padding: 3em;
-    background-color: $background-grey-strong;
+.stadistics {
+  padding: 3em;
+  background-color: $background-grey-strong;
 
-    .stadistic{
-        padding: 1.5em;
+  .stadistic {
+    padding: 1.5em;
 
-        &__description{
-            & h1{
-                font-family: $font-roboto;
-                font-size: 60px;
-                font-weight: 700;
-                line-height: 82px;
+    &__description {
+      & h1 {
+        font-family: $font-roboto;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 82px;
 
-                color: $color-white;
-                
-                & span{
-                    font-family: $font-roboto;
-                    font-size: 16px;
-                    font-weight: 700;
-                    line-height: 22px;
-                                        
-                }
-            }
-            & p{
-                font-family: $font-roboto;
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 22px;
-                
-                color: $color-grey;
-            }
+        color: $color-white;
+
+        & span {
+          font-family: $font-roboto;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 22px;
         }
+      }
+      & p {
+        font-family: $font-roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+
+        color: $color-grey;
+      }
     }
+  }
 }
