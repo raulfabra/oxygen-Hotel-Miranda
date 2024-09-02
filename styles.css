@@ -225,6 +225,41 @@ body {
   color: rgb(190, 173, 142);
 }
 
+@media only screen and (min-width: 1000px) {
+  .banner__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    padding: 2em 0;
+  }
+  .banner__subtitle {
+    padding-top: 2em;
+  }
+  .banner__title {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    text-align: left;
+    font-family: "Old Standard TT", sans-serif;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 130px;
+    letter-spacing: -1.2px;
+    color: rgb(255, 255, 255);
+    max-width: 55%;
+    letter-spacing: -3.6px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .banner__buttons {
+    display: flex;
+    gap: 1em;
+  }
+  .banner__paragraph {
+    top: 80px;
+    left: 75%;
+  }
+}
 .card {
   padding: 2em 2.5em;
   box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
