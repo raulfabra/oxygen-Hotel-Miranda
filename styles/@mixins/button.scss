@@ -1,43 +1,50 @@
-@mixin Button($font, $color){
-    display: block;
-    width: 200px;
-    margin: 2em 0;
-    padding: 1.5em;
-    border: none;
+@mixin Button($font, $color) {
+  display: block;
+  width: 200px;
+  margin: 2em 0;
+  padding: 1.5em;
+  border: none;
 
-    font-family: $font;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 15px;
-    letter-spacing: 2.80px;
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.8px;
 
-    color: $color;
+  color: $color;
 }
 
+@mixin Button_Swiper() {
+  &__btn--prev,
+  &__btn--next {
+    position: absolute;
+    z-index: 9;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid $color-black;
+    top: 6.5rem;
 
-@mixin Button_Swiper () {
+    transition: background-color 0.6s ease-in-out;
 
-    &__btn--prev, &__btn--next {
-        position: absolute;
-        z-index: 9;
-        width: 2rem;
-        height: 2rem;
-        border: 1px solid $color-black;
-        top: 6.5rem;
-
-        transition: background-color 0.6s ease-in-out;
-
-        &:hover, &:active {
-            background-color: $background-beige;
-        }
+    &:hover,
+    &:active {
+      background-color: $background-beige;
     }
+  }
 
-    &__btn--next {
-        right: 0.94rem;
+  &__btn--next {
+    right: 0.94rem;
+    @media (min-width: 1000px) {
+      top: 35%;
+      right: 15%;
     }
+  }
 
-    &__btn--prev {
-        left: 0.94rem;
+  &__btn--prev {
+    left: 0.94rem;
+    @media (min-width: 1000px) {
+      top: 35%;
+      left: 15%;
     }
-    
+  }
 }

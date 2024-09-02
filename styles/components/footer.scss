@@ -1,128 +1,158 @@
-.footer{
-    margin-top: 4em;
-    padding: 2em 1.5em;
-    position: relative;
+.footer {
+  margin-top: 4em;
+  padding: 2em 1.5em;
+  position: relative;
 
-    &--about{margin-top: 0;}
+  &--about {
+    margin-top: 0;
+  }
 
-    &__title{
-        text-align: left;
-        vertical-align: middle;
-        .letter--H {
-            @include Title ($font-archivo, 40px, 700, 28px, left, $color-white);
-            display: inline-block;
-            padding: 0.6em 0.6em;
+  .Introduction__title {
+    text-align: left;
+    vertical-align: middle;
+    .letter--H {
+      @include Title($font-archivo, 40px, 700, 28px, left, $color-white);
+      display: inline-block;
+      padding: 0.6em 0.6em;
 
-            background-color: $background-beige;
-        }
-
-        .title--name{
-            @include Title ($font-archivo, 26px, 700, 28px, left, black);
-            display: inline-block;
-            margin-left: 1em;
-            width: 50%;
-            letter-spacing: 3px;
-
-            & span{
-                font-weight: 400;              
-            }
-        } 
+      background-color: $background-beige;
     }
 
-    &__paragraph{
-        @include Text($font-archivo, 16px, 400, 26px, justify);
-        margin: 2em 0;
+    .title--name {
+      @include Title($font-archivo, 26px, 700, 28px, left, black);
+      display: inline-block;
+      margin-left: 1em;
+      width: 50%;
+      letter-spacing: 3px;
+
+      & span {
+        font-weight: 400;
+      }
     }
+  }
 
-    .RedesSociales{
-        width: 70%;
-        text-align: left;
-        background-color: $background-grey-light;
+  .Introduction__paragraph {
+    @include Text($font-archivo, 16px, 400, 26px, justify);
+    margin: 2em 0;
+  }
 
-        & img{
-            padding: 0.5em;
-        }
-
-        margin-bottom: 2em;
-    }
-
-    .Services{
-        width: 100%;
-
-        &__title{
-            @include Title($font-oldstandardTT, 24px, 400, 24px, left, $color-grey-strong);
-        }
-
-        &__contenedor{
-            display: inline-block;
-
-            &__list{
-                @include Text ($font-roboto, 16px, 400, 48px, left);
-                display: inline-block;
-                list-style-type: none;
-                vertical-align: top;
-                padding-top: 0;
-                width: 49%;               
-
-                & li{
-                    width: 165px;
-                }
-            }
-        }
-    }
-
-    .ContactUs{
-        margin-top: 2em;
-        width: 100%;
-        text-align: left;
-
-        &__title{
-            @include Title ($font-oldstandardTT, 24px, 400, 24px, left, $color-grey-strong);
-        }
-
-        &__information{
-            display: inline-block;
-            padding-top: 2em;
-
-            .info__title{
-                @include Title (undefined, 20px, 400, 24px, left, black);
-                display: inline-block;
-                width: 49%;
-                list-style-type: none;
-                vertical-align: top;
-                margin-left: 1em;
-
-
-                & span{
-                    @include Title($font-roboto, 14px, 400, 16px, left, $color-grey);                    
-                }
-            }
-        }
-    }
-}
-
-.footer::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background-image: url("./public/images/Background-Footer.png");
-    opacity: 0.03;
-}
-
-
-.Copyright_Terminos{
-    padding: 1em 1.5em;
+  .RedesSociales {
+    width: 70%;
+    text-align: left;
     background-color: $background-grey-light;
 
-    & p{
-        @include Text ($font-roboto, 16px, 700, 19px, left, black);
-        padding-top: 0;
-        padding: 0.5em 0;
-        letter-spacing: -0.50px;
+    & img {
+      padding: 0.5em;
     }
-    
+
+    margin-bottom: 2em;
+  }
+
+  .Services,
+  &__Services {
+    width: 100%;
+    text-align: left;
+
+    &__title {
+      @include Title($font-oldstandardTT, 24px, 400, 24px, left, $color-grey-strong);
+    }
+
+    &__contenedor {
+      display: inline-block;
+
+      &__list {
+        @include Text($font-roboto, 16px, 400, 48px, left);
+        display: inline-block;
+        list-style-type: none;
+        vertical-align: top;
+        padding-top: 0;
+        width: 49%;
+
+        & li {
+          width: 165px;
+        }
+      }
+    }
+  }
+
+  .ContactUs,
+  &__ContactUs {
+    margin-top: 2em;
+    width: 100%;
+    text-align: left;
+
+    &__title {
+      @include Title($font-oldstandardTT, 24px, 400, 24px, left, $color-grey-strong);
+    }
+
+    &__information {
+      display: inline-block;
+      padding-top: 2em;
+
+      .info__title {
+        @include Title(undefined, 20px, 400, 24px, left, black);
+        display: inline-block;
+        width: 49%;
+        list-style-type: none;
+        vertical-align: top;
+        margin-left: 1em;
+
+        & span {
+          @include Title($font-roboto, 14px, 400, 16px, left, $color-grey);
+        }
+      }
+    }
+  }
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("./public/images/Background-Footer.png");
+  opacity: 0.03;
+}
+
+.Copyright_Terminos {
+  padding: 1em 1.5em;
+  background-color: $background-grey-light;
+
+  & p {
+    @include Text($font-roboto, 16px, 700, 19px, left, black);
+    padding-top: 0;
+    padding: 0.5em 0;
+    letter-spacing: -0.5px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    &__Introduction,
+    .Introduction {
+      width: 60%;
+      &__paragraph {
+        width: 70%;
+      }
+    }
+
+    &__Services {
+      width: 70%;
+    }
+
+    &__ContactUs {
+      width: 60%;
+      margin-top: 0;
+    }
+  }
 }
