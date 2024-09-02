@@ -82,108 +82,166 @@
   }
 }
 
-.aboutUS {
-  padding: 2em 1.5em;
-  margin-top: 3em;
-  background-color: $background-grey-light;
+.ourExperience {
+  position: relative;
+  .aboutUS {
+    padding: 2em 1.5em;
+    margin-top: 3em;
+    background-color: $background-grey-light;
 
-  &__subtitle {
-    @include Subtitle(undefined, left);
+    &__subtitle {
+      @include Subtitle(undefined, left);
+    }
+
+    &__title {
+      @include Title(Old Standard TT, 56px, 400, 60px, left);
+    }
+
+    &__paragraph {
+      @include Text($font-archivo, 14px, 400, 24px, justify);
+    }
+
+    &__button {
+      @include Button($font-archivo, $color-white);
+      background-color: $background-beige;
+    }
   }
 
-  &__title {
-    @include Title(undefined, 56px, 400, 60px, left);
-  }
+  .details {
+    .strongTeam {
+      position: relative;
+      padding: 3em 1.5em;
 
-  &__paragraph {
-    @include Text($font-archivo, 14px, 400, 24px, justify);
-  }
+      &__image {
+        margin: 0 auto;
+        width: 80%;
+        height: 400px;
 
-  &__button {
-    @include Button($font-archivo, $color-white);
-    background-color: $background-beige;
+        & img {
+          object-fit: contain;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &__info {
+        &__logo {
+          position: relative;
+          margin-top: 4em;
+          margin-bottom: 2em;
+
+          .logo--secondary {
+            position: absolute;
+            z-index: -2;
+            top: -10%;
+            left: 45%;
+          }
+        }
+
+        &__description {
+          .description__title {
+            @include Title($font-oldstandardTT, 30px, 400, 30px);
+            padding: 0;
+            letter-spacing: -0.9px;
+          }
+          .description__paragraph {
+            @include Text($font-roboto, 14px, 400, 22px, center, black);
+            margin: 0 auto;
+            width: 200px;
+          }
+        }
+      }
+    }
+    .luxuryRoom {
+      position: relative;
+      padding: 3em 1.5em;
+
+      &--dark {
+        margin: 0 auto;
+        padding: 3em 1.5em;
+        width: 75.5%;
+        background-color: $background-grey-strong;
+      }
+
+      &__imagen {
+        margin: 0 auto;
+        width: 80%;
+        height: 400px;
+
+        & img {
+          object-fit: contain;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &__logo {
+        position: relative;
+      }
+
+      &__description {
+        .description__title {
+          @include Title($font-oldstandardTT, 30px, 400, 30px, center, $color-white);
+          letter-spacing: -0.9px;
+        }
+        .description__paragraph {
+          @include Text($font-roboto, 14px, 400, 22px, center, $color-white);
+          padding: 0;
+          margin: 0 auto;
+          width: 200px;
+        }
+      }
+    }
   }
 }
 
-.strongTeam {
-  position: relative;
-  padding: 3em 1.5em;
-
-  &__imagen {
+@media (min-width: 1000px) {
+  .ourExperience {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
     margin: 0 auto;
     width: 80%;
-    height: 400px;
+    padding: 0;
+    height: 800px;
 
-    & img {
-      object-fit: contain;
+    .aboutUS {
+      padding: 0%;
+      width: 70%;
+
+      &__subtitle {
+        background-color: white;
+        color: $background-beige;
+      }
+
+      &__title {
+        @include Title(Old Standard TT, 80px, 400, 90px, left);
+        letter-spacing: -2.4px;
+        padding-bottom: 0;
+      }
+
+      &__paragraph {
+        width: 70%;
+      }
+    }
+
+    .details {
+      display: flex;
+      justify-content: left;
+      gap: 0;
       width: 100%;
-      height: 100%;
-    }
-  }
+      .strongTeam {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: left;
+        width: 80%;
+      }
 
-  &__logo {
-    position: relative;
-    margin-top: 4em;
-    margin-bottom: 2em;
-
-    .logo--secondary {
-      position: absolute;
-      z-index: -2;
-      top: -10%;
-      left: 45%;
-    }
-  }
-
-  &__description {
-    .description__title {
-      @include Title($font-oldstandardTT, 30px, 400, 30px);
-      padding: 0;
-      letter-spacing: -0.9px;
-    }
-    .description__paragraph {
-      @include Text($font-roboto, 14px, 400, 22px, center, black);
-      margin: 0 auto;
-      width: 200px;
-    }
-  }
-}
-.luxuryRoom {
-  position: relative;
-  padding: 3em 1.5em;
-
-  &--dark {
-    margin: 0 auto;
-    padding: 3em 1.5em;
-    width: 75.5%;
-    background-color: $background-grey-strong;
-  }
-
-  &__imagen {
-    margin: 0 auto;
-    width: 80%;
-    height: 400px;
-
-    & img {
-      object-fit: contain;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  &__logo {
-    position: relative;
-  }
-
-  &__description {
-    .description__title {
-      @include Title($font-oldstandardTT, 30px, 400, 30px, center, $color-white);
-      letter-spacing: -0.9px;
-    }
-    .description__paragraph {
-      @include Text($font-roboto, 14px, 400, 22px, center, $color-white);
-      padding: 0;
-      margin: 0 auto;
-      width: 200px;
+      .luxuryRoom {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+      }
     }
   }
 }
