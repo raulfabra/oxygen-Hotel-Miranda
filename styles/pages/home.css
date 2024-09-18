@@ -351,7 +351,7 @@
   }
   .introVideo__content {
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
   }
   .introVideo__title {
     padding-top: 0.5em;
@@ -373,10 +373,9 @@
     padding-bottom: 2em;
   }
   .introVideo__video {
-    width: 50%;
     position: absolute;
     top: 20%;
-    left: 45%;
+    left: 20%;
   }
 }
 @media (min-width: 1000px) {
@@ -498,6 +497,17 @@
   font-weight: 700;
   line-height: 22px;
   color: rgb(119, 119, 119);
+}
+
+@media (min-width: 1000px) {
+  .stadistics {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
