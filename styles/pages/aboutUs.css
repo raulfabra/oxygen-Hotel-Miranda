@@ -11,6 +11,11 @@
   height: auto;
   display: block;
 }
+@media (min-width: 1000px) {
+  .welcomeVideo__container {
+    width: 50%;
+  }
+}
 .welcomeVideo__title {
   padding-top: 0.5em;
   padding-bottom: 1em;
@@ -22,6 +27,22 @@
   letter-spacing: -1.2px;
   color: black;
   margin-top: 1em;
+}
+@media (min-width: 1000px) {
+  .welcomeVideo__title {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-family: "Old Standard TT", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -1.2px;
+    color: black;
+    margin: 0 auto;
+    width: 55%;
+    letter-spacing: -2.2px;
+  }
 }
 
 .features {
@@ -51,6 +72,12 @@
   line-height: 14px;
   letter-spacing: 2.4px;
   width: 100%;
+}
+@media (min-width: 1000px) {
+  .features {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .counter {
